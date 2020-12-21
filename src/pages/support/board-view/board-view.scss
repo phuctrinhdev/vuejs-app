@@ -1,0 +1,29 @@
+#System_in .inner{width: 100%; box-sizing:border-box; }
+#System_in .inner table{margin-top: 15px;}
+#System_in .inner table thead tr td{background-color: #edf0f0;}
+#System_in .inner table tr td{ font-size: 13px; text-align: center; font-weight: 600; color: #555; vertical-align: middle;}
+#System_in .inner table tr td a{ font-size: 13px; font-weight: 600; color: #555;}
+// #System_in .inner table tbody tr td:nth-of-type(2){text-align: left; padding-left: 10px;}
+#System_in .inner table tr td p.blue1.kr{margin: 0 5px;}
+#System_in .inner table tr td select{}
+#System_in .inner table tr td span{}
+
+#System_in .inner.show table tr td{text-align: left; padding-left: 10px;}
+#System_in .inner.show table tr td:nth-of-type(2n+1){background-color: #edf0f0; text-align: center; width: 12%;}
+
+#System_in .inner.show table tr td.txt{text-align: left; padding-left: 10px; background-color: #fff;}
+
+.file-attachment{
+    cursor: pointer !important;
+    padding-bottom: 25px;
+}
+
+td.contents{
+    text-align: left !important;
+
+}
+.p-contents{
+    font-size: 12pt;
+    color: black;
+    line-height: 1.6;
+}

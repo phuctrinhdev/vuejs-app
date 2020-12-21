@@ -1,0 +1,204 @@
+.booking-opening-hours-page {
+  .inner {
+    width: 100%;
+  }
+  .opening-hours-part {
+    width: 100%;
+    margin: 10px 0;    
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px $gray;
+    background-color: $white;
+    .part-title {
+      margin-bottom: 10px;
+      .title {
+        float: left;
+        line-height: 35px;
+        font-weight: bold;
+      }
+      .btn-group {
+        float: right;
+        .btn {
+          width: 70px;
+          margin: 0 auto;
+          padding: 4px 5px;
+          border: 1px solid $blue;
+          background: $white;
+          color: $blue;
+          &:hover {
+            background: $blue;
+            color: $white;
+          }
+        }
+      }
+    }
+    .specific-off-days {
+      .part-box {
+        width: fit-content;
+        margin-left: 30px;
+        padding-left: 60px;
+        border-left: 1px dashed $gray;
+      }
+    }
+  }
+  .off-days-part {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px $gray;
+    background-color: $white;
+    .repeat {
+      padding-left: 0;
+    }
+    .specific {
+      margin-left: 75px;
+      padding-left: 90px;
+      border-left: 1px dashed $gray;
+      .part-box {
+        width: fit-content;
+      }
+    }
+    .part-title {
+      padding-left: 0;
+      .title {
+        font-weight: bold;
+      }
+    }
+    .part-box {
+      .part-box-head {
+        margin-bottom: 10px;
+        line-height: 35px;
+      }
+      .part-box-content {
+        .repeat-week-options {
+          height: 100px;
+          padding: 15px 12px 8px 12px;
+          border: 1px solid $gray;
+          .repeat-week-selected, .repeat-day-of-week {
+            float: left;
+            width: calc(50% - 5px);
+            margin-bottom: 0;
+          }
+          .repeat-day-of-week {
+            margin-left: 10px;
+          }
+          .custom-radio label::before, .multi-checkbox .multiselect__tags {
+            border-color: $gray;
+          }
+        }
+        .add-off-days {
+          padding: 12px 0 12px 15px;
+          .btn {
+            width: 150px;
+            height: 30px;
+            margin: 0 auto;
+            border: 1px solid $blue;
+            background: $white;
+            color: $blue;
+            line-height: 18px;
+            &:hover {
+              background:$blue;
+              color:$white;
+            }
+          }
+        }
+      }
+    }
+  }
+  .off-days-submit {
+    margin-top: 20px;
+    .btn {
+      width: 200px !important;
+      margin: 0 auto;
+      padding: 12px 15px !important;
+      &.btn-blue {
+        color: white;
+        &:hover {
+          background: $blue;
+        }
+      }
+    }
+  }
+}
+
+// large: .col-lg- | 992 - 1199px -> ipad landscape
+@media (max-width: 1199.98px) {
+  .booking-opening-hours-page .off-days-part .specific {
+    margin-left: 30px;
+    padding-left: 45px;
+  }
+  .booking-opening-hours-page .opening-hours-part .specific-off-days {
+    .part-box {
+      margin-left: 0;
+      padding-left: 30px;
+    }
+  }
+}
+
+// medium: .col-md- | 768 - 991px -> ipad
+@media (max-width: 991.98px) {
+  .booking-opening-hours-page .off-days-part .specific {
+    position: initial;
+    min-height: 320px;
+    margin: 0 0 0px 30px;
+    padding-left: 45px;
+  }
+  .booking-opening-hours-page .opening-hours-part .specific-off-days {
+    .part-box {
+      margin-top: 30px;
+      padding-left: 0px;
+      border: 0;
+    }
+  }
+}
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+  .booking-opening-hours-page {
+    padding: 15px 7.5px;
+    .setup-top {
+      h3 {
+        text-indent: 5px;
+      }
+    }
+    .booking-table .table-data table {
+      th, td {
+        min-width: 80px;
+        white-space: nowrap;
+        font-size: 13px;
+      }
+    }
+  }
+  .booking-opening-hours-page .off-days-part {
+    .repeat {
+      padding-right: 0;
+    }
+    .specific {
+      position: initial;
+      min-height: 320px;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      .part-box {
+        position: relative;
+        right: auto;
+        width: auto;
+        margin-top: 20px;
+        .calendar-wrapper{
+          float: none;
+          width: auto;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .booking-opening-hours-page .off-days-part .part-box .part-box-content .add-off-days .btn {
+    line-height: 20px;
+  }
+}
+
+// extra small: .col- | 360 - 575px, mobile
+@media (max-width: 575.98px) {
+
+}

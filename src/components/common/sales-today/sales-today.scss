@@ -1,0 +1,163 @@
+.sales-today {
+  float: left;
+  margin-bottom: 50px;
+  width: 460px;
+  margin-right: 35px;
+  &:nth-of-type(1) {
+    h2 {
+      color: $pink;
+      border-bottom: 2px solid $pink;
+      &:before {
+        border: 3px solid $pink;
+      }
+    }
+  }
+  &:nth-of-type(2) {
+    h2 {
+      color: $purple;
+      border-bottom: 2px solid $purple;
+      &:before {
+        border: 3px solid $purple;
+      }
+    }
+  }
+  &:nth-of-type(3) {
+    margin-right: 0;
+      h2 {
+      color: $green;
+      border-bottom: 2px solid $green;
+      &:before {
+        border: 3px solid $green;
+      }
+    }
+  }
+  h2 {
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: $font-large;
+    text-indent: 15px;
+    line-height: 38px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+
+    &:before {
+      content: " ";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      box-sizing: border-box;
+      background-color: $white;
+      margin-right: 10px;
+    }
+    span {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      box-sizing: border-box;
+      background-color: $white;
+      margin-right: 10px;
+    }
+  }
+  .sales-today-list {
+    min-height: 206px;
+    padding: 20px 25px;
+    margin-top: 3px;
+    background-color: $white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px $gray-light;
+    font-size: $font-medium;
+    dl {
+      padding: 0px 10px;
+      &.sub-title {
+        display: inline-block;
+        width: 100%;
+      }
+      &.value {
+        float: right;
+
+        dd {
+          text-align: right;
+        }
+      }
+      dd {
+        margin-bottom: 20px;
+        position: relative;
+        line-height: 1;
+        span {
+          &.value {
+            float: right;
+          }
+        }
+        strong {
+          display: inline-block;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+    }
+    p.total {
+      clear: both;
+      border-top: 1px solid $gray;
+      box-sizing: border-box;
+      font-weight: 800;
+      position: relative;
+      padding: 10px;
+      strong {
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+      }
+    }
+  }
+}
+
+// responsive
+@media (max-width:1600px){
+  .sales-today{
+    float: left;
+    width: 32.3%;
+    margin-right: 1.5%;
+  }
+}
+
+// large: .col-lg- | 992 - 1199px -> ipad landscape
+@media (max-width: 1199.98px) {
+  .sales-today {
+    margin-bottom: 0px;
+  }
+}
+
+// medium: .col-md- | 768 - 991px -> ipad
+@media (max-width: 991.98px) {
+  .sales-today {
+    width: 49%;
+    &:nth-of-type(odd) {
+      margin-right: 2%;
+    }
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+}
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+  .sales-today {
+    width: 100%;
+    margin-right: 0 !important;
+    margin-bottom: 10px;
+  }
+}

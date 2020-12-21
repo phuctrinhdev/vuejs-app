@@ -1,0 +1,113 @@
+.action-prepaid-card-modal {
+  .modal-dialog {
+    width: 590px;
+  }
+  .box-tap{
+    .nav-tabs{     
+      border-bottom: 0px;
+      .nav-item{ 
+        margin-right: 5px;
+      }
+      .nav-link{
+        transition:0.3s;
+        border: 1px solid $gray;
+        color: $gray-dark;
+        background-color: $white;
+        border-radius: 0;
+        &:hover {
+          background-color: $purple; 
+          color: $white; 
+          border: 1px solid $purple;
+        }
+      }
+      .active{ 
+        color: $white;
+        border: 1px solid $purple;
+        background-color: $purple;
+        border-radius: 0;
+      }
+    }
+    .tab-content{
+      border: 1px solid $gray-light;
+      box-sizing: border-box;
+      padding: 15px;
+      margin-top: 10px !important;
+    }
+  }
+  .form-group {
+    &.prepaid-card-type {
+      .form-btn-group {
+        .custom-radio {
+          padding-top: 0px;
+          padding-bottom: 1px;
+        }
+      }
+    }
+    &.salary-sales, &.validity {
+      .row {
+        .radio-group {
+          .btn-group-toggle {
+            min-width: 123px;
+          }
+        }
+      }
+    }
+    &.discount {
+      .custom-checkbox {
+        display: inline-block;
+      }
+      .failcode-link {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        margin-left: 5px;
+        vertical-align: middle;
+      }
+    }
+    input{
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+  .modal-footer {
+    flex-direction: row;
+    .btn {
+      margin-right: 5px;
+    }
+  }
+  .btn-group{
+    .btn {
+      padding: 3px 10px !important;
+      margin: 0px !important;
+    }
+  }
+  .padding-zero {
+    padding: 0
+  }
+  .icon-line {
+    display: unset;
+  }
+}
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+  .action-prepaid-card-modal {
+    .modal-dialog {
+      max-width: 95%;
+    }
+  }
+}
+
+
+// extra small: .col- | 360 - 575px, mobile
+@media (max-width: 575.98px) {
+  .form-group {
+    &.salary-sales, &.validity {
+      .row {
+        .radio-group {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}

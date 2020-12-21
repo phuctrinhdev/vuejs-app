@@ -1,0 +1,27 @@
+@mixin truncate-text($line, $line-height) {
+  display: -webkit-box;
+  max-height: $line * $line-height;
+  line-height: $line-height;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  // font-family: Arial;
+}
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin position-sticky(){
+  position: sticky;
+  position: -webkit-sticky;
+}
+
+@mixin box-shadow(){
+  box-shadow: 2px 2px 2px $gray;
+}

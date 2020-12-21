@@ -1,0 +1,50 @@
+.action-opening-hours-resource-modal {
+  .form-wrapper {
+    label, .mx-datepicker {
+      width: 49%;
+    }
+    .mx-datepicker {
+      .mx-input {
+        height: 30px;
+        border-color: $gray;
+      }
+    }
+    .multiselect {
+      width: 99%;
+      margin-top: 20px;
+    }
+  }
+  .modal-footer {
+    padding: 20px 30px 0 30px;
+  }
+  .table-data {
+    table {
+      th, td {
+        height: 40px;
+        border-color: $gray;
+      }
+      thead {
+        th {
+          background: $gray-lighten;
+          color: $gray-dark;
+        }
+      }
+      tbody {
+        tr {
+          &:hover {
+            background: transparent;
+          }
+        }
+        td {
+          font-size: 16px;
+          &.days {
+            text-align: left;
+          }
+          .btn {
+            width: 70px;
+          }
+        }
+      }
+    }
+  }
+}

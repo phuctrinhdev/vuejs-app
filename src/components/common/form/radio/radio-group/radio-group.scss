@@ -1,0 +1,12 @@
+.btn-group-toggle {
+  border-radius: 5px;
+  color: $blue;
+  &>label {
+    background: $white !important;
+    color: $blue !important;
+    &.active {  
+      background: $blue !important;
+      color: $white !important;
+    }
+  }
+}

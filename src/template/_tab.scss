@@ -1,0 +1,17 @@
+//===========================================
+// ELEMENT 
+//   tab
+//-------------------------------------------
+.tabs {
+  .card-header {
+    &:focus, &>nav:focus {
+      outline: 0;
+    }
+  }
+  .tab-content {
+    min-height: 250px;
+    .tab-pane {
+      outline: 0;
+    }
+  }
+}

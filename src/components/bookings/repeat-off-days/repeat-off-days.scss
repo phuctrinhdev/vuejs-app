@@ -1,0 +1,25 @@
+.repeat {
+  .part-box-content {
+    padding: 12px 25px;
+    .repeat-week-options {
+      .custom-radio {
+        margin-right: 2px;
+      }
+    }
+  }
+}
+.repeat-off-days {
+  &.disabled {
+    .list-off-days-wrapper {
+      background: $gray-light;
+    }
+  }
+}
+.repeat-off-days {
+  padding: 0;
+  .list-off-days {
+    .title {
+      display: none;
+    }
+  }
+}

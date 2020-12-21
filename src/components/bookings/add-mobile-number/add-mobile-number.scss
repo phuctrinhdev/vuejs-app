@@ -1,0 +1,38 @@
+.add-mobile-number-modal {
+  .modal-dialog {
+    width: 500px; 
+  }
+  .form-wrapper { 
+    
+    .form-group {
+      margin-bottom: 5px;
+      input{
+        width: 100%;
+        font-size: 14px;
+      } 
+      .btn-group{
+        .btn {
+          margin: 0px !important;
+        }
+      } 
+    }
+     
+  }
+}
+
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+  main {
+    .add-mobile-number-modal {
+      .modal-dialog {
+        max-width: 95%;
+      }
+    }
+  }
+}
+
+// extra small: .col- | 360 - 575px, mobile
+@media (max-width: 575.98px) {
+
+}

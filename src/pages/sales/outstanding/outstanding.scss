@@ -1,0 +1,217 @@
+.receivables-page{
+    .title{
+        width: 100%;
+        height: 46px;
+        border-bottom: 1px solid black;
+        margin-bottom: 10px;
+        h3{
+            padding-top: 10px;
+            font-weight: 900;
+            width: 50%;
+            height: 100%;
+            float: left;
+            font-size: 18px;
+        }
+        &>div{
+            float: left;
+            width: 50%;
+            height: 100%;
+            text-align: right;
+            a{
+                font-size: 14px;
+                display: inline-block;
+                text-align: center;
+                color: #3499db;
+                padding: 4px 15px;
+                background-color: white;
+                border-radius: 5px;  
+                width: 200px;
+                height: 33px;
+                border: 1px solid #3499db;
+                &:hover{
+                    background-color: #3499db;
+                    color: white;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+    .filter{
+        width: 100%;
+        height: 76px;
+        background-color: white;
+        padding: 22px 20px;
+        margin-bottom: 10px;
+        h3{
+            background-color: #7c79b6;
+            color: white;
+            padding: 0 10px;
+            line-height: 30px;
+            border-radius: 25px;
+            width: 10%;
+            text-align: center;
+            float: left;
+            margin-right: 5%;
+        }
+        .bigger-than{
+            width: 70%;
+            float: left;
+            label{
+                padding-top: 5px;
+                width: 12%;
+                float: left;
+            }
+            &>input:nth-child(1n){
+                height: 30px !important;
+                width: 59%;
+                float: left;
+                border-radius: 4px;
+            }
+            &>input:nth-child(2n){
+                height: 30px !important;
+                width: 28%;
+                float: left;
+                margin-right: 1%;
+            }
+        }
+        .search{
+            width: 15%;
+            float: left;
+            text-align: right;
+            button{
+                width: 120px;
+                height: 36px;
+                margin-top: -3px;
+                padding-left: 23px;
+                border-radius: 5px;
+                background-color: #3499db;
+                color: white;
+                text-align: center;
+                position: relative;
+                border: 0;
+                i{
+                    left: 27px;
+                    height: 19px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+    .table{
+        padding:22px 20px;
+        width: 100%;
+        height: auto;
+        background-color: white;
+    }
+}
+// ****responsive------------------------
+@media screen and (max-width: 1199.98px) {  
+    .receivables-page{
+        .filter{
+            h3 {
+                width: 11%;
+                margin-right: 4%;
+            }
+            .bigger-than{
+                width: 70%;
+                label{
+                    width: 14%;
+                }
+                &>input:nth-child(1n){
+                    width: 57%;
+                }
+                &>input:nth-child(2n){
+                    width: 28%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 991.98px) {
+  .receivables-page{
+    .filter{
+      display: flex;
+      position: relative;
+      height: auto;
+      padding: 10px;
+      h3 {
+        width: 100px;
+        height: fit-content;
+        margin-right: 20px;
+      }
+      .bigger-than {
+        display: flex;
+        width: auto;
+        label {
+          width: 90px;
+        }
+        input {
+          width: 180px !important;
+          &.input-money {
+            width: 120px !important;
+            margin-right: 5px !important;
+          }
+        }
+      }
+      .search {
+        position: absolute;
+        right: 10px;
+        display: block;
+        width: auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .receivables-page{
+    .filter{
+      h3 {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .receivables-page{
+    .title {
+      h3 {
+        width: fit-content;
+        margin-right: 15px;
+      }
+      &>div {
+        float: right;
+        width: fit-content;
+        margin-top:5px;
+      }
+    }
+    .filter{
+      display: block;
+      height: 100px;
+      h3 {
+        display: none;
+      }
+      .bigger-than {
+        width: 100%;
+        label {
+          font-size: 13px;
+        }
+        input {
+          width: 140px !important;
+          padding: 5px;
+          font-size: 13px;
+          &.input-money {
+            width: 90px !important;
+          }
+        }
+      }
+      .search {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        right: 0;
+        width: 100%;
+        margin-top: 15px;
+      }
+    }
+  }
+}

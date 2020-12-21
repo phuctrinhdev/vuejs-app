@@ -1,0 +1,112 @@
+.campaign-report-page {
+  .campaign-report-page__section {
+    background-color: $white;
+    border: solid 1px #e0e3e3;
+    padding: 25px 15px;
+    margin-bottom: 5px;
+  }
+
+  .report-settings {
+    display: inline-flex;
+    flex-wrap: wrap;
+
+    &.report-settings--block {
+      display: block;
+
+      .report-settings__type {
+        margin-bottom: 10px;
+      }
+    }
+
+    label {
+      margin-right: 10px;
+    }
+
+    .report-settings__type {
+      margin-right: 10px;
+
+      @media (max-width: 991.98px) {
+        margin-bottom: 10px;
+      }
+    }
+
+    .report-settings__comparison-period {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .report-settings__type,
+    .report-settings__comparison-period {
+      label {
+        font-weight: 800;
+      }
+    }
+  }
+
+  .campaign-summary {
+    .campaign-summary__title {
+      display: inline-block;
+      font-size: $font-16;
+      line-height: 24px;
+      color: #333434;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .campaign-summary__period {
+      .b-dropdown {
+        .btn {
+          height: 30px;
+          padding: 6px 12px !important;
+          color: $black;
+          border-color: $gray;
+          background-color: $white;
+        }
+
+        .dropdown-menu {
+          padding: 15px;
+          width: 400px;
+          font-size: $font-13;
+
+          @media (max-width: 575.98px) {
+            width: 250px;
+          }
+
+          label {
+            font-weight: 600;
+            color: #666;
+          }
+
+          textarea {
+            padding: 5px;
+            text-indent: initial;
+          }
+        }
+      }
+    }
+
+    .campaign-summary__results {
+      margin-top: 30px;
+
+      .results__title {
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+
+      .results__empty {
+        padding: 15px;
+        text-align: center;
+        border: solid 1px #e0e3e3;
+      }
+    }
+  }
+
+  .campaign-report-page__action {
+    text-align: right;
+
+    @media (max-width: 991.98px) {
+      margin-top: 15px;
+      text-align: left;
+    }
+  }
+}

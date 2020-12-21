@@ -1,0 +1,113 @@
+.setup-auto-mes {
+  .setup-btn {
+    border: 1px solid #bc7e07;
+    color: #a97207;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  .set-info {
+    .nav-item {
+      width: 25%;
+      box-sizing: border-box;
+      padding: 0 .1rem;
+      text-align: center;
+      .nav-link {
+        border: 1px solid #7c79b6;
+        border-radius: 0;
+        color: #7c79b6;
+        font-size: 13px;
+      }
+      .nav-link.active {
+        background: #7c79b6;
+        color: #fff;
+      }
+    }
+    .active-btn {
+      margin-top: 5px;
+      width: 19px; 
+      height: 19px;
+      display: inline-block;
+      border-radius: 50%;
+      border: 1px solid #088660;
+      background-color: #4dcfa6;
+    }
+    .inactive-btn {
+      margin-top: 5px;
+      width: 19px; 
+      height: 19px;
+      display: inline-block;
+      border-radius: 50%;
+      border: 1px solid #088660;
+    }
+    .not-setting-btn {
+      margin-top: 5px;
+      width: 19px; 
+      height: 19px;
+      display: inline-block;
+      border-radius: 50%;
+      border: 1px solid #088660;
+      background-color: #E9ECEF;
+    }
+    .status-info {
+      li {
+        float: left;
+        margin-right: 30px;
+      }
+      .status-show {
+        width: 19px; 
+        height: 19px;
+        display: block;
+        border-radius: 50%;
+        border: 1px solid #088660;
+        float: left;
+      }
+      .status-show.active {
+        background-color: #4dcfa6;
+      }
+      .status-show.no-setting {
+        background-color: #e9ecef;
+      }
+      .status-text {
+        margin-left: 10px;
+        display: block;
+        float: left;
+      }
+    }
+  }
+  .tabs .tab-content {
+    min-height: auto;
+  }
+}
+
+// ****responsive------------------------
+@media screen and (max-width: 1199.98px) {
+  .setup-auto-mes {
+    .set-info {
+      .nav-item {
+        display: table;
+        height: 56px;
+        .nav-link {          
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 991.98px) {
+}
+@media screen and (max-width: 767.98px) {
+  .setup-auto-mes {
+    .set-info {
+      .nav-item {
+        width: 50%;
+        margin-bottom: 3px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .setup-auto-mes .set-info .status-info li {
+    margin-right: 20px;
+  }
+}

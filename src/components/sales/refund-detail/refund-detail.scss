@@ -1,0 +1,245 @@
+.refund-detail-modal {
+  .modal-dialog {
+    max-width: 95%;
+    .modal-content {
+      min-height: 400px;
+    }
+  }
+  .refund-info{
+    h1{
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .detail{
+      margin-top: 15px;
+      margin-bottom: 0px;
+      .status{
+        text-align: right;
+        font-weight: bold;
+        font-size: 16px;
+        color:red;
+      }
+    }
+  }
+  .detail-title {
+    margin-bottom: 15px;
+    color: $gray-dark;
+    font-size: 18px;
+  }
+  .user-info {
+    margin-bottom: 10px;
+  }
+  .refund-items-table{
+    table {
+      td {
+        .amount {
+          span {
+            font-size: 13px;
+            font-style: italic;
+            color: $blue;
+          }
+        }
+      }
+    }
+
+  }
+  .check-out-wrapper {
+    position: relative;
+    min-height: 240px;
+    margin-top: 20px;
+    .check-out-brief {
+      display: inline-block;
+      width: 280px;
+      padding: 15px;
+      border: 1px solid $gray;
+      ul {
+        li {
+          margin: 10px 0;
+          &.total-amount {
+            color: $blue;
+            font-weight: bold;
+          }
+          &.payment {
+            margin-top: 30px;
+            .payment-amount{
+              position: relative;
+              span {
+                display: block;
+                position: absolute;
+                top: 1px;
+                right: -13px;
+                width: 11px;
+                height: 14px;
+                padding-right: 1px;
+                border: 1px solid $blue;
+                color: $blue;
+                line-height: 8px;
+                &:hover {
+                  background: $blue;
+                  color: $white;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+          &.outstanding {
+            margin-top: 30px;
+            color: $red;
+            font-weight: bold;
+            &.change {
+              color: $green-dark;
+            }
+          }
+          &.earn-loyalty-points {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed $gray;
+          }
+          &>div {
+            display: inline-block;
+            width: 160px;
+            &:last-child {
+              width: calc(100% - 165px);
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+    .paying {
+      float: left;
+      margin-left: 15px;
+      .title {
+        text-transform: uppercase;
+      }
+      ul.list-btn {
+        li {
+          float: left;
+          width: calc(50% - 5px);
+          margin-bottom: 10px;
+          &:nth-child(odd){
+            margin-right: 5px;
+          }
+          &:nth-child(even){
+            margin-left: 5px;
+          }
+          a {
+            display: block;
+            height: 32px;
+            padding: 0 5px;
+            border: 1px solid $blue;
+            line-height: 32px;
+            color: $blue;
+            text-align: center;
+            &:hover {
+              background: $blue;
+              color: $white;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .deduction-wrapper {
+        clear: both;
+        .list-btn {
+          &.no-action {
+            a {
+              background: $gray-light;
+              color: $gray;
+            }
+          }
+        }
+      }
+      .payment-wrapper {
+        clear: both;
+        padding-top: 10px;
+      }
+      .notes-date-wrapper {
+        clear: both;
+        // padding-top: 10px;
+        .date-time {
+          margin-top: 10px;
+          label {
+            display: inline-block;
+          }
+          &>div {
+            display: inline-block;
+            .popover-container {
+              display: inline-block;
+              margin-left: 10px;
+            }
+            input{
+              text-align: center;
+              &.date {
+                height: 25px;
+                margin-left: 7px;
+                border: 1px solid $gray;
+                background: $gray-light;
+                color: $gray-dark;
+              }
+              &.time {
+                height: 25px;
+                margin-left: 7px;
+                border: 1px solid $gray;
+                background: $gray-light;
+                color: $gray-dark;
+              }
+            }
+          }
+        }
+      }
+    }
+    .check-out-title{
+      padding-bottom: 5px;
+      font-weight: bold;
+      font-size: 16px;
+      border-bottom: 1px solid grey;
+      margin-bottom: 10px;
+    }
+    .more-info{
+      position: absolute;
+      top: 40px;
+      display: inline-block;
+      width: 420px;
+      padding-left: 20px;
+      p{
+        padding-top: 10px;
+      }
+    }
+    .group-button{
+      button{
+        display: inline-block;
+        width: 117px;
+        height: auto;
+        margin-top: 10px;
+        padding: 5px 15px !important;
+        background-color: #3499db;
+        font-size: 14px;
+        text-align: center;
+        border: 1px;
+        color: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) { // sm
+  .refund-detail-modal {
+    .check-out-wrapper {
+      .check-out-brief {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .more-info {
+        position: relative;
+        top: auto;
+        width: 100%;
+        padding: 0;
+        .group-button {
+          margin-top: 10px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

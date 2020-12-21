@@ -1,0 +1,343 @@
+.booking-info {
+  .walk-in {
+    margin-top: 0;
+    padding-top: 2px;
+  }
+  &>.title {
+    display: none;
+  }
+  .box-time {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid $gray;
+    .color-picker-box {
+      float: left;
+      position: relative;
+      margin-bottom: 0;
+      label, select {
+        float: left;
+      }
+      label {
+        width: 50px;
+        line-height: 25px;
+      }
+      .select-color-wrapper{
+        float: left;
+      }
+    }
+    .custom-checkbox {
+      float: left;
+      margin-left: 30px;
+      margin-right: 0px;
+    }
+    .box-date {
+      height: 33px;
+      margin-top: 15px;
+      .date-picker-box {
+        position: relative;
+        display: inline-block;
+        margin-top: 5px;
+        label {
+          float: left;
+          width: 50px;
+          line-height: 25px;
+        }
+        .popover-container {
+          display: inline-block;
+          input {
+            border: 1px solid $gray;
+            padding-left: 5px;
+          }
+        }
+        .view-only {
+          position: absolute;
+          top: 0;
+          left: 50px;
+          width: calc(100% - 50px);
+          height: 25px;
+          background: $gray;
+          opacity: 0.5;
+        }
+      }
+      .repeat-block {
+        display: inline-block;
+        margin-left: 28px;
+        .btn-repeat {
+          display: inline-block;
+          width: 100px;
+          margin-right: 10px;
+          color: $white;
+        }
+      }
+    }
+  }
+  .add-service {
+    font-size: 13px;
+    
+    table {
+      tr {
+        td {
+          &:nth-child(1){
+            width: 170px;
+          }
+          &:nth-child(2){
+            width: 170px;
+          }
+          &:nth-child(3){
+            width: 120px;
+          }
+          &:nth-child(4){
+            width: 120px;
+          }
+          &:nth-child(5){
+            width: 50px;
+            .btn {
+              height: 25px;
+              line-height: 10px;
+            }
+          }
+        }
+      }
+      thead {
+        tr {
+          td {
+            height: 35px;
+            padding: 0 10px;
+            vertical-align: middle;
+          }
+        }
+      }
+      tbody {
+        tr {
+          border: 1px solid $gray;
+          &:last-child {
+            &:hover {
+              background: transparent;
+            }
+          }
+          td {
+            height: 50px;
+            padding: 0 10px;
+            border: 0;
+            text-align: left;
+            vertical-align: middle;
+            &:first-child {
+              .btn {
+                max-width: 100%;
+                margin: 0;
+                padding: 5px 9px !important;
+                font-size: 14px;
+              }
+            }
+            input {
+              font-size: 14px;
+              color: $black;
+            }
+            select {
+              font-size: 14px;
+            }
+            select.from-time{
+              width: 145px;
+              height: 25px;
+              padding-left: 5px;
+            }
+            .btn {
+              height: auto;
+              color: $blue;
+            }
+            .btn-select-services {
+              width: 130px;
+              height: 38px;
+              color: $white;
+            }
+            .btn-delete {
+              height: 38px;
+              border: 1px solid $gray;
+              background: $white;
+              font-size: 20px;
+              line-height: 14px;
+              color: $gray;
+              &:hover {
+                border: 1px solid $red;
+                background: $red;
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+    .btn-deposit {
+      float: right;
+      width: 150px;
+      margin-bottom: 10px;
+      color: $white;
+    }
+  }
+  .booking-deposit {
+    margin-top: 5px;
+    .custom-checkbox {
+      width: 210px;
+    }
+    .deposit-brief {
+      padding-left: 24px;
+      font-size: 12px;
+      span {
+        &.btn {
+          display: inline;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  .booking-note {
+    margin-top: 15px;
+    textarea {
+      font-size: 13px;
+    }
+  }
+}
+
+// css only apply for ie11+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+  .booking-info .box-time .box-date .date-picker-box .popover-container input {
+    height: 25px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .booking-info .add-service table {
+    tbody {
+      tr td:first-child .btn {
+        font-size: 13px;
+        line-height: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .booking-info-wrapper {
+    margin-top: 15px;
+  }
+  .booking-info {
+    &>.title {
+      display: block;
+      padding: 10px;
+      background: $blue-dark;
+      color: $white;
+      line-height: 16px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .booking-info .add-service table tr td:nth-child(5) .btn {
+     padding-top: 5px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .booking-info {
+    .box-time {
+      padding: 10px;
+      .color-picker-box{
+        label {
+          width: 45px;
+        }
+        .color-picker-trigger {
+          width: 40px;
+        }
+        .color-picker-options{
+          left: 45px;
+          width: 40px;
+        }
+      }
+      .custom-checkbox {
+        margin-left: 12px;
+        &.not-send-message {
+          font-size: 12px;
+        }
+      }
+      .box-date {
+        .date-picker-box {
+          label {
+            width: 45px;
+          }
+          .view-only {
+            left: 45px;
+            width: calc(100% - 45px);
+          }
+        }
+        .repeat-block {
+          margin-left: 10px;
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+    .add-service {
+      table {
+        thead {
+          tr {
+            th {
+              position: relative;
+              padding-left: 3px;
+              padding-right: 3px;
+              &.booking-items {
+                min-width: 90px;
+              }
+              &.resource {
+                min-width: 65px;
+              }
+              &.start-time {
+                min-width: 65px;
+              }
+              &.delele-action {
+                min-width: 45px;
+              }
+              span {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+        tbody {
+          tr {
+            td {
+              height: 40px;
+              padding: 0 5px;
+              font-size: 12px;
+              &:first-child .btn {
+                margin: 5px 0;
+                font-size: 12px;
+              }
+              select {
+                font-size: 12px;
+                background-position: right 0.25rem center;
+                &.from-time {
+                  width: 55px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .booking-info .add-service table thead tr th {
+    &.resource, &.delele-action {
+      span {
+        display: block;
+        position: absolute;
+        top: calc(50% - 8px);
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+}

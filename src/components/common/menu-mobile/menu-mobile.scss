@@ -1,0 +1,189 @@
+
+.mobile-icon {
+  display: none;
+}
+.menu-mobile-full {
+  display: none;
+}
+.menu-mobile-mini {
+  display: none;
+}
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+  .header {
+    ul.mobile-icon {
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: 3%;
+      li {
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+
+    .menu-mobile-toggle {
+      display: block;
+      position: absolute;
+      top: 22px;
+      right: 5%;
+      z-index: 300;
+    }
+
+    .menu-mobile-full {
+      display: none;
+      background-color: $blue-gray;
+      width: 100%;
+      position: relative;
+      z-index: 400;
+      left: 0;
+      top: -60px;
+      &.show {
+        display: block;
+      }
+      .inner {
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .logo-transparent {
+        text-align: center;
+        padding-top: 15px;
+        a {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      .btn-close {
+        position: absolute;
+        right: 15px;
+        top: 20px;
+      }
+      .profile {
+        text-align: center;
+        color: $white;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        .photo {
+          margin: 0 auto;
+          border-radius: 50%;
+          overflow: hidden;
+          img {
+            width: 150%;
+            margin-left: -18px;
+          }
+        }
+        h3 {
+          font-size: $font-large;
+          padding-top: 10px;
+          color: $white;
+        }
+        span {
+          font-size: $font-13;
+          color: $gray-light;
+          &.sign-out a {
+            color: $gray-light;
+            padding: 3px 10px;
+            border: 1px solid $gray-light;
+            border-radius: 13px;
+            font-size: $font-11;
+          }
+        }
+      }
+      ul.menu-list {
+        text-indent: 15%;
+
+        & > li {
+          width: 100%;
+
+          &:last-child {
+            .menu-sub-wrap {
+              padding-bottom: 0;
+            }
+          }
+
+          & > a {
+            display: block;
+            position: relative;
+            padding: 10px 0;
+            background-color: $blue-darken;
+            color: $white;
+            font-size: $font-16;
+            text-indent: unset;
+            text-transform: uppercase;
+
+            > img {
+              margin-right: 5px;
+              margin-top: -5px;
+            }
+
+            i {
+              position: absolute;
+              top: 6px;
+              left: calc(15% - 40px);
+            }
+          }
+
+          .menu-sub-wrap {
+            background-color: $blue-dark;
+            padding-bottom: 15px;
+            z-index: 100;
+
+            .menu-sub {
+              &.expand {
+                ul {
+                  li {
+                    height: auto;
+
+                    a {
+                      color: $white;
+                      opacity: 0.8;
+                    }
+                  }
+                }
+              }
+
+              h2 {
+                padding: 10px 0;
+                color: $gray-light;
+                font-size: $font-medium;
+                line-height: 1.5;
+                text-transform: uppercase;
+                text-indent: 20%;
+              }
+
+              & > ul {
+                width: 100%;
+                li {
+                  height: 0;
+                  margin-bottom: 10px;
+                  margin-bottom: 0;
+                  text-indent: 25%;
+
+                  a {
+                    display: block;
+                    padding: 7px 0;
+                    background-color: $blue-dark;
+                    color: $gray-light;
+                    color: transparent;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      p.copyright {
+        color: $gray-light;
+        text-align: center;
+        padding: 30px 0 30px 0;
+        font-size: $font-13;
+      }
+    }
+  }
+}
+
+// extra small: .col- | 360 - 575px, mobile portrait
+@media (max-width: 575.98px) {
+  
+}

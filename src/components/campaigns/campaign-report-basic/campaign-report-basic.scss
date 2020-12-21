@@ -1,0 +1,33 @@
+.campaign-report-basic {
+  background: #edf0f0;
+  border: 1px solid #aaa;
+  padding: 30px;
+
+  .campaign-report-basic__title {
+    border-bottom: 1px solid #a7a9a9;
+  }
+
+  .campaign-report-basic__list-item {
+    list-style: none;
+    margin-top: 20px;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .campaign-report-basic__sales-analysis {
+      margin-top: 30px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .campaign-report-basic__clients-analysis,
+    .campaign-report-basic__sales-analysis {
+      width: 90%;
+    }
+  }
+}

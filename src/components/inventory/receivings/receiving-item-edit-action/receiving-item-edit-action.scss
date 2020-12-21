@@ -1,0 +1,17 @@
+.receiving-item-edit-action-wrapper{
+  .modal-body{
+    padding: 10px !important;
+  }
+  .modal-footer{
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  .form-wrapper .form-group {
+    label {
+      line-height: 30px;
+    }
+    .form-control {
+      height: 30px;
+    }
+  }
+}

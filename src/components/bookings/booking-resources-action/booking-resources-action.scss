@@ -1,0 +1,124 @@
+.action-booking-resources-modal {
+  .modal-dialog {
+    width: 760px;
+    max-width: 760px;
+  }
+  .form-wrapper { 
+    .form-group {
+      margin-bottom: 5px;
+      input{
+        width: 100%;
+        font-size: 14px;
+      }
+      select{
+        width: 100%;
+        font-size: 14px;
+      }
+      &.resource-name {
+        .custom-select {
+          margin-top: 5px;
+        }
+      }
+      .group-staff{
+        border: 1px solid $gray-light; 
+        padding: 10px;
+        max-height: 300px;
+        overflow-y: scroll;
+        .custom-checkbox{
+          width: 45%;
+          float: left;
+        }
+      }
+      .btn-group{
+        .btn {
+          padding: 3px 10px !important;
+          margin: 0px !important;
+        }
+      }
+      .failcode-link{
+        margin-top: 15px;
+        display: block;
+        position: absolute;
+      }
+      .multiselect { 
+        margin-top: 0; 
+      }
+      .custom-checkbox {
+        width: auto;
+      }
+    }
+    .opening-hours-part{
+      width: 100%;
+      margin-top: 20px;
+      .title{
+        width: 50%;
+        float: left;
+      }
+      .btn-group{ 
+        float: right;
+        display: block;
+        a{
+          color: $white;
+        }
+      }
+    }
+    
+    .table-data {
+      table {
+        th, td {
+          height: 40px;
+          border-color: $gray;
+        }
+        thead {
+          th {
+            background: $gray-lighten;
+            color: $gray-dark;
+          }
+        }
+        tbody {
+          tr {
+            &:hover {
+              background: transparent;
+            }
+          }
+          td {
+            font-size: 16px;
+            &.days {
+              text-align: left;
+            }
+            .btn {
+              width: 70px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .modal-dialog .modal-content .modal-footer {
+    padding: 20px 30px 0 30px;
+  }
+}
+
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+  .action-booking-resources-modal .form-wrapper .opening-hours-part {
+    .title {
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 25px;
+    }
+    table {
+      th, td {
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// extra small: .col- | 360 - 575px, mobile
+@media (max-width: 575.98px) {
+
+}

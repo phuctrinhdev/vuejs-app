@@ -1,0 +1,23 @@
+.action-opening-hours-modal {
+  .modal-dialog {
+    width: 360px;
+    .modal-content .modal-footer .btn {
+      width: 100px !important;
+    }
+  }
+  .form-wrapper {
+    .mx-datepicker {
+      width: 100%;
+      .mx-input {
+        height: 30px;
+        border-color: $gray;
+      }
+    }
+    .multiselect {
+      margin-top: 20px;
+    }
+    .multiselect.multi-checkbox .multiselect__tags span.selected {
+      color: $gray-dark;
+    }
+  }
+}

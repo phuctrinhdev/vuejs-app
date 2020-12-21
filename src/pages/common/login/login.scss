@@ -1,0 +1,52 @@
+.login-page {
+  .login-wrapper {
+    max-width: 400px;
+    margin: 15% auto;
+    .logo {
+      margin-bottom: 50px;
+    }
+    h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+    p {
+      input {
+        font-family: revert;
+      }
+      input[type="text"] {
+        padding: 12px;
+        height: 45px;
+        text-align-last: left;
+      }
+      input[type="password"] {
+        padding: 12px;
+        height: 45px;
+        text-align-last: left;
+      }
+      .login-btn {
+        width: 100% !important;
+        font-size: 14px !important;
+        padding: 10px !important;
+        font-weight: bold;
+        &:hover {
+          background: $blue;
+        }
+      }
+    }
+    p.mt20 {
+      margin-top: 20px;
+    }
+    .login-intro {
+      font-size: 13px;
+    }
+  }
+}
+
+.account-lock {
+  .bd {
+    border: 1px solid #bfbfbf;
+    padding: 15px;
+    margin: 10px 0;
+  }
+}

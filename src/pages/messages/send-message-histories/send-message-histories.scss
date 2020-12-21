@@ -1,0 +1,79 @@
+.send-message-histories {
+  .page-title {
+    margin: 0 0px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $gray-dark;
+    padding-bottom: 10px;
+    h3 {
+      display: inline-block;
+      margin-top: 10px;
+      padding-left: 0;
+      font-weight: 900;
+      font-size: 18px;
+    }
+    .group-btn {
+      float: right;
+      .btn {
+        display: inline-block;
+        width: 200px !important;
+        a {
+          display: block;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.table-wrapper {
+  max-height: calc(100vh - 295px);
+  overflow: auto;
+  border-bottom: 1px solid $gray;
+  table {
+    th, td { 
+      padding: 2px 5px;
+      vertical-align: middle;
+    }
+    thead {
+      tr {
+        th {
+          background: transparent;
+          z-index: 3;
+          &[rowspan="2"]{
+            height: 80px;
+          }
+          &[rowspan="1"]{
+            height: 40px;
+          }
+          &.idx {
+            width: 10%;
+            // min-width: 30px;
+          }
+          &.sending-date {
+            width: 19%;
+            // min-width: 150px;
+          }
+          &.type, &.target, &.sent, &.holding {
+            width: 7%;
+            // min-width: 120px;
+          }
+          &.receiving-results {
+            width: 21%;
+            // min-width: 120px;
+          }
+          &.success, &.fail, &.waiting-result {
+            width: 7%;
+          }
+          &.contents {
+            width: 11%;
+            // min-width: 70px;
+          }
+          &.detail{
+            width: 11%;
+            // min-width: 70px;
+          }
+        }
+      }
+    }
+  }
+}

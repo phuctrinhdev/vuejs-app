@@ -1,0 +1,166 @@
+.balance-point-edit-history{
+  .title{
+    display: block;
+    width: 100%;
+    height: 85px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    h3{
+      padding-top: 10px;
+      font-weight: 900;
+      width: 100%;
+      float: left;
+      font-size: 18px;
+    }
+    &>div{
+      margin-top: 10px;
+      width: 100%;
+      float: left;
+      a{
+        font-size: 14px;
+        display: inline-block;
+        text-align: center;
+        color: #3499db;
+        padding: 4px 15px;
+        background-color: white;
+        border-radius: 5px;
+        width: 220px;
+        height: 33px;
+        border: 1px solid #3499db;
+        &:hover{
+          background-color: #3499db;
+          color: white;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+  .filter{
+    width: 100%;
+    height: 76px;
+    background-color: white;
+    padding: 22px 20px;
+    margin-bottom: 10px;
+    .input-date-range{
+      width: 40%;
+      float: left;
+      label{
+        width: 20%;
+        float: left;
+        line-height: 30px;
+      }
+      .from-date{
+        width: 35% !important;
+        float: left;
+        input{
+          width: 100%;
+          height: 30px;
+          padding: 0.375rem 0.75rem;
+          background-color: #fff;
+          background-clip: padding-box;
+          transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+      }
+      .between{
+        width: 10%;
+        float: left;
+        text-align: center;
+        line-height: 33px;
+      }
+      .to-date{
+        width: 35% !important;
+        float: left;
+        input{
+          width: 100% !important;
+          height: 30px;
+          padding: 0.375rem 0.75rem;
+          background-color: #fff;
+          background-clip: padding-box;
+          transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+      }
+    }
+    .edited-item{
+      width: 25%;
+      float: left;
+      label{
+        float: left;
+        width: 30%;
+        line-height: 30px;
+        text-align: center;
+      }
+      select{
+        width: 70%;
+        float: left;
+        height: 30px;
+        background-color: #fff;
+        background-clip: padding-box;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+    }
+    .user-id{
+      width: 25%;
+      float: left;
+      label{
+        float: left;
+        width: 25%;
+        line-height: 30px;
+        text-align: center;
+      }
+      select{
+        width: 75%;
+        float: left;
+        height: 30px;
+        background-color: #fff;
+        background-clip: padding-box;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+    }
+    .search{
+      width: 10%;
+      float: left;
+      text-align: right;
+      button{
+        padding-left: 23px;
+        width: 110px;
+        height: 36px;
+        margin-top: -3px;
+        border-radius: 5px;
+        background-color: #3499db;
+        color: white;
+        text-align: center;
+        position: relative;
+        border: 0;
+        i{
+            left: 17px;
+            height: 19px;
+            position: absolute;
+        }
+      }
+    }
+  }
+  .table{
+    padding:22px 20px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .active{
+    background-color: #3499db !important;
+    color: white !important;
+  }
+  .blue-text{
+    font-weight: bold;
+    color: #3499db;
+  }
+}
+// ****responsive------------------------
+@media screen and (max-width: 1199.98px) {
+}
+@media screen and (max-width: 991.98px) {
+}
+@media screen and (max-width: 767.98px) {
+}
+@media screen and (max-width: 575.98px) {
+
+}

@@ -1,0 +1,143 @@
+.payment-section {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px #ccc;
+    box-sizing: border-box;
+    padding: 1rem;
+    .txt1 {
+        width: 100%; 
+        background-color: #f3f3f3; 
+        box-sizing:border-box;
+        border: 1px dotted #ccc; 
+        padding: 15px 20px;
+        span {
+            font-size: 13px; 
+            font-weight: 800; 
+            color: #666;
+            display: block; 
+            float: left;
+            width: 25%; 
+            text-align: center;
+            line-height: 29px;
+        }
+    }
+    .radio-tab {
+        margin: 0 10px;
+        .custom-control-label {
+            text-align: left;
+        }
+    }
+    .dis-none {
+        .nav-tabs {display: none;}
+    }
+    .tabs .tab-content {
+        min-height: auto;
+    }
+    .payment-table {
+        td {
+            vertical-align: middle;
+            text-align: left;
+            text-align-last: left;
+            height: 30px;            
+        }
+        td.pay-th {
+            background-color: #666; 
+            text-align-last: center; 
+            color: #fff; 
+            font-size: 13px; 
+            font-weight: 400; 
+        }
+        td.bd-none {
+            border: 0 solid #000;
+            text-align: left;
+            text-align-last: left;
+        }
+    }
+    .pay_select {
+        margin-top: 10px;
+    }
+    .pay_result {
+        box-sizing: border-box;
+        padding: 2rem;
+        border: 5px solid #e3e3e3;
+        margin-top: 10px;
+        .in-txt {
+            box-sizing:border-box; 
+            border: 1px solid #c3c3c3; 
+            margin: 10px 0;
+            padding: 15px 20px;
+            p {
+                line-height: 1.7;
+                margin-bottom: 10px;
+                strong {
+                    font-weight: 600;
+                    color: #f3331f;
+                }
+            }
+            p.mb0 {margin-bottom: 0;}
+        }
+    }
+}
+
+// responsive
+@media (max-width:1440px){
+
+}
+
+// large: .col-lg- | 992 - 1199px -> ipad landscape
+@media (max-width: 1199.98px) {
+    .payment-section {
+        .txt1 {
+            span {
+                width: 50%; 
+            }
+        }
+        .radio-tab {
+            margin: 0;
+            padding: 5px;
+            width: 50%;
+            display: block;
+            float: left;
+        }
+    }    
+}
+
+// medium: .col-md- | 768 - 991px -> ipad
+@media (max-width: 991.98px) {
+
+}
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+    .payment-section {
+        .radio-tab {
+            width: 100%;
+        }
+        .pay_result {    
+            .mobile-br {
+                display: block;
+                width: 100%;
+            }      
+        }
+    }    
+}
+
+// extra small: .col- | 360 - 575px, mobile
+@media (max-width: 575.98px) {
+    .payment-section {
+        .txt1 {
+            span {
+                width: 100%; 
+                text-align: left;
+                line-height: auto;
+            }
+        }
+        .pay_result {
+            padding: 1rem; 
+            select {
+                max-width: 175px;
+                margin-bottom: 5px;
+            }       
+        }
+    } 
+}

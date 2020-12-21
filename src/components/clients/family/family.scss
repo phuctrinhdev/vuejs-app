@@ -1,0 +1,53 @@
+.family-member-box {
+    .topbox {
+        height: 33px;
+        position: relative;
+        p {padding-top: 10px;}
+        .poa {
+            position: absolute;
+            right: 0; top: 0;
+        }
+        .add-member-btn {
+            top: -3px;
+        }
+    }
+    .topbox.bdb {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+        height: auto;
+    }
+    .tabbox-table {
+        .management {
+            .btn {
+                padding: 3px 7px !important;
+            }
+        }
+    }
+}
+
+// ****responsive------------------------
+@media screen and (max-width: 1199.98px) {    
+
+}
+@media screen and (max-width: 991.98px) {  
+  
+}
+@media screen and (max-width: 767.98px) {    
+  
+}
+@media screen and (max-width: 575.98px) {   
+    .family-member-box {
+        .topbox {
+            height: auto;
+            position: static;
+            p {padding-top: 0;}
+            .poa {
+                position: static;
+                margin-top: 5px;
+            }
+        }
+        .pagination-wrapper {
+            display: none;
+        }
+    }
+}

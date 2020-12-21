@@ -1,0 +1,63 @@
+main .prepaid-cards-page {
+  padding: 20px 30px;
+  .inner {
+    width: 100%;
+  }
+  .table-custom {
+    .table-data {
+      .total-data {
+        float: left;
+      }
+      .show-inactives {
+        float: right;
+        .custom-checkbox {
+          margin-right: 0;
+        }
+      }
+      .btn-group {
+        .btn {
+          margin-right: 5px;
+          padding: 7px 12px;
+          border: 1px solid $blue;
+          background: $white;
+          color: $blue;
+          &:hover {
+            background: $blue;
+            color: $white;
+          }
+        }
+      }
+      table {
+        .custom-checkbox {
+          margin-right: 0;
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+}
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+  main .content.prepaid-cards-page {
+    .setup-top {
+      padding-bottom: 7px;
+      h3 {
+        text-indent: 0;
+      }
+      .btn-group {
+        .btn {
+          padding: 4px 12px;
+        }
+      }
+    }
+
+    .table-custom {
+      .table-data {
+        .show-inactives {
+          margin-top: -2px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.send-message-action-modal {
+  .modal-dialog {
+    max-width: 500px !important;
+  }
+  .form-wrapper .form-group {
+    label {
+      line-height: 30px;
+      text-align: right;
+    }
+    input, select {
+      height: 30px;
+    }
+  }
+   
+}

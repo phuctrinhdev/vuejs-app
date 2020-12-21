@@ -1,0 +1,56 @@
+ul.list-days-box-wrapper {
+  height: 100px;
+  border: 1px solid $gray;
+  overflow-y: auto;
+  li {
+    position: relative;
+    height: 26px;
+    padding: 7px 0;
+    padding-left: 24px;
+    line-height: 12px;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 14px;
+      height: 14px;
+      margin: 6px 5px;
+      border: 1px solid $gray;
+      border-radius: 2px;
+    }
+    &.selected{
+      span::before {
+        display: block;
+      }
+    }
+    &.fixed {
+      background: $gray-lighten;
+      &.selected {
+        span::before {
+          display: none;
+        }
+      }
+    }
+    span::before {
+      display: none;
+      content: "\2714";
+      position: absolute;
+      top: 7px;
+      left: 7px;
+      font-size: 12px;
+    }
+  }
+}
+ul.action-wrapper {
+  margin-top: 5px;
+  li.btn {
+    display: inline-block;
+    width: 100px;
+    height: 31px;
+    margin-right: 10px;
+    line-height: 20px;
+  }
+}

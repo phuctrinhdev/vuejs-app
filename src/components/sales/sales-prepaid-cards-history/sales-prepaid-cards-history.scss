@@ -1,0 +1,55 @@
+.prepaid-card-history-wrapper {
+    table{
+        thead{
+            tr{
+                th{
+                    &.mobile{
+                        display: none;
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    &.mobile {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .prepaid-card-history-wrapper {
+        table {
+            thead {
+                tr {
+                    th {
+                        display: none;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        display: none;
+                        &.mobile {
+                            display: block;
+                            height: auto;
+                            text-align: left;
+                            .show-mobile-text-box {
+                                .btn {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+

@@ -1,0 +1,116 @@
+.box-item-product{ 
+  .custom-select{
+    height: 32px !important;
+    font-size: 12px;
+    overflow: hidden;
+    padding-right: 25px;
+  }
+  .box-i-body{
+    .list-group{
+      max-height: 460px;
+      overflow-y: auto;
+      .list-group-item{
+        border-radius: 0 !important;
+        padding: 0px;   
+        span{
+          padding: 5px;  
+          display: inline-block;
+          border-left: 1px solid $gray;
+        }
+        .no{ 
+          width: 25px;
+          text-align: center;
+        }
+        .code{ 
+          width: 91px;
+        }
+        .name{ 
+          width: calc( 100% - 124px) ; 
+        }
+        &:hover{
+          cursor: pointer;
+        }
+      } 
+    } 
+    .lb-total-items{
+      font-size: 12px;
+      margin-top: 2px;
+    }
+    h3{
+      background-color: $blue-dark; 
+      color: $white;
+      span{ 
+        text-indent: 10px;
+        line-height: 30px;
+        display: inline-block;
+        border-left: 1px solid $gray;
+      } 
+      .code{ 
+        width: 120px;
+      }
+      .name{ 
+        width: calc( 100% - 124px) ; 
+      }
+    }
+  }
+  .box-i{
+    width: 50%;
+    float: left;
+    padding: 5px;   
+  }
+  .box-i-1{
+    width: 40%;
+    float: left;
+    padding: 5px 0;
+    .multiselect { 
+      margin-top: 0;
+      .multiselect__select {
+        top: 12px;
+        margin-top: 5px;
+      }
+      .multiselect__tags {
+        margin-top: 0;
+        height: 32px;
+      }
+      .multiselect__single{ 
+        font-size: 12px;
+        padding: 5px 0 5px 5px;
+        overflow: hidden;
+        height: 30px;
+      }
+      .multiselect__placeholder {
+        color: $gray-dark;
+        text-indent: 5px;
+      }
+      .multiselect__option {
+        padding-left: 5px;
+      }
+    } 
+  }
+  .box-i-2{
+    width: calc(40% - 5px);
+    float: left;
+    padding: 5px; 
+    padding-right: 0;
+    input{ 
+      width: 100%;
+      font-size: 12px;
+      padding: 0px 3px;
+    }
+  }
+  .box-i-3{
+    width: 20%;
+    float: left;
+    padding: 5px;
+    padding-right: 0;
+    .btn-submit{
+      width: 55px;
+      margin: auto;
+      height: 32px;
+      padding: 5px 0;
+    }
+  }
+  .box-i-product {
+    padding-right: 5px;
+  }
+} 

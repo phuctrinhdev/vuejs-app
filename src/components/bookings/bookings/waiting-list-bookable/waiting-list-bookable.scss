@@ -1,0 +1,103 @@
+.waiting-list-bookable-modal {
+  .modal-dialog {
+    max-width: 1200px !important;
+    width: 1200px !important;
+    .box-date .custom-control {
+      width: 50%;
+      float: left; 
+    }
+    input,select{
+      height: 30px;
+      padding: 0 5px;
+      width: 100%;
+      background-color: $white;
+      border: 1px solid $gray;
+    } 
+
+    .format-right{ 
+      margin-top: 5px;
+      display: block;
+      width: 100%;
+      text-align: right;
+    } 
+    .box-right{
+      float: right;
+    }
+    .button-search{
+      width: 160px !important;
+      text-align: center; 
+      font-size: 17px;
+      margin-top: -5px;
+    }
+    .box-form-search {
+      background-color: $gray-lighten;
+      padding: 15px ;
+    }
+    .box-list-search{
+      margin-top: 15px; 
+    } 
+    .text-amount{    
+      text-decoration: underline !important;
+      cursor: pointer;
+    }
+    table th, table td { 
+      vertical-align: middle;
+    }
+    .box-btn-top{ 
+      float: right;
+      margin-bottom: 10px;
+    }
+    .box-btn-top button{
+      float: right; 
+      margin-left: 5px;
+    }
+    .box-menu-client .nav-link {
+      color: $blue;
+      &:after {
+        display: none;
+      }
+    }
+    .box-menu-booking { 
+      .nav-link{
+        &:after {
+          display: none;
+        }
+      }
+      
+    }
+    .box-comment{
+      margin-top: 15px;
+      border: 1px solid $black;
+      padding: 10px;
+      ul{
+        margin-left: 20px;
+        li{
+          padding: 3px;   
+          list-style: square !important;
+        }
+      }
+      
+    }
+    .pagination{
+      margin-top: 15px;
+    }
+  }
+  .validate-errors-wrapper{ 
+    margin-top: 15px;
+  }
+  .pagination{
+    margin-top: 15px;
+  }
+  .bookable-waiting{
+    margin-right: 10px;
+    float: right;
+    .custom-checkbox{
+      float: left;
+      margin-right: 20px;
+    }
+    span{
+      float: left;
+
+    }
+  }
+}

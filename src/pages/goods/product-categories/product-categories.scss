@@ -1,0 +1,123 @@
+main .product-categories-page {
+  .inner {
+    width: 100%;
+  }
+  .table-custom {
+    .table-filter {
+      background: $white;
+      padding: 25px 20px 15px 20px;
+      padding-left: 5px;
+      .form-group {
+        display: inline-flex;
+        margin: 0;
+        label {
+          height: 30px;
+          margin: 2px 10px 0 0;
+          padding: 0 10px;
+          border-radius: 25px;
+          background: $purple;
+          font-size: 14px;
+          line-height: 30px;
+          color: $white;
+        }
+        .multiselect {
+          margin-top: 12px;
+        }
+        .multiselect__select {
+          top: 6px;
+        }
+        .multiselect__tags {
+          height: 30px;
+          border: 1px solid $gray !important;
+          font-size: 14px;
+          .multiselect__single {
+            line-height: 30px;
+            background: transparent;
+          }
+        }
+        input.form-control {
+          height: 30px;
+          margin-top: 2px;
+          border: 1px solid $gray !important;
+          font-size: 14px;
+        }
+      }
+      .btn-submit {
+        position: relative;
+        float: right;
+        margin: 0;
+        padding-left: 23px;
+        i {
+          position: absolute;
+          top: 8px;
+          left: 27px;
+          height: 19px;
+          margin-top: 1px;
+        }
+      }
+    }
+    .table-data {
+      .total-data {
+        float: left;
+      }
+      .show-inactives {
+        text-align: right;
+        .custom-checkbox {
+          margin-right: 0;
+        }
+      }
+      .btn-group {
+        .btn {
+          margin-right: 5px;
+          padding: 7px 12px;
+          border: 1px solid $blue;
+          background: $white;
+          color: $blue;
+          &:hover {
+            background: $blue;
+            color: $white;
+          }
+        }
+      }
+      table {
+        .custom-checkbox {
+          margin-right: 0;
+          padding-left: 30px;
+        }
+        tr {
+          td {
+            &.cell-name {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+  main .product-categories-page {
+    .setup-top {
+      padding-bottom: 7px;
+      h3 {
+        text-indent: 0;
+      }
+      .btn-group {
+        .btn {
+          padding: 4px 12px;
+        }
+      }
+    }
+
+    .table-custom {
+      .table-data {
+        padding: 0;
+        .show-inactives {
+          margin-top: -2px;
+        }
+      }
+    }
+  }
+}

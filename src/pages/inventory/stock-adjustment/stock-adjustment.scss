@@ -1,0 +1,85 @@
+.stock-adjustment-page {
+  margin-bottom: 50px;
+  .page-title {
+    margin: 0 0px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $gray-dark;
+    padding-bottom: 10px;
+    h3 {
+      display: inline-block;
+      margin-top: 10px;
+      padding-left: 0;
+      font-weight: 900;
+      font-size: 18px;
+    }
+    .group-btn {
+      float: right;
+      .btn {
+        display: inline-block;
+        width: 200px !important;
+        a {
+          display: block;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .table-stock-adjustment {
+    position: relative;
+    background: $white;
+    &.has-pagination {
+      .btn-wrapper {
+        bottom: 12px;
+        right: 10px;
+      }
+    }
+    .table_intro {
+      padding: 10px 10px 0;
+    }
+    .view-table-wrapper {
+      padding: 10px;
+      th.stock-before, .stock-after {
+        .th-double {
+          line-height: 18px;
+        }
+      }
+      .input-money {
+        height: 25px;
+        padding: 0 5px;
+        text-align: center;
+      }
+    }
+    .btn-wrapper {
+      position: absolute;
+      bottom: -45px;
+      right: 0px;
+      .btn-save {
+        width: 120px !important;
+        color: $white;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) { // sm from 576px
+  .stock-adjustment-page {
+    .page-title h3 {
+      margin-top: 5px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) { // xs from 360px
+  .stock-adjustment-page {
+    .page-title h3 {
+      font-size: 16px;
+    }
+    .table-stock-adjustment .btn-wrapper {
+      width: 100%;
+      .btn-save {
+        margin: 0 auto;
+      }
+    }
+  }
+}

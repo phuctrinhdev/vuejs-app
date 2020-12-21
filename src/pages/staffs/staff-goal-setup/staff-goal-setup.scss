@@ -1,0 +1,186 @@
+.staff-goal-setup-page {
+  .page-title{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+    h3{
+      display: inline-block;
+      margin-top: 10px;
+      padding-left: 0;
+      font-weight: 900;
+      font-size: 18px;
+    }
+    .group-btn {
+      float: right;
+      .btn {
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+  .filter-wrapper {
+    margin-bottom: 15px;
+    padding: 15px 10px;
+    background: $white;
+    .filter {
+      &>label {
+        float: left;
+        height: 30px;
+        line-height: 28px;
+        margin-right: 30px;
+      }
+      .input-month-range {
+        display: inline-flex;
+        margin-right: 30px;
+        &>label {
+          display: none;
+        }
+        .between, .to-month, .to-year {
+          display: none;
+        }
+      }
+      .btn-white {
+        display: inline-flex;
+      }
+      .form-group {
+        margin-bottom: 0;
+        label {
+          display: inline-block;
+          width: 85px;
+        }
+        input {
+          height: 30px;
+          border: 1px solid $gray;
+        }
+        &.input-date-range {
+          margin-bottom: 15px;
+        }
+        &.prepaid-sales-counting {
+          display: flex;
+          align-items: center;
+          &>label {
+            width: 160px;
+          }
+          .form-btn-group {
+            label {
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+    .filter-search {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 100%;
+      .btn-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        width: 120px !important;
+        height: 36px;
+        margin-top: -2px;
+        padding: 0;
+        border: 0;
+        border-radius: 5px;
+        text-align: center;
+        outline: 0;
+        i {
+          height: 19px;
+          margin-right: 5px;
+        }
+        span {
+          color: $white;
+        }
+      }
+    }
+  }
+  .table-wrapper {
+    margin-top: 15px;
+    padding: 15px 10px;
+    background: $white;
+    .table-intro {
+      display: flex;
+      justify-content: space-between;
+      .intro-title {
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .add-staff {
+        display: flex;
+        margin-bottom: 10px;
+        label {
+          width: 70px;
+          line-height: 30px;
+        }
+        .multiselect.multi-checkbox {
+          width: 200px;
+          min-height: auto;
+          margin-right: 10px;
+          .multiselect__tags {
+            margin-top: 0;
+          }
+        }
+        .btn {
+          line-height: 18px;
+          color: $white;
+        }
+      }
+    }
+    table {
+      thead {
+        th {
+          height: 36px;
+          border: 1px solid $gray;
+          vertical-align: middle;
+          color: $white;
+        }
+      }
+      tbody {
+        tr {
+          td {
+            &.disable {
+              background: $gray-lighten;
+            }
+            .input-money {
+              height: 25px;
+              border: 1px solid transparent;
+              background: transparent;
+              text-align: center;
+              &:focus {
+                border: 1px solid $gray-light;
+                outline: 0;
+                box-shadow: inherit;
+              }
+            }
+          }
+        }
+      }
+    }
+    .btn-submit{
+      background-color: #3499db;
+      width: 220px !important;
+      height: 40px;
+      margin: 25px auto 10px;
+      line-height: 30px;
+      color: #fff;
+      text-align: center;
+      border: 1px solid #3499db !important;
+      border-radius: 5px;
+    }
+    .guides {
+      margin-top: 45px;
+      padding: 10px 30px;
+      border: 1px solid $gray-light;
+      ul {
+        li {
+          list-style-type: disc;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+main .misc-codes.common-style {
+  .booking-links {
+    li {
+      a {
+        display: block;
+        padding: 6px 27px;
+        border: solid 1px $gray;
+        border-radius: 0;
+        background-color: unset;
+        color: $gray-dark;
+        &:hover, &.router-link-exact-active {
+          background-color: $purple;
+          color: $white;
+        }
+      }
+    }
+  }
+  .misc-codes-wrapper {
+    width: 100%;
+    margin: 10px 0;
+    padding: 19px 10px 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px $gray;
+    background-color: $white;
+    .part-title {
+      margin-bottom: 10px;
+    }
+    .tabs {
+      .tab-content {
+        .show-inactives {
+          top: -30px;
+          label {
+            padding-top: 1px;
+          }
+        }
+        .good-table-wrapper {
+
+        }
+        .add-item-modal {
+          .discount-category-action-modal {
+            .discount {
+
+            }
+          }
+        }
+      }
+    }
+  }
+  .col-auto {
+    width: 50%;
+  }
+  .card-header {
+    background-color: $white;
+    border: 0px solid $black;
+    padding: 0 1rem 0 0;
+  }
+  .card {
+    border: 0px solid $black;
+  }
+  .nav-pills .nav-link {
+    border-radius: 0;
+    background-color: $blue-lighten;
+    border: 1px solid $gray;
+    border-bottom: 0px solid $black;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    padding: 0;
+  }
+  .nav-item:last-of-type .nav-link{
+    border-bottom: 1px solid $gray;
+  }
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: $blue;
+  }
+  .badge-pill {
+    padding: 5px 25px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: $cyan;
+  }
+  .card-body {
+    padding: 0;
+    // .code-show > {
+    //   table tr td {
+    //     border: 1px solid $gray;
+    //     height: 45px; line-height: 45px;
+    //     padding: 0;
+    //   }
+    //   table tr td.on {
+    //     background-color: #fad58e;
+    //   }
+    // }
+  }
+  .good-table-wrapper table th, .good-table-wrapper table td {
+    min-width : auto !important;
+    vertical-align: middle;
+  }
+  .card-text {
+    position: relative;
+    .card-btn.btn-group {
+      position: absolute;
+      top: -42px;
+      right: 0; 
+      .btn {
+        background-color: $white;
+        border: 1px solid $blue;
+        padding: 0.2rem 1rem;
+        color: $blue;
+      }
+      .btn:hover {
+        background-color: $blue;
+        color: $white;
+      }
+    }
+  }
+
+  .good-table-wrapper .vgt-wrap:nth-child(1) .vgt-global-search, .good-table-wrapper .vgt-wrap:nth-child(1) .vgt-fixed-header {
+    width: 100%;
+  }
+  .good-table-wrapper .vgt-wrap:last-of-type {
+    padding: 0;  
+  }
+  .good-table-wrapper .vgt-wrap:last-of-type .vgt-responsive {
+    border:0;  
+  }
+  .good-table-wrapper {
+    table {   
+      th.col-misc-code {
+        background-color: $orange;
+        color:$black;
+      }       
+    }
+  }  
+  .vgt-table.bordered td, .vgt-table.bordered th {
+    border: 1px solid $gray;
+    height: 45px;
+  }
+  table.vgt-table td .table td, table.vgt-table td {
+    padding : 0 !important;
+    padding-bottom: 1px !important;
+    height: 45px;
+  }  
+}
+
+// --------------------------------------------------------------
+
+@media screen and (max-width: 991.98px) {
+  main .common-style.misc-codes .col-auto {
+    width: 100%;
+  }
+  main .misc-codes.common-style .card-header {
+    padding-right: 0;
+  }
+  main .tabs .tab-content {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 767.98px) {
+  main .misc-codes.common-style .card-text .card-btn.btn-group {
+    top: -38px;
+  }
+}

@@ -1,0 +1,36 @@
+.good-table-wrapper {
+  table {
+    th, td {
+      min-width: 100px;
+    }
+    .show-shared {
+      min-width: 60px;
+    }
+    tbody {
+      &>tr {
+        &.show {
+          display: table-row;
+        }
+        td {
+          user-select: none;
+          &.col-name {
+            text-align: left;
+          }
+          &.hide{
+            display: none;
+          }
+        }
+      }
+    }
+    thead {
+      tr {
+        th {
+          &.hide{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+

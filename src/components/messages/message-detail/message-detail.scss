@@ -1,0 +1,72 @@
+#message-detail-modal{
+  .modal-xl{
+    width: 100% !important;
+    max-width: 1400px !important;
+  }
+}
+.message-detail {
+  .normal {
+    thead {
+        th , td {
+            background-color: #edf0f0 !important;
+        }
+    }
+  }
+  .table-wrapper {
+    max-height: calc(100vh - 295px);
+    overflow: auto;
+    border-bottom: 1px solid $gray;
+    table {
+      th, td { 
+        padding: 2px 5px;
+        vertical-align: middle;
+      }
+      thead {
+        tr {
+          th {
+            background: transparent;
+            z-index: 3;
+            &[rowspan="2"]{
+              height: 80px;
+            }
+            &[rowspan="1"]{
+              height: 40px;
+            }
+            &.no {
+              width: 6%;
+              // min-width: 30px;
+            }
+            &.name {
+              width: 9%;
+              // min-width: 150px;
+            }
+            &.mobile-number {
+              width: 11%;
+              // min-width: 150px;
+            }
+            &.date {
+              width: 15%;
+              // min-width: 150px;
+            }
+            &.contents {
+              width: 15%;
+              // min-width: 150px;
+            }
+            &.image {
+              width: 8%;
+              // min-width: 150px;
+            }
+            &.send-result {
+              width: 36%;
+              // min-width: 150px;
+            }
+            &.sent-fail, &.success, &.fail, &.waiting-result {
+              width: 8% !important;
+              // min-width: 120px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

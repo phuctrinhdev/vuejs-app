@@ -1,0 +1,44 @@
+.sales-item-discount-card-apply-modal {
+  .modal-dialog {
+    max-width: 450px;
+  }
+  .modal-footer {
+    margin-top: 20px !important;
+  }
+  .discout-cards-wrapper {
+    .intro {
+      margin-bottom: 10px;
+    }
+    table {
+      thead {
+        th {
+          &.rate {
+            span {
+              padding-top: 10px;
+            }
+          }
+          span {
+            display: block;
+            height: 100%;
+            line-height: 18px;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            .family-card {
+              font-style: italic;
+              color: $blue;
+              font-size: 13px;
+            }
+            .btn {
+              background: $blue;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

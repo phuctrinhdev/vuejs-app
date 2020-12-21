@@ -1,0 +1,272 @@
+.stock-history {
+  .page-title {
+    margin: 0 0px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $gray-dark;
+    padding-bottom: 10px;
+    h3 {
+      display: inline-block;
+      margin-top: 10px;
+      padding-left: 0;
+      font-weight: 900;
+      font-size: 18px;
+    }
+  }
+  .filter-wrapper {
+    margin-bottom: 15px;
+    padding: 15px 10px 5px;
+    background: $white;
+    .filter {
+      display: flex;
+      justify-content: flex-start;
+      .form-group {
+        margin-bottom: 10px;
+      }
+      label {
+        display: inline-block;
+      }
+      input {
+        height: 30px;
+        border: 1px solid $gray;
+      }
+      .date-range {
+        margin-right: 30px;
+        label {
+          width: 82px;
+        }
+        .popover-container {
+          display: inline-block;
+          &:first-of-type {
+            margin-right: 5px;
+          }
+          input {
+            padding: 0 5px;
+          }
+        }
+      }
+      .product {
+        margin-right: 30px;
+        width: 220px;
+        label {
+          width: 56px;
+        }
+        input {
+          display: inline-block;
+          max-width: calc(100% - 60px);
+          min-width: 160px; 
+          padding: 0 5px;
+        }
+      }
+      .action {
+        width: 220px;
+        label {
+          width: 48px;
+        }
+        .custom-select {
+          display: inline-block;
+          max-width: calc(100% - 52px);
+          min-width: 160px;
+          height: 30px;
+        }
+      }
+    }
+    .filter-search {
+      .btn-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        width: 120px !important;
+        height: 36px;
+        margin-top: -3px;
+        padding: 0;
+        border: 0;
+        border-radius: 5px;
+        text-align: center;
+        outline: 0;
+        i {
+          height: 19px;
+          margin-right: 5px;
+        }
+        span {
+          color: $white;
+        }
+      }
+    }
+  }
+  .table-stock-historys {
+    padding: 10px;
+    background: $white;
+    .intro {
+      span {
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) { // lg from 992px
+  .stock-history {
+    .filter-wrapper {
+      .filter {
+        .date-range {
+          width: 391px;
+          input {
+            width: 120px;
+          }
+        }
+        .product {
+          width: 210px;
+          input {
+            width: 120px;
+            min-width: 100px !important;
+          }
+        }
+        .action {
+          width: 195px;
+          select {
+            width: 120px;
+            min-width: 100px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) { // md from 768px
+  .stock-history {
+    .filter-wrapper {
+      .filter {
+        flex-flow: wrap;
+        .date-range {
+          flex: 0 0 100%;
+          margin-right: 0;
+          input {
+            width: 200px;
+          }
+        }
+        .product {
+          flex: 0 0 100%;
+          margin-right: 0;
+          label {
+            width: 82px;
+            padding-right: 6px;
+            text-align: right;
+          }
+          input {
+            width: 409px;
+            min-width: 100px !important;
+          }
+        }
+        .action {
+          flex: 0 0 100%;
+          margin-right: 0;
+          label {
+            width: 82px;
+            padding-right: 6px;
+            text-align: right;
+          }
+          select {
+            width: 409px;
+            min-width: 100px !important;
+          }
+        }
+      }
+      .filter-search {
+        position: relative;
+        .btn-search {
+          position: absolute;
+          bottom: 10px;
+          right: 15px;
+          height: 70px;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) { // sm from 576px
+  .stock-history {
+    .filter-wrapper {
+      padding-bottom: 15px;
+      .filter {
+        .date-range {
+          input {
+            width: 150px;
+          }
+        }
+        .product {
+          label {
+            width: 82px;
+            padding-right: 6px;
+            text-align: right;
+          }
+          input {
+            width: 309px;
+            min-width: 100px !important;
+          }
+        }
+        .action {
+          label {
+            width: 82px;
+            padding-right: 6px;
+            text-align: right;
+          }
+          select {
+            width: 309px;
+            min-width: 100px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) { // xs from 360px
+  .stock-history {
+    .filter-wrapper {
+      .filter {
+        .date-range {
+          input {
+            width: 115px;
+          }
+        }
+        .product {
+          label {
+            width: 82px;
+            padding-right: 6px;
+            text-align: right;
+          }
+          input {
+            width: 239px;
+            min-width: 100px !important;
+          }
+        }
+        .action {
+          label {
+            width: 82px;
+            padding-right: 6px;
+            text-align: right;
+          }
+          select {
+            width: 239px;
+            min-width: 100px !important;
+          }
+        }
+      }
+      .filter-search {
+        display: flex;
+        justify-content: center;
+        .btn-search {
+          position: initial;
+          height: 36px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}

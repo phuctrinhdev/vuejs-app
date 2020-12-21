@@ -1,0 +1,166 @@
+.sales-by-item-page{
+  .filter-wrapper {
+    margin-bottom: 15px;
+    padding: 15px 10px;
+    background: $white;
+    .filter {
+      .input-date-range-by-date-type {
+        width: auto;
+        margin-right: 45px;
+        margin-bottom: 15px;
+      }
+      .select-box {
+        label {
+          float: left;
+          width: 30px;
+          margin-right: 10px;
+          line-height: 30px;
+        }
+        select {
+          float: left;
+          width: 200px;
+          height: 30px;
+        }
+        &.sales-item {
+          label {
+            width: 65px;
+          }
+          select {
+            margin-right: 45px;
+          }
+        }
+      }
+    }
+    .filter-search {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 100%;
+      .btn-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        width: 120px !important;
+        height: 36px;
+        margin-top: -3px;
+        padding: 0;
+        border: 0;
+        border-radius: 5px;
+        text-align: center;
+        outline: 0;
+        i {
+          height: 19px;
+          margin-right: 5px;
+        }
+        span {
+          color: $white;
+        }
+      }
+    }
+  }
+  .table-wrapper{
+    background-color: white;
+    padding: 15px 10px;
+    .table-title {
+      float: left;
+      height: 25px;
+      padding-top: 2px;
+    }
+    .display-by-type {
+      display: flex;
+      float: right;
+      height: 25px;
+      &>label {
+        margin-right: 10px;
+      }
+      .custom-radio {
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .table-sales-by-item {
+      width: 100%;
+      overflow: auto;
+    }
+    table {
+      thead {
+        th {
+          background: $blue-dark;
+          color: $white;
+          vertical-align: middle;
+          line-height: 18px;
+        }
+      }
+      tbody {
+        tr {
+          &:last-child {
+            background: $gray-lighten;
+          }
+          td {
+            &.category-name {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+    .table-sales-total {
+
+    }
+  }
+  .description{
+    margin: 10px 0px;
+    padding: 22px 0px;
+    background-color: white;
+    ul{
+      li{
+        list-style: inside;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .sales-by-item-page {
+    .filter-wrapper{
+      .filter {
+        .input-date-range-by-date-type{
+          margin-right: 20px;
+        }
+        .select-box {
+          select {
+            width: 180px;
+          }
+        }
+      }
+    }
+    .filter-search {
+      justify-content: center !important;
+      margin: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .sales-by-item-page {
+    .filter-wrapper{
+      .filter {
+        .select-box {
+          &.sales-item {
+            select {
+              margin-bottom: 10px;
+            }
+          }
+          label {
+            width: 65px;
+          }
+          select {
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+}

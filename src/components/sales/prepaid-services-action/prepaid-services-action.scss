@@ -1,0 +1,53 @@
+.prepaid-services-action-modal{
+  .modal-dialog {
+    max-width:  450px;
+  }
+  .form-wrapper{
+    border-bottom: 1px solid $gray;
+    input {
+      border-color: $gray;
+      width: 100%;
+      text-align: center;
+      &:disabled {
+        background: $gray;
+        opacity: 0.5;
+      }
+    }
+    .input-money{
+      text-align: center;
+    }
+    .current-remaining {
+      input {
+        border-color: $gray-dark;
+        color: $black;
+      }
+    }
+    .new-remaining {
+      input:disabled {
+        border-color: $gray-dark;
+        color: $black;
+      }
+    }
+  }
+  .update-type-wrapper {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $gray;
+  }
+  .expiry-date {
+    .current-expiry-date{
+
+      input {
+        height: 25px;
+        border: 1px solid $gray-dark;
+        color: $black;
+      }
+    }
+    .new-expiry-date {
+      input:disabled {
+        border-color: $gray-dark;
+        color: $black;
+      }
+    }
+  }
+}

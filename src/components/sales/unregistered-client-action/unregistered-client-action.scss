@@ -1,0 +1,46 @@
+.unregistered-client-action-wrapper{
+  .modal-body{
+      &>.filter{
+          padding:10px;
+          height: 50px;
+          width: 100%;
+          border: 1px solid gainsboro;
+          .client-name{
+              width: 80%;
+              float: left;
+              label{
+                  width: 165px;
+              }
+              input{
+                  display: inline-block;
+                  width: 180px;
+                  height: 30px !important;
+              }
+          }
+          .search{
+              width: 20%;
+              float: right;
+              button{
+                  height: 32px !important;
+              }
+          }
+      }
+      &>.table{
+          margin-top: 20px;
+          margin-bottom: 0px;
+          padding: 0px;
+          .validate-errors-wrapper{
+              margin-top: 10px;
+          }
+      }
+  }
+  .modal-footer{
+    padding: 0;
+    margin: 0;
+    &>.btn{
+      height: 40px !important;
+      line-height: 29px !important;
+      width: 105px !important;
+    }
+  }
+}

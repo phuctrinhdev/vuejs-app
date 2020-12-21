@@ -1,0 +1,19 @@
+.repeat-off-days-action-modal {
+  .modal-dialog {
+    width: 400px;
+    
+    .repeat-week-selected {
+      display: inline-block;
+      width: calc(50% - 5px);
+    }
+    .repeat-day-of-week {
+      display: inline-block;
+      margin-left: 5px;
+      width: calc(50% - 5px);
+    }
+    .modal-content .modal-footer {
+      margin-top: 0px;
+      margin-bottom: 0;
+    }
+  }
+}

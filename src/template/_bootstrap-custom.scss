@@ -1,0 +1,109 @@
+//===========================================
+// BOOTSTRAP CUSTOM
+//-------------------------------------------
+.row {
+  display: flex;
+}
+.clearfix {
+	&:before {
+		display: table;
+    content: " ";
+	}
+	&:after {
+		content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    font-size: 0;
+	}
+}
+a.dropdown-item {
+  &.active,
+  &:active,
+  &:focus {
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+  }
+}
+button:focus {
+  box-shadow: none !important;
+}
+a, 
+.btn-link {
+  text-decoration: none !important;
+}
+.btn-secondary{
+  background: none;
+  border: 0;
+  color: $black;
+  &:hover {
+    background: none;
+    color: $black;
+  }
+}
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
+  color: unset;
+  background-color: unset;
+  border-color: unset;
+}
+img {
+  max-width: 100%;
+}
+.page-link {
+  color: unset;
+}
+.divider {
+  display: block;
+  width: 100%;
+  border-top: 1px solid $gray-light;
+}
+.custom-select {
+  background: url(template/images/common/select-arrow.png) no-repeat right 0.75rem center/8px 8px;
+  background-position: right 0.5rem center;
+}
+
+.is-desktop {
+  display: block;
+}
+.is-mobile {
+  display: none;
+}
+.datepicker-dib {
+  display: inline-block;
+  .popover-container {
+    display: inline-block;
+  }
+}
+/////////////////////
+main {
+  .common-style {
+    // vue-carlendar
+    .mx-datepicker .mx-datepicker-popup {
+      left: 0 !important;
+      right: auto;
+    }
+    .mx-input-append {
+      right: -35px;
+      top: 50%;
+      margin-top: -19px;
+      width: 36px; height: 36px;
+      opacity: 0;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 575.98px) {
+  .is-desktop {
+    display: none;
+  }
+  .is-mobile {
+    display: block;
+  }
+  
+}

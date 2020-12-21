@@ -1,0 +1,42 @@
+th {
+  vertical-align: middle;
+  text-align: center;
+}
+
+th.w7p {
+  width: 7% !important;
+}
+th.w8p {
+  width: 8% !important;
+}
+th.w12p {
+  width: 12% !important;
+}
+th.w15p {
+  width: 15% !important;
+}
+th.w20p {
+  width: 20% !important;
+}
+th.w24p {
+  width: 24% !important;
+}
+
+.content-tooltip {
+  .btn {
+      color: #000 !important;
+      border: 0 solid #000 !important;
+      background-color: transparent !important;
+      padding: 0 !important;
+      max-width: 350px !important;
+      width: 350px !important;
+      word-break: break-all;
+  }
+  .w350px{
+      max-width: 350px !important;
+      width: 350px !important;
+  }
+  .btn:hover {
+      background-color: transparent !important;
+  }
+}

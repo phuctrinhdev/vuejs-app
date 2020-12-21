@@ -1,0 +1,19 @@
+//===========================================
+// ELEMENT
+//   dropdown
+//-------------------------------------------
+.dropdown.dropdown-custom {
+  height: 30px;
+  margin-right: 5px;
+  .dropdown-toggle {
+    height: 30px;
+  }
+  .dropdown-menu {
+    padding: 0;
+    .dropdown-item {
+      border-bottom: 1px solid $gray-light;
+      font-size: 13px;
+      padding: 5px 15px;
+    }
+  }
+}

@@ -1,0 +1,456 @@
+//===========================================
+// ELEMENT 
+//   icon
+//-------------------------------------------
+
+// auto generate by gulp sprites
+@import 'sprites';
+
+.notification {
+  &-icon {
+    @include sprite($notification);
+
+    &:hover {
+      &:hover {
+        @include sprite($notification);
+      }
+    }
+  }
+}
+
+.user-account {
+  &-pc {
+    .icon-user {
+      @include sprite($user);
+    }
+  }
+}
+
+.menu-pc {
+  .inner {
+    ul.menu-list {
+      &>li {
+        .menu-sub-wrap {
+          &.report {
+            .menu-sub ul li a span {
+              text-transform: uppercase;
+              &:nth-child(1) {
+                display: none;
+              }
+            }
+          }
+          ul {
+            li {
+              a {
+                span {
+                  i {
+                    width: 32px;
+                    height: 32px;
+                    background-image: url(template/images/navlist.png);
+                    // sales menu
+                    &.sales-total {
+                      background-position: 0px 0px;
+                    }
+                    &.sales-by-staff {
+                      background-position: -32px 0px;
+                    }
+                    &.sales-by-item {
+                      background-position: -64px 0px;
+                    }
+                    &.invoices {
+                      background-position: -96px 0px;
+                    }
+                    &.bookings {
+                      background-position: -128px 0px;
+                    }
+                    &.receivables {
+                      background-position: -160px 0px;
+                    }
+                    &.point-and-balance-edit-history {
+                      background-position: -192px 0px;
+                    }
+                    // client menu
+                    &.clients {
+                      background-position: -224px 0px;
+                    }
+                    &.duplicated-clients {
+                      background-position: -256px 0px;
+                    }
+                    &.deleted-clients {
+                      background-position: -288px 0px;
+                    }
+                    &.client-management {
+                      background-position: -320px 0px;
+                    }
+                    &.campaign-management {
+                      background-position: -352px 0px;
+                    }
+                    &.messages-history {
+                      background-position: -384px 0px;
+                    }
+                    &.setup-automatic-messaging {
+                      background-position: -416px 0px;
+                    }
+                    // staff menu
+                    &.time-clock {
+                      background-position: -448px 0px;
+                    }
+                    &.staff-goal {
+                      background-position: -480px 0px;
+                    }
+                    &.payroll {
+                      background-position: -512px 0px;
+                    }
+                    &.staffs {
+                      background-position: -544px 0px;
+                    }
+                    // inventory menu
+                    &.purchase {
+                      background-position: -576px 0px;
+                    }
+                    &.purchases {
+                      background-position: -608px 0px;
+                    }
+                    &.internal-use {
+                      background-position: -640px 0px;
+                    }
+                    &.stock-adjustment {
+                      background-position: -672px 0px;
+                    }
+                    &.stock-history {
+                      background-position: -704px 0px;
+                    }
+                    &.stock-status {
+                      background-position: -736px 0px;
+                    }
+                    &.suppliers {
+                      background-position: -768px 0px;
+                    }
+                    // expenditure menu
+                    &.add-expenditure {
+                      background-position: -800px 0px;
+                    }
+                    &.expenditure-history {
+                      background-position: -833px 0px;
+                    }
+                    &.expenditure-summary {
+                      background-position: -865px 0px;
+                    }
+                    &.expenditure-items {
+                      background-position: -897px 0px;
+                    }
+                    // report menu
+                    &.show-menu {
+                      background: none;
+                    }
+                    // setup menu
+                    &.services {
+                      background-position: -928px 0px;
+                    }
+                    &.prepaid-cards {
+                      background-position: -960px 0px;
+                    }
+                    &.packages {
+                      background-position: -992px 0px;
+                    }
+                    &.products {
+                      background-position: -1024px 0px;
+                    }
+                    &.product-categories {
+                      background-position: -1056px 0px;
+                    }
+                    &.misc-codes {
+                      background-position: -1088px 0px;
+                    }
+                    &.loyalty-points-setup {
+                      background-position: -1120px 0px;
+                    }
+                    &.environment-setup {
+                      background-position: -1152px 0px;
+                    }
+                    &.caller-id-setup {
+                      background-position: -1184px 0px;
+                    }
+                    // support menu
+                    &.notices {
+                      background-position: -1219px 1px;
+                    }
+                    &.headquarter-notice {
+                      background-position: -1219px 1px;
+                    }
+                    &.branch-board {
+                      background-position: -1254px 1px;
+                    }
+                    &.system-qna {
+                      background-position: -1254px 1px;
+                    }
+                    &.manual {
+                      background-position: -1287px 2px;
+                    }
+                    &.solution-information {
+                      background-position: -1320px 0px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.top-bar-left {
+  .logo {
+    a {
+      @include sprite($logo);
+    }
+  }
+}
+.logo-icon {
+  display: block;
+  @include sprite($logo);
+}
+
+.top-bar-right {
+  .menu-user-home {
+    a {
+      @include sprite($home)
+    }
+  }
+}
+
+.sales-top .searchBox .down_btn {
+  .icon-btn-down-white {
+    @include sprite($btn-down-white);
+  }
+}
+
+.searchBox .search_btn {
+  .icon-btn-search-white {
+    @include sprite($btn-search-white);
+  }
+}
+
+//client-action
+.client-action-img {
+  .duplicate-check {
+    @include sprite($dulicate-check);
+  }
+  .client-setup-s {
+    @include sprite($client-setup-s);
+  }
+  .client-setup-big {
+    @include sprite($client-setup-big);
+  }
+}
+//calendar
+.calendar-img {
+  @include sprite($calendar-img);
+  display: inline-block;
+  margin-bottom: -9px;
+}
+.calendar-img-gray {
+  @include sprite($calendar-img-gray);
+  display: inline-block;
+}
+//search
+.search-img {
+  @include sprite($search-img);
+  display: inline-block;
+  margin-bottom: -9px;
+}
+.search-pc {
+  @include sprite($search-gray);
+}
+.search-mobile {
+  @include sprite($btn-search-white);
+}
+
+//img-icon
+.img-icon {
+  @include sprite($img-icon);
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+//call-w-icon
+.call-w-icon {
+  @include sprite($call-w-icon);
+  display: inline-block;
+  margin-bottom: -3px;
+}
+//cid-disconnect-icon
+.cid-disconnect-icon {
+  @include sprite($cid-disconnect-icon);
+  display: inline-block;
+  margin-bottom: -3px;
+}
+//cid-connect-icon
+.cid-connect-icon {
+  @include sprite($cid-connect-icon);
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+//message-w-icon
+.message-w-icon {
+  @include sprite($message-w-icon);
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+//fail-code
+.fail-code-img {
+  @include sprite($fail-code);
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+.bookings-page {
+  .notification {
+    &>span {
+      i.notification-gray {
+        display: block;
+        @include sprite($notification-gray);
+      }
+    }
+  }
+  .booking-action {
+    i{
+      display: block;
+      &.confirmed {
+        @include sprite($confirmed);
+      }
+      &.uncheck-confirmed {
+        @include sprite($uncheck-confirmed);
+      }
+      &.arrived {
+        @include sprite($arrived);
+      }
+      &.uncheck-arrived {
+        @include sprite($uncheck-arrived);
+      }
+      &.uncheck-cancelled {
+        @include sprite($uncheck-cancelled);
+      }
+      &.cancelled {
+        @include sprite($cancelled);
+      }
+    }
+  }
+}
+
+i {
+  display: block;
+  &.btn-down-white {
+    @include sprite($btn-down-white);
+  }
+  &.btn-search-white {
+    @include sprite($btn-search-white);
+  }
+  &.mobile-sales {
+    width: 24px;
+    height: 21px;
+    background-image: url(template/images/mobile-icon.gif);
+    background-position: 0 0;
+  }
+  &.mobile-booking {
+    width: 24px;
+    height: 21px;
+    background-image: url(template/images/mobile-icon.gif);
+    background-position: -33px 0;
+  }
+  &.pad-back {
+    @include sprite($pad-back);
+  }
+}
+.failcode-link {
+  background: url(template/images/common/fail-code-icon.png) no-repeat;
+}
+.duplicate-link {
+  background: url(template/images/common/duplicate-check.png) no-repeat;
+}
+.member-number-setup-link {
+  background: url(template/images/common/client-setup-s.png) no-repeat;
+}
+.field-setup-link {
+  background: url(template/images/common/client-setup.png) no-repeat;
+}
+.search-recommender-link {
+  background: url(template/images/common/search-btn.png) no-repeat;
+}
+
+@media (max-width: 767.98px) {
+  .user-account {
+    &-mobile {
+      .photo {
+        @include sprite($avatar);
+      }
+    }
+  }
+
+  .menu-mobile-toggle {
+    @include sprite($menu-mobile);
+  }
+
+  .menu-mobile-full {
+    .btn-close {
+      @include sprite($close);
+    }
+
+    .logo-transparent {
+      a {
+        @include sprite($logo-transparent);
+      }
+    }
+
+    ul.menu-list {
+      &>li {
+        &>a {
+          i {
+            width: 32px;
+            height: 32px;
+            background-image: url(template/images/navlist.png);
+            &.sales {
+              background-position: 0px 0px;
+            }
+
+            &.clients {
+              background-position: -224px 0px;
+            }
+            &.staff {
+              background-position: -544px 0px;
+            }
+            &.inventory {
+              background-position: -576px 0px;
+            }
+
+            &.expenditure {
+              background-position: -800px 0px;
+            }
+            &.report {
+              background-position: -704px 0px;
+            }
+            &.setup {
+              background-position: -928px 0px;
+            }
+            &.support {
+              background-position: -1152px 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    .logo-transparent {
+      a {
+        @include sprite($logo-transparent);
+      }
+    }
+  }
+}
+

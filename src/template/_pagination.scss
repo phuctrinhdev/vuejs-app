@@ -1,0 +1,135 @@
+//===========================================
+// ELEMENT 
+//   pagination
+//-------------------------------------------
+.pagination-wrapper {
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+  nav {
+    float: left;
+  }
+  .pagination {
+    .page-item {
+      span.page-link {
+        pointer-events: none;
+      }
+    }
+  }
+  .goto {
+    float: left;
+    label {
+      width: 50px;
+      height: 25px;
+      margin-left: 2px;
+      border: 1px solid $gray;
+      text-align: center;
+      cursor: pointer;
+    }
+    .multiselect {
+      display: none;
+      float: right;
+      width: auto;
+      margin-top: 0;
+      &.show {
+        display: block;
+      }
+      .multiselect__select {
+        top: 14px;
+      }
+      .multiselect__tags {
+        width: 50px;
+        height: 25px;
+        margin-top: 0;
+        margin-left: 2px;
+        border: 1px solid $gray;
+        border-radius: 0;
+      }
+      input[type=text], input[type=number] {
+        max-width: 40px !important;
+        padding-left: 0;
+        border: 0;
+      }
+      .multiselect__single {
+        line-height: 22px;
+      }
+    }
+  }
+}
+.pagination-index {
+  float: left;
+  margin-right: 15px;
+  line-height: 25px;
+  span {
+    color: $gray-dark;
+  }
+}
+.pagination {
+  ul, ol {
+    float: left;
+  }
+  li {
+    float: left;
+    height: 25px;
+    margin-left: 2px;
+    border: 1px solid $gray;
+    border-radius: 3px;
+    cursor: pointer;
+    &.disabled {
+      cursor: auto;
+      span {
+        background: $gray-light;
+        color: $gray;
+      }
+    }
+    &.active {
+      display: none;
+      a {
+        border: 0;
+      }
+    }
+    &:nth-of-type(1) {
+      a, span {
+        width: 50px;
+      }
+    }
+    &:nth-of-type(2) {
+      a, span {
+        width: 25px;
+      }
+    }
+    &:nth-of-type(4) {
+      a, span {
+        width: 25px;
+      }
+    }
+    &:nth-of-type(5) {
+      a, span {
+        width: 50px;
+      }
+    }
+    a, span {
+      float: left;
+      margin-top: 3px;
+      margin-left: 1px;
+      padding:0;
+      border: 0;
+      background: transparent !important;
+      color: $black;
+      font-size: 13px;
+      text-align: center;
+      strong {
+        font-weight: 800;
+      }
+      em {
+        font-weight: 400;
+      }
+    }
+    a {
+      background: transparent;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}

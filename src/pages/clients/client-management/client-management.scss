@@ -1,0 +1,296 @@
+main{
+  .common-style{
+    button.btn-show-filter{
+      background-color: $gray-dark;
+      border: 1px solid $gray-dark;
+    }
+  }
+  .clients-management-form-search{
+    .form-control{
+      padding: 0 5px;
+    }
+    input[type=text], select{
+      height: 30px;
+    }
+    .between{
+      display: inline-grid;
+      align-items: center;
+    }
+    .search-conditions, .filters-section, .clients-management-table-result{
+      h3{
+        margin: 15px;
+        float: left;
+        font-weight: 900;
+        font-size: 18px;
+        border-bottom: 1px solid $gray-dark;
+        width: 100%;
+        padding-bottom: 8px;
+      }
+      .form-search-conditions, .form-filters{
+        width: 100%;
+        padding: 0 15px;
+      }
+      .form-search-conditions{
+        .number-of-not-visit-days{
+          width: 80px;
+        }
+        .sales-amount{
+          .input-money{
+            width: 80px;
+          }
+        }
+      }
+    }
+    .filters-section{
+      input[type=text]{
+        width: 200px;
+      }
+      h3{
+        margin-top: 0;
+      }
+      .field-range{
+        display: inline-block;
+        .input-money{
+          width: 160px;
+          display: inline-block;
+        }
+      }
+      .birthday-range{
+        input[type=text]{
+          width: 50px;
+        }
+      }
+      .input-date-range{
+        .date-picker{
+          width: 100px;
+          input[type=text]{
+            width: 50px;
+          }
+        }
+      }
+      .recent-visit-date{
+        input[type=text]{
+          width: auto;
+        }
+      }
+    }
+    .btn-search-clients{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      button{
+        &:hover{
+          background: $blue;
+        }
+        span {
+          color: $white;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 36px;
+        margin-top: -3px;
+        padding: 0;
+        border-radius: 5px;
+        text-align: center;
+        outline: 0;
+        width: 150px !important;
+      }
+    }
+    label.label-title{
+      width: 125px;
+      line-height: 30px;
+      float: left;
+    }
+    .action-type, .target-type{
+      label{
+        line-height: 30px;
+      }
+      select{
+        width: 265px;
+      }
+    }
+    .target-type{
+      label{
+        width: 80px;
+      }
+    }
+    .action-type{
+      .label-action{
+        width: 65px;
+      }
+    }
+    .clients-by-sales-service, .clients-by-sales-product, .clients-by-sales-amount, .clients-by-prepaid-card, .clients-by-prepaid-service{
+      .label-right{
+        text-align: right;
+        padding-right: 10px;
+      }
+      .select-1, .select-2{
+        float: left;
+      }
+      .select-1{
+        margin-right: 0.25rem;
+      }
+    }
+    .clients-by-prepaid-card, .clients-by-prepaid-service{
+      .balance{
+        .input-money{
+          width: 80px;
+        }
+      }
+    }
+    .birth-clients{
+      .select-member-types{
+        margin-left: 1rem;
+      }
+    }
+    .recommended-clients{
+      .recommender-type{
+        width: 200px;
+        margin-right: 1rem;
+      }
+    }
+  }
+  .clients-management-table-result{
+    .btn-next, .btn-back{
+      display: inline-block;
+    }
+  }
+  .send-messages-modal{
+    .modal-dialog{
+      main{
+        .contents-style{
+          padding: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .check-owner-login-modal{
+    .form-control{
+      height: 30px;
+    }
+  }
+}
+@media screen and (min-width: 1200.98px) and (max-width: 1500px){
+  main{
+    .clients-management-form-search{
+      .filters-section{
+        .form-filters{
+          .row{
+            .col-xl-5{
+              -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+              max-width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1310px){
+  main{
+    .clients-management-form-search{
+      .filters-section{
+        .birthday-range{
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1310px){
+  main{
+    .clients-management-form-search{
+      .filters-section{
+        .field-range{
+          .input-money{
+            width: 130px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024.98px) {
+  main{
+    .clients-management-form-search{
+      .filters-section{
+        .birthday-range{
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 991.98px) {
+  main{
+    .clients-management-form-search{
+      .clients-by-sales-service, .clients-by-sales-product, .clients-by-sales-amount, .clients-by-prepaid-card, .clients-by-prepaid-service{
+        .label-right{
+          text-align: left;
+          padding-right: 0;
+        }
+      }
+      .action-type, .target-type{
+        width: 50%;
+        label{
+          width: 100%;
+        }
+      }
+      .filters-section{
+        .birthday-range{
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 575.98px) {
+  main{
+    .clients-management-form-search{
+      .action-type, .target-type{
+        width: 100%;
+        select{
+          width: 100%;
+        }
+      }
+      .clients-by-sales-service, .clients-by-sales-product, .clients-by-sales-amount, .clients-by-prepaid-card, .clients-by-prepaid-service{
+        .form-group{
+          width: 100%;
+          .label-title, .sales-amount, .balance{
+            width: 100%;
+          }
+          select{
+            width: 50%;
+          }
+          .select-1{
+            margin-right: 0;
+          }
+        }
+      }
+      .birth-clients{
+        .select-member-types{
+          margin-left: 0;
+          margin-top: 15px;
+        }
+      }
+      .recommended-clients{
+        .recommender-type{
+          margin: 15px 0;
+        }
+      }
+      .filters-section{
+        .field-range{
+          input[type=text]{
+            width: 30%;
+          }
+        }
+        .custom-select, input[type=text]{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

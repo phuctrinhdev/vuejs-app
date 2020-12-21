@@ -1,0 +1,13 @@
+.client-avatar {
+  float: left;
+  margin-right: 10px;
+  .avatar-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 105px;
+    height: 140px;
+    background: $gray-light;
+    color: $gray;
+  }
+}

@@ -1,0 +1,39 @@
+.select-payment-method-panel {
+  .title {
+    text-transform: uppercase;
+  }
+  ul.list-btn {
+    li {
+      float: left;
+      width: calc(50% - 5px);
+      margin-bottom: 10px;
+      &:nth-child(odd){
+        margin-right: 5px;
+      }
+      &:nth-child(even){
+        margin-left: 5px;
+      }
+      a {
+        display: block;
+        height: 32px;
+        padding: 0 5px;
+        border: 1px solid $blue;
+        line-height: 32px;
+        color: $blue;
+        text-align: center;
+        &:hover {
+          background: $blue;
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  select.custom-select {
+    height: 32px;
+    text-align-last: center;
+    text-align: center;
+    -ms-text-align-last: center;
+    -moz-text-align-last: center;
+  }
+}

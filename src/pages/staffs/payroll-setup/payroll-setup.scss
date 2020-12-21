@@ -1,0 +1,83 @@
+.payroll-setup-page {
+  .page-title{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+    h3{
+      display: inline-block;
+      margin-top: 10px;
+      padding-left: 0;
+      font-weight: 900;
+      font-size: 18px;
+    }
+    .group-btn {
+      float: right;
+      .btn {
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+  .table-wrapper {
+    margin-top: 15px;
+    padding: 15px 10px;
+    background: $white;
+    .table-intro {
+      display: flex;
+      justify-content: space-between;
+    }
+    table {
+      thead {
+        th {
+          height: 36px;
+          border: 1px solid $gray;
+          vertical-align: middle;
+          color: $white;
+        }
+      }
+      tbody {
+        tr {
+          td {
+            padding: 5px;
+            &.disable {
+              background: $gray-lighten;
+            }
+            .input-money {
+              height: 25px;
+              border: 1px solid transparent;
+              background: transparent;
+              &:focus {
+                border: 1px solid $gray-light;
+                outline: 0;
+                box-shadow: inherit;
+              }
+            }
+          }
+        }
+      }
+    }
+    .btn{
+      background-color: #3499db;
+      width: 220px !important;
+      height: 40px;
+      margin: 25px auto 10px;
+      line-height: 30px;
+      color: #fff;
+      text-align: center;
+      border: 1px solid #3499db !important;
+      border-radius: 5px;
+    }
+    .guides {
+      margin-top: 45px;
+      padding: 10px 30px;
+      border: 1px solid $gray-light;
+      ul {
+        li {
+          list-style-type: disc;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}

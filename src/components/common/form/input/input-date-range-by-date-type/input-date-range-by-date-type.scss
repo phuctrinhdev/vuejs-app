@@ -1,0 +1,62 @@
+.input-date-range-by-date-type{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  .date-type{
+    width: 280px;
+    float: left;
+  }
+  .date-view{
+    float: left;
+    input,select{
+      height: 30px;
+      padding: 0 5px;
+      border-color: $gray;
+      background-color: #fff;
+      background-clip: padding-box;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    .select-date {
+      input {
+        width: 200px;
+      }
+    }
+    select.select-month {
+        width: 200px;
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .input-date-range-by-date-type {
+    .date-view {
+      .date-picker {
+        width: 100px;
+      }
+    }
+  }
+  .select-filter{
+    .select-box {
+      select{
+        width: 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .input-date-range-by-date-type {
+    flex-direction: column;
+
+    .date-type {
+      float: none;
+      width: 100%;
+    }
+    .date-view {
+      float: none;
+      width: 100%;
+      padding-top: 5px;
+      padding-left: 75px;
+    }
+  }
+}

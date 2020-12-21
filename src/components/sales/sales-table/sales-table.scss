@@ -1,0 +1,223 @@
+.sales-table-wrapper {
+  position: relative;
+  .show-deleted {
+    position: absolute;
+    top: -26px;
+    right: 0;
+  }
+  .unregistered-client{
+    font-weight: bold;
+    color: #3499db;
+    height: 100%;
+    width: 100%;
+  }
+  .table-expand-menu-options {
+    .vgt-responsive {
+      overflow-x: inherit;
+      table {
+        &.vgt-table{
+          overflow-x: inherit;
+        }
+      }
+    }
+  }
+  th, td {
+    &.mobile {
+      display: none;
+    }
+  }
+  table {
+    &.vgt-table{
+      overflow: hidden;
+    }
+    thead {
+      tr {
+        th {
+          vertical-align: middle;
+          line-height: 16px;
+          &.location {
+            min-width: 35px;
+          }
+          &.date {
+            min-width: 50px;
+          }
+          &.sales-items {
+            min-width: 150px;
+          }
+          &.staffs {
+            min-width: 100px;
+          }
+          &.sales-type {
+            min-width: 50px;
+            font-size: 12px;
+          }
+          &.discount {
+            min-width: 70px;
+          }
+          &.amounts {
+            min-width: 100px;
+            padding: 0 5px;
+          }
+          &.payment-method {
+            min-width: 100px;
+            padding: 0 5px;
+            font-size: 12px;
+          }
+          &.payment-amount {
+            min-width: 100px;
+          }
+          &.notes {
+            min-width: 200px;
+          }
+          &.menu {
+            min-width: 70px;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        &.deleted {
+          background: $gray-lighten;
+        }
+        td {
+          .tag-refund {
+            display: block;
+            width: 60px;
+            margin: 0 auto;
+            padding: 0 5px;
+            border-radius: 4px;
+            background: $green-light;
+            font-size: 12px;
+          }
+          .payment-amount {
+            i {
+              font-style: normal;
+              &.outstanding {
+                color: $red;
+              }
+            }
+          }
+          &.client-name{
+            .is-client-of-other-shop {
+              color: $blue;
+              font-weight: bold;
+            }
+          }
+          &.notes {
+            text-align: left;
+            &>span {
+              @include truncate-text(3, 21px);
+              display: block;
+              width: 100%;
+              height: 100%;
+              &>div {
+                width: 100%;
+                height: 100%;
+                display: block;
+                &.not-editable {
+                  &:hover {
+                    cursor: initial;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) { // lg
+  .sales-table-wrapper .table-expand-menu-options .vgt-responsive {
+    overflow-y: auto;
+  }
+}
+@media (max-width: 991.98px) { // md
+  
+}
+
+@media (max-width: 767.98px) { // sm
+  .sales-table-wrapper {
+    .sales-table-data {
+      th, td {
+        display: none;
+        &.mobile {
+          display: block;
+          height: auto;
+        }
+      }
+      table {
+        tr {
+          th, td {
+            padding: 10px;
+            font-size: 13px;
+            text-align-last: left;
+          }
+        }
+        thead {
+          tr {
+            th {
+              padding: 10px 5px;
+              // background: $gray-light;
+              // color: $gray-dark;
+            }
+          }
+        }
+        tbody {
+          tr {
+            td {
+              .show-more-on-mobile {
+                position: relative;
+                &.expand {
+                  .payment-detail {
+                    display: block;
+                  }
+                  .show-more-text {
+                    transform: rotate(-90deg);
+                  }
+                  .notes {
+                    display: block;
+                  }
+                }
+                p {
+                  line-height: 20px;
+                }
+                i {
+                  display: inline;
+                  font-style: normal;
+                }
+                .color-red {
+                  color: $blue;
+                  font-size: 12px;
+                }
+                .payment-detail {
+                  display: none;
+                  font-size: 12px;
+                }
+                .notes {
+                  margin-top: 3px;
+                  text-align: justify;
+                }
+                .show-more-text {
+                  display: block;
+                  position: absolute;
+                  top: 18px;
+                  right: 0;
+                  width: 25px;
+                  height: 25px;
+                  padding: 2.5px 0 0 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) { // xs
+  
+}

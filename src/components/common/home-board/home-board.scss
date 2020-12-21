@@ -1,0 +1,138 @@
+li.home-board {
+  float: left;
+  width: 460px;
+  margin-right: 35px;
+  margin-bottom: 20px;
+  h2{
+    cursor: pointer;
+  }
+  &:nth-of-type(1) {
+    h2:before {
+      background-color: $orange;
+    }
+    dl dd:before {
+      background-color: $orange;
+    }
+  }
+  &:nth-of-type(2) {
+    h2:before {
+      background-color: $blue-light;
+    }
+    dl dd:before {
+      background-color: $blue-light;
+    }
+  }
+  &:nth-of-type(3) {
+    margin-right: 0;
+    h2:before {
+      background-color: $pink;
+    }
+    dl dd:before {
+      background-color: $pink;
+    }
+  }
+  h2 {
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: $font-large;
+    text-indent: 35px;
+    text-transform: uppercase;
+    line-height: 38px;
+    position: relative;
+    &:before {
+      content: " ";
+      display: inline-block;
+      width: 12px;
+      height: 38px;
+      box-sizing: border-box;
+      margin-right: 10px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    span {
+      display: inline-block;
+      width: 12px;
+      height: 38px;
+      box-sizing: border-box;
+      margin-right: 10px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  dl.home-board-list {
+    margin-top: 3px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px $gray-light;
+    background-color: $white;
+    font-size: $font-medium;
+    dd {
+      position: relative;
+      margin: 15px 0;
+      text-indent: 15px;
+      cursor: pointer !important;
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 4px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+      }
+      label{
+        display: inline;
+      }
+    }
+  }
+}
+
+@media (max-width:1600px){
+  .row-info ul li {
+    width: 32.3%;
+    margin-right: 1.5%;
+  }
+}
+
+@media (max-width:1280px){
+  .row-info {
+    margin-bottom: 227px;
+  }
+}
+
+// large: .col-lg- | 992 - 1199px -> ipad landscape
+@media (max-width: 1199.98px) {
+  .row-info {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+}
+
+// medium: .col-md- | 768 - 991px -> ipad
+@media (max-width: 991.98px) {
+  .row-info ul li {
+    width: 49%;
+    &:nth-of-type(odd) {
+      margin-right: 2%;
+    }
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+}
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+  .row-info {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    ul li {
+      width: 100%;
+      margin-right: 0 !important;
+      margin-bottom: 10px;
+    }
+  }
+}

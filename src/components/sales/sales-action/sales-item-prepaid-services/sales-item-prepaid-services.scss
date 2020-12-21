@@ -1,0 +1,186 @@
+.sales-item-prepaid-services {
+  .tabs {
+    ul.nav-tabs {
+      border-bottom: 0;
+      li.nav-item {
+        margin-right: 4px;
+        a {
+          padding: 5px 10px;
+          border: 1px solid $gray !important;
+          border-radius: 0;
+          font-weight: normal !important;
+          &.active {
+            background: $purple;
+            color: $white;
+          }
+        }
+      }
+    }
+    .tab-content {
+      padding: 0 !important;
+      .deduct-prepaid-services {
+        .prepaid-service-name {
+          text-align: left;
+          .family-card {
+            font-style: italic;
+            color: $blue;
+            font-size: 13px;
+          }
+        }
+      }
+      .sale-prepaid-services {
+        .service-categorys-wrapper {
+          .service-categorys {
+            min-height: 250px;
+            border: 1px solid $gray;
+            ul {
+              padding: 10px 20px;
+              li {
+                margin-bottom: 10px;
+                padding: 0 5px;
+                &.active {
+                  a {
+                    background: $purple;
+                    color: $white;
+                    &:hover {
+                      background: $purple;
+                      color: $white;
+                    }
+                  }
+                }
+                a {
+                  @include truncate-text(1, 40px);
+                  height: 40px;
+                  padding: 0px 5px;
+                  border: 1px solid $gray;
+                  text-align: center;
+                  line-height: 40px;;
+                  &:hover {
+                    background: $purple-light;
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .prepaid-services-wrapper {
+          .prepaid-services {
+            min-height: 250px;
+            border: 1px solid $gray;
+            ul {
+              padding: 10px 20px;
+              li {
+                margin-bottom: 10px;
+                padding: 0 5px;
+                &.active {
+                  a {
+                    background: $purple;
+                    color: $white;
+                    &:hover {
+                      background: $purple;
+                      color: $white;
+                    }
+                  }
+                }
+                a {
+                  @include truncate-text(1, 40px);
+                  height: 40px;
+                  padding: 0px 5px;
+                  border: 1px solid $gray;
+                  text-align: center;
+                  line-height: 40px;;
+                  &:hover {
+                    background: $purple-light;
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+            .load-more {
+              padding: 0 10px 10px;
+              display: none;
+              &.show {
+                display: block;
+              }
+              .btn {
+                &:hover {
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) { // lg
+  
+}
+
+@media (max-width: 991.98px) { // md
+  .sales-item-prepaid-services {
+    .service-categorys-wrapper {
+      margin-bottom: 10px;
+      .service-categorys {
+        min-height: auto !important;
+      }
+    }
+    .tabs {
+      ul.nav-tabs {
+        border-bottom: 0;
+        li.nav-item {
+          margin-right: 4px;
+          a {
+            max-width: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) { // sm
+  .sales-item-prepaid-services {
+    .service-categorys-wrapper {
+      margin-bottom: 10px;
+      .service-categorys {
+        min-height: auto !important;
+      }
+    }
+    .prepaid-services-wrapper {
+      .prepaid-services {
+        min-height: auto !important;
+      }
+    }
+    .tabs {
+      ul.nav-tabs {
+        li.nav-item {
+          a {
+            
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) { // xs
+  .sales-item-prepaid-services {
+    .tabs {
+      ul.nav-tabs {
+        border-bottom: 0;
+        li.nav-item {
+          margin-right: 4px;
+          a {
+            max-width: fit-content;
+            padding: 5px;
+            line-height: 1.3;
+          }
+        }
+      }
+    }
+  }
+}

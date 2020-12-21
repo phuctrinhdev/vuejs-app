@@ -1,0 +1,134 @@
+.service-action-modal-wrapper {
+  .alert-modal {
+    .modal-dialog {
+      left: -8px;
+      max-width: 550px;
+    }
+  }
+}
+.service-action-modal {
+  .online-description {
+    color: $red;
+  }
+  .box-tap{
+    .nav-tabs{     
+      border-bottom: 0px;
+      .nav-item{ 
+        margin-right: 5px;
+      }
+      .nav-link{
+        transition:0.3s;
+        border: 1px solid $gray;
+        color: $gray-dark;
+        background-color: $white;
+        border-radius: 0;
+        &:hover {
+          background-color: $purple; 
+          color: $white; 
+          border: 1px solid $purple;
+        }
+      }
+      .active{ 
+        color: $white;
+        border: 1px solid $purple;
+        background-color: $purple;
+        border-radius: 0;
+      }
+    }
+    .tab-content{
+      width: 100%;
+      border: 1px solid $gray-light;
+      box-sizing: border-box;
+      padding: 15px;
+      margin-top: 10px !important;
+      display: inline-block;
+    }
+  }
+  .form-group {
+    input{
+      width: 100%;
+      font-size: 14px;
+    }
+    select{
+      width: 100%;
+      font-size: 14px;
+    }
+    .check-every-resource {
+      padding-left: 0;
+    }
+    .group-resource{
+      max-height: 300px;
+      margin-top: 5px;
+      padding: 10px;
+      border: 1px solid $gray-light;
+      overflow-y: scroll;
+      .custom-checkbox{
+        width: 45%;
+        float: left;
+      }
+    }
+    .btn-group{
+      .btn {
+        padding: 3px 10px !important;
+        margin: 0px !important;
+      }
+    }
+    .failcode-link{
+      margin-top: 15px;
+      display: block;
+      position: absolute;
+    }
+    .multiselect { 
+      margin-top: 0;
+      .multiselect__select {
+        top: 12px;
+      }
+      .multiselect__tags {
+        margin-top: 0;
+      }
+      .multiselect__placeholder {
+        color: $gray-dark;
+        text-indent: 5px;
+      }
+      .multiselect__option {
+        padding-left: 5px;
+      }
+    }
+    .custom-checkbox {
+      width: auto;
+    }
+  }
+  .modal-footer{
+    margin:0px auto !important; 
+    &>.btn {
+      margin-left: .25rem !important;
+    }
+  }
+}
+.hide{
+  display: none
+}
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+  .service-action-modal {
+    .modal-dialog {
+      max-width: 95%;
+    }
+  }
+  .col-md-5,.col-md-7,.col-md-3,.col-md-2,.col-md-4 ,.col-md-6,.col-md-1{ 
+    width: 100%;
+  }
+}
+
+// extra small: .col- | 360 - 575px, mobile
+@media (max-width: 575.98px) {
+  .service-action-modal {
+    .salary-sales {
+      .radio-group {
+        margin-top: 5px;
+        margin-left: 0;
+      }
+    }
+  }
+}

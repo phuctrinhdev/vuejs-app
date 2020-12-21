@@ -1,0 +1,132 @@
+.booking-item {
+  .inner {
+    width: 100%;
+  }
+  .booking-links {
+    li {
+      a {
+        display: block;
+        padding: 6px 27px;
+        border: solid 1px $gray;
+        border-radius: 0;
+        background-color: unset;
+        color: $gray-dark;
+        &:hover, &.router-link-exact-active {
+          background-color: $purple;
+          color: $white;
+        }
+      }
+    }
+  }
+  .booking-item-part {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px $gray;
+    background-color: $white;
+    .part-title {
+      position: relative;
+      height: 45px;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $gray;
+      .title {
+        float: left;
+        margin-top: 5px;
+      }
+      .btn-group {
+        float: right;
+        .btn { 
+          margin: 0 auto;
+          padding: 4px 5px;
+          border: 1px solid $blue;
+          background: $white;
+          color: $blue;
+          &:hover {
+            background: $blue;
+            color: $white;
+          }
+        }
+      }
+    }
+    .form-btn-group{
+      .btn {
+        margin: 0px !important;
+      }
+      label{
+        margin-top: 4px;
+        background: $white;
+        border: 1px solid $blue;
+        color: $blue;
+      }
+      .active{
+        background: $blue !important;
+        border: 1px solid $blue !important;
+        color: $white !important;
+      }
+    }
+    .table-data {
+      table {
+        th, td {
+          height: 40px;
+          border-color: $gray;
+        }
+        thead {
+          th {
+            background: $gray-lighten;
+            color: $gray-dark;
+          }
+        }
+        tbody {
+          tr {
+            &:hover {
+              background: transparent;
+            }
+          }
+          td {
+            font-size: 16px;
+            &.days {
+              text-align: left;
+            }
+            .btn {
+              width: 70px;
+            }
+          }
+        }
+      }
+      .vgt-wrap__actions-footer {
+        border: 0;
+      }
+    }
+    .same-as-service-codes{
+      float: left;
+    }
+    .booking-item-more{
+      .show-inactives{
+        float: right;
+        margin-top: 4px;
+      }
+    }
+  }
+  .booking-resources-part-1 {
+    width: 100%;
+    margin: 15px 0;    
+    padding: 2%;
+    border-radius: 3px; 
+    background-color: $white;
+    border: solid 1px $gray;
+  }
+}
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+  .booking-item .booking-item-part .booking-item-more {
+    height: auto;
+  }
+}
+
+// extra small: .col- | 360 - 575px, mobile
+@media (max-width: 575.98px) {
+
+}

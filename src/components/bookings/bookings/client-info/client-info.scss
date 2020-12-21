@@ -1,0 +1,255 @@
+.client-info {
+  .client-unregistered {
+    padding: 20px;
+    p {
+      &:first-child {
+        margin-bottom: 30px;
+      }
+    }
+    .client-form {
+      margin-top: 20px;
+      padding: 15px;
+      border: 1px solid $gray;
+
+      .form-group {
+        label {
+          font-size: 14px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .client-view {
+    margin-bottom: 5px;
+    padding: 2%;
+    border: 1px solid $gray;
+    box-sizing: border-box;
+    .client-remove {
+      position: absolute;
+      top: 5px;
+      right: 20px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: $blue-light;
+      color: $white;
+      font-size: 20px;
+      text-align: center;
+      line-height: 27px;
+      cursor: pointer;
+    }
+    .client-vip {
+      margin-bottom: 10px;
+      h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .name-client {
+        color: $blue-darken;
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 5px;
+        display: inline-block;
+      }
+      .vip {
+        display: inline-block;
+        width: 40px;
+        height: 25px;
+        line-height: 25px;
+        color: $white;
+        font-weight: lighter;
+        background-color: $orange-dark;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: .5px;
+      }
+    }
+    .detail-client {
+      margin-bottom: 13px;
+      color: $gray-dark;
+      .list-item {
+        .item {
+          margin-bottom: 10px;
+          &:first-child .desc-item {
+            font-weight: bold;
+            color: $gray-dark;
+          }
+          .title-item {
+            position: relative;
+            margin-right: 10px;
+            &:before {
+              content: ':';
+              position: absolute;
+              top: 0;
+              right: -7px;
+            }
+          }
+        }
+      }
+      .desc-client {
+        .highlight {
+          color: $red;
+          font-weight: bold;
+        }
+      }
+    }
+    .notes-client {
+      margin-top: 30px;
+    }
+  }
+  .tabs.client-reference {
+    margin-top: 15px;
+    .card-header {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      .nav {
+        margin: 0;
+        .nav-item {
+          margin-right: 5px;
+          a {
+            padding-left: 10px;
+            padding-right: 10px;
+            border: 1px solid $purple;
+            border-radius: 0;
+            &.active {
+              background: $purple;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+    .tab-content {
+      min-height: auto;
+      .tab-pane {
+        margin-top: 5px;
+        padding: 0;
+        &.tab-booking {
+          .title {
+            height: 36px;
+            padding: 10px;
+            background: $blue-dark;
+            color: $white;
+            line-height: 16px;
+          }
+          .booking-list-wrapper {
+            .booking-list {
+              border: 1px solid $gray;
+              .title {
+                display: none;
+              }
+              .item {
+                display: flex;
+                flex-direction: row;
+                padding: 10px;
+                border-bottom: 1px solid $gray;
+                align-items: center;
+                &:last-child {
+                  border: 0;
+                }
+                .info-booking {
+                  width: calc(100% - 82px);
+                  padding-right: 10px;
+                  .services {
+                    span + span {
+                      &:before {
+                        content: ', ';
+                      }
+                    }
+                  }
+                }
+                .rebook {
+                  .btn {
+                    background: transparent;
+                    color: $blue;
+                    border: 1px solid $blue;
+                    &:hover {
+                      background: $blue;
+                      color: $white;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        &.tab-sales-history {
+          .table-wrapper {
+            height: 250px;
+            overflow-y: scroll;
+            tr {
+              th {
+                padding-left: 5px;
+                text-align: left;
+              }
+              td {
+                padding: 5px;
+                text-align: center;
+                vertical-align: middle;
+                height: 35px;
+                &:first-child {
+                  text-align: left;
+                }
+                span {
+                  color: $red;
+                }
+              }
+            }
+          }
+          .pagination li.page-item.disabled span {
+            line-height: 25px;
+          }
+        }
+        .empty-message {
+          min-height: 172px;
+          border: 1px solid $gray;
+          line-height: 172px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .client-info {
+    .client-unregistered {
+      padding: 0;
+      p:first-child{
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  
+}
+
+@media (max-width: 767.98px) {
+  
+}
+
+@media (max-width: 575.98px) {
+  .client-info .tabs.client-reference .tab-content .tab-pane.tab-booking .booking-list-wrapper .booking-list .title {
+    display: block;
+  }
+  .client-info{
+    .client-unregistered {
+      p {
+        display: none;
+      }
+      .client-form {
+        margin-top: 0;
+        padding: 10px;
+        label {
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}

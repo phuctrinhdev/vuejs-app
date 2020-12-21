@@ -1,0 +1,155 @@
+.refund-items-adding-action-modal {
+  #refund-items-adding-action-modal {
+    .modal-dialog {
+      max-width: 90%;
+    }
+  }
+  .refund-items-adding-action-wrapper{
+    &.is-showed-goods {
+      .refund-item-adding-submit{
+        &.bottom {
+          display: none;
+        }
+      }
+    }
+    .goods-wrapper {
+      .sales-goods-content-wrapper {
+        padding: 10px;
+        border: 1px solid $gray;
+      }
+      .sales-items-selected-wrapper {
+        .refund-item-adding-submit {
+          margin: 0;
+          padding: 0;
+          .btn-action-group {
+            justify-content: flex-end;
+            .btn {
+              margin: 0 !important;
+              &.btn-default {
+                margin-bottom: 10px !important;
+              }
+            }
+          }
+        }
+        .staffs-selected {
+          margin: 10px 0 5px;
+          label {
+            font-weight: bold;
+          }
+        }
+        .sales-items-selected.services-products {
+          label {
+            font-weight: bold;
+          }
+          table {
+            td {
+              text-align: left;
+              .btn {
+                height: 20px;
+                padding: 7px 10px !important;
+                line-height: 0;
+                color: $blue;
+              }
+            }
+          }
+        }
+      }
+    }
+    .prepaid-goods-wrapper {
+      table {
+        thead {
+          th {
+            &.mobile {
+              display: none;
+            }
+          }
+        }
+        tbody {
+          tr {
+            td {
+              &.mobile {
+                display: none;
+              }
+              .input-money {
+                height: 25px;
+                &:focus {
+                  outline: 0;
+                  box-shadow: none;
+                  border-color: $gray-light;
+                }
+              }
+              .family-card {
+                font-style: italic;
+                color: $blue;
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+      .modal-footer {
+        margin: 10px auto !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) { // sm
+  .refund-items-adding-action-modal {
+    .refund-items-adding-action-wrapper {
+      &.is-showed-goods {
+        .refund-item-adding-submit{
+          &.top {
+            display: none;
+          }
+          &.bottom {
+            display: block;
+          }
+        }
+      }
+      .goods-wrapper {
+        .sales-items-selected-wrapper {
+          .refund-item-adding-submit {
+            margin-top: 20px;
+          }
+        }
+      }
+      .prepaid-goods-wrapper {
+        table {
+          thead {
+            th {
+              display: none;
+              &.mobile, &.id {
+                display: table-cell;
+                padding-left: 5px;
+                text-align: left;
+              }
+            }
+          }
+          tbody {
+            tr {
+              td {
+                display: none;
+                &.mobile, &.id {
+                  display: table-cell;
+                  text-align: left;
+                }
+                &.mobile {
+                  .deduction, .refund-amount {
+                    display: inline-block;
+                    width: 48%;
+                    margin-top: 10px;
+                    margin-bottom: 5px;
+                  }
+                  .deduction {
+                    margin-right: 2%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

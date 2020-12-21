@@ -1,0 +1,75 @@
+main .common-style.loyalty-setup {
+  .sales-points {
+    table {
+      thead {
+        td {
+          line-height: 25px;
+          .custom-switch {
+            label {
+              font-size: 16px;
+              line-height: 24px;
+              text-transform: capitalize;
+            }
+          }
+        }
+      }
+      tbody {
+        td {
+          &.disabled {
+            background: $gray-light;
+          }
+          .input-money {
+            height: 25px;
+            border: 1px solid transparent;
+            &:disabled {
+              background: $gray-light;
+            }
+            &:focus {
+              border-color: $gray-light;
+              outline: 0;
+              box-shadow: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+  .recommendation-points {
+    td {
+      &.recommendation-title {
+        position: relative;
+        padding: 0;
+        height: 44px;
+        .switch {
+          position: absolute;
+          right: 7px;
+          top: .35rem;
+        }
+      }
+      input {
+        width: 100%;
+        border: 1px solid transparent;
+        text-align: center;
+        &:focus {
+          border-color: $gray-light;
+          outline: 0;
+        }
+      }
+    }
+  }
+}
+
+// --------------------------------------------------------------
+@media screen and (max-width: 575.98px) {
+  main .common-style.loyalty-setup {
+    .recommendation-points {
+      td {
+        &.recommendation-title {
+          .switch {
+            top: .4rem;
+          }
+        }
+      }
+    }
+  }
+}

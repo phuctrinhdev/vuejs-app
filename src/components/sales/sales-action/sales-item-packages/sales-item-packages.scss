@@ -1,0 +1,20 @@
+.sales-item-packages {
+  ul {
+    padding: 0 10px;
+    li {
+      margin-bottom: 10px;
+      padding: 0 5px;
+      a {
+        @include truncate-text(1, 40px);
+        height: 40px;
+        border: 1px solid $gray;
+        text-align: center;
+        line-height: 40px;;
+        &:hover {
+          background: $purple-light;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

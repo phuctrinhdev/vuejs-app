@@ -1,0 +1,162 @@
+.report-detailed-analysis-of-bookings-page{
+  .page-title {
+    margin: 0 0px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $gray-dark;
+    padding-bottom: 10px;
+    h3 {
+      display: inline-block;
+      margin-top: 10px;
+      padding-left: 0;
+      font-weight: 900;
+      font-size: 18px;
+    }
+    .group-btn {
+      float: right;
+      .btn {
+        display: inline-block;
+        width: 150px !important;
+        a {
+          display: block;
+          color: $white;
+        }
+      }
+    }
+  }
+  .filter-wrapper {
+    margin-bottom: 15px;
+    padding: 15px 10px;
+    background: $white;
+    .filter {
+      .date{
+        float: left;
+        margin-right: 45px;
+        .input-date-range-by-date-type{
+          margin-bottom: 15px;
+          .date-type{
+            width: 200px;
+            &>.custom-radio{
+              &:nth-child(1){
+                display: none;
+              }
+            }
+          }
+          select, input {
+            height: 30px;
+          }
+        }
+      }
+      .report-by-type {
+        float: left;
+        margin-right: 30px;
+        label {
+          width: 65px;
+          margin-right: 10px;
+        }
+        select {
+          width: 200px;
+          height: 30px;
+        }
+      }
+      .chart-type{
+        float: left;
+        width: 250px;
+        height: 30px;
+        margin-bottom: 0;
+        label{
+          display: block;
+          float: left;
+          margin-top: 4px;
+          margin-right: 10px;
+        }
+      }
+    }
+    .filter-search {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 100%;
+      .btn-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        width: 120px !important;
+        height: 36px;
+        margin-top: -3px;
+        padding: 0;
+        border: 0;
+        border-radius: 5px;
+        text-align: center;
+        outline: 0;
+        i {
+          height: 19px;
+          margin-right: 5px;
+        }
+        span {
+          color: $white;
+        }
+      }
+    }
+  }
+  .chart-wrapper {
+    height: auto;
+    margin-bottom: 15px;
+    padding: 10px 10px 20px;
+    background: $white;
+  }
+  .table-wrapper {
+    padding: 10px;
+    background: $white;
+    table {
+      tbody {
+        tr {
+          &:last-of-type {
+            background: $gray;
+          }
+          &:first-of-type {
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .report-detailed-analysis-of-bookings-page {
+    .filter-wrapper{
+      .filter {
+        .report-by-type {
+          margin-right: 15px;
+        }
+        .chart-type {
+          width: 200px;
+        }
+      }
+    }
+    .filter-search {
+      justify-content: center !important;
+      margin: 10px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .report-detailed-analysis-of-bookings-page {
+    .filter-wrapper{
+      .filter {
+        .input-date-range-by-date-type {
+          align-items: flex-start;
+          .date-view {
+            padding-left: 0;
+          }
+        }
+        .report-by-type {
+          margin-right: 15px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

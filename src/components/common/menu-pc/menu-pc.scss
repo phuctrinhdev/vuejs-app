@@ -1,0 +1,355 @@
+.menu-pc {
+  z-index: 300;
+  background-color: $blue-gray;
+  width: 100%;
+  position: relative;
+
+  .salon {
+    background-color: $black;
+    height: 30px;
+    width: 100%;
+    position: relative;
+
+    .local {
+      line-height: 30px;
+      color: $gray-light;
+      padding-left: 3%;
+      font-size: $font-13;
+    }
+
+    .menu-pc-trigger {
+      background-color: $black;
+      width: 120px;
+      height: 40px;
+      color: $white;
+      font-weight: 500;
+      font-size: $font-small;
+      padding-top: 2px;
+      border-radius: 5px;
+      text-align: center;
+      position: absolute;
+      right: 25%;
+      top: -20px;
+      cursor: pointer;
+    }
+  }
+  .inner {
+    display: none;
+    width: 100%;
+    padding-left: 3%;
+    transition: all .3s ease-out;
+    &.show {
+      display: block;
+      &>ul>li>a {
+        height: 45px;
+        opacity: 1;
+      }
+    }
+    &>ul>li>a {
+      height: 0;
+      opacity: 0;
+    }
+
+    ul.menu-list {
+      &>li {
+        float: left;
+        position: relative;
+        &:hover {
+          .menu-sub-wrap {
+            display: block;
+          }
+        }        
+        &>a {
+          display: block;
+          line-height: 45px;
+          width: 160px;
+          text-align: center;
+          background-color: $blue-gray;
+          box-sizing: border-box;
+          color: $gray-light;
+          transition: 0.3s;
+          text-transform: uppercase;
+          &:hover {
+            background-color: $blue-dark;
+            color: $white;
+          }
+        }
+
+        .menu-sub-wrap {
+          display: none;
+          position: absolute;
+          top: 45px;
+          left: 0;
+          width: 280px;
+          height: 222px;
+          background-color: $blue-dark;
+          border-radius: 0 0px 5px 5px;
+          z-index: 100;
+          &.sales {
+            width: 750px;
+            height: 222px;
+          }
+          &.clients {
+            width: 850px;
+            height: 222px;
+          }
+          &.staff {
+            padding-top: 25px;
+          }
+          &.inventory {
+            width: 450px;
+            height: 315px;
+          }
+          &.expenditure {
+            padding-top: 25px;
+            height: 177px;
+          }
+          &.report {
+            width: 280px;
+            height: 80px;
+            padding-top: 25px;
+            div.menu-sub h2 {
+              border-bottom: none;
+            }
+            h2 a {
+              color: $gray-light;
+            }
+          }
+          &.setup {
+            left: auto;
+            right: -80px;
+            width: 750px;
+            height: 310px;
+          }
+          &.support {
+            left: 0;
+            right: auto;
+            padding-top: 25px;
+            height: fit-content;
+          }
+          .menu-sub {
+            float: left;
+            text-align: left;
+            padding: 25px 30px;
+            margin-right: 15px;
+            &:nth-child(1) {
+              ul li a span:nth-child(1) {
+                background-color: $orange;
+              }
+            }
+
+            &:nth-child(2) {
+              ul li a span:nth-child(1) {
+                background-color: $pink;
+              }
+            }
+
+            &:nth-child(3) {
+              ul li a span:nth-child(1) {
+                background-color: $cyan;
+              }
+            }
+
+            h2 {
+              margin-bottom: 50px;
+              font-size: $font-16;
+              color: $white;
+              text-transform: uppercase;
+              display: inline-block;
+              border-bottom: 3px double $gray-light;
+            }
+            ul {
+              margin-top: -25px;
+              li {
+                margin-bottom: 10px;
+                a {
+                  width: 200px;
+                  background-color: $blue-dark;
+                  color: rgba(255, 255, 255, 0.8);
+                  text-align: left;
+                  line-height: 35px;
+                  vertical-align: top;
+                  &:hover {
+                    span {
+                      opacity: 1;
+                    }
+                  }
+                  span {
+                    &:nth-child(1) {
+                      display: inline-block;
+                      width: 35px;
+                      height: 35px;
+                      margin-right: 6px;
+                      border-radius: 50%;
+                      background-color: $white;
+                      text-align: center;
+                      vertical-align: top;
+                    }
+                    &:nth-child(2) {
+                      vertical-align: top;
+                    }
+                    img {
+                      vertical-align: middle;
+                      margin-top: -3px;
+                      transition: 0.3s;
+                    }
+                    i {
+                      display: block;
+                      margin: 2px auto;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &>li.account-menu-mobile {
+        display: none;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1600px) {
+  .menu-pc {
+    .salon p {
+      &.menu-pc-trigger {
+        right: 5%;
+        top: 2px;
+        background: transparent;
+      }
+    }
+  }
+  .menu-pc .inner ul.menu-list > li .menu-sub-wrap.support {
+    left: auto;
+    right: 0;
+  }
+}
+
+@media all and (max-width: 1366px) {
+  .menu-pc {
+    .inner ul.menu-list > li {
+      width: 12.5%;
+      text-align: center;
+      box-sizing: border-box;
+      &>a {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// large: .col-lg- | 992 - 1199px -> ipad landscape
+@media (max-width: 1199.98px) {
+  .menu-pc .inner ul.menu-list > li {
+    .menu-sub-wrap {
+      &.sales {
+        height: 220px;
+        width: 680px;
+      }
+      &.clients {
+        height: 220px;
+        width: 720px;
+      }
+      &.staff {
+        height: 220px;
+      }
+      &.inventory {
+        width: 400px;
+        height: 325px;
+      }
+      &.expenditure {
+        height: 187px;
+      }
+      &.setup {
+        width: 620px;
+        height: 310px;
+      }
+    }
+    .menu-sub-wrap .menu-sub {
+      margin-right: 0;
+      h2 {
+        font-size: $font-medium;
+      }
+    }
+    .menu-list > li > a {
+      font-size: $font-small;
+    }
+    .menu-sub ul li {
+      margin-bottom: 7px;
+      a {
+        line-height: 30px;
+        width: 150px;
+        font-size: $font-small;
+        span {
+          width: 30px;
+          height: 30px;
+          img {
+            margin-top: 0px;
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// medium: .col-md- | 768 - 991px -> ipad
+@media (max-width: 991.98px) {
+  .menu-pc .inner ul.menu-list > li .menu-sub-wrap {
+    &.sales {
+      width: 300px;
+      height: 540px;
+    }
+    &.clients {
+      width: 270px;
+      height: 540px;
+    }
+    &.staff {
+      height: 220px;
+    }
+    &.inventory {
+      width: 270px;
+      height: 475px;
+    }
+    &.expenditure {
+      height: 220px;
+    }
+    &.report {
+      width: 200px;
+    }
+    &.setup {
+      width: 270px;
+      height: 630px;
+    }
+    .menu-sub {
+      float: none;
+      padding-bottom: 0;
+    }
+  }
+}
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+  .menu-pc {
+    display: none;
+  }
+  .menu-pc .salon {
+    text-align: center;
+    p {
+      &.menu-pc-trigger {
+        display: none;
+      }
+      &.local {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+// extra small: .col- | 360 - 575px, mobile
+@media (max-width: 575.98px) {
+
+}

@@ -1,0 +1,78 @@
+.user-account {
+  &-pc {
+    .icon-user {
+      display: inline-block;
+    }
+
+    .user-account-dropdown {
+      position: relative;
+      display: inline-block;
+      margin: 0 !important;
+
+      .dropdown-toggle{
+        margin: -6px 0 0;
+        padding-left: 2px;
+        background: none;
+        color: $gray-dark;
+        font-size: $font-13;
+        font-weight: 500;
+        &:after {
+          margin-top: 0;
+          border-top: 0.3em solid;
+          border-right: 0.3em solid transparent;
+          border-left: 0.3em solid transparent;
+          vertical-align: 0.15em;
+        }
+      }
+
+      .dropdown-menu {
+        left: -20px !important;
+        padding-top: 0;
+
+        .dropdown-header {
+          background: $blue-light;
+          color: $white;
+        }
+      }
+    }
+
+    .user-auth {
+      display: inline-block;
+      margin-left: 15px;
+
+      &>.btn {
+        width: 85px;
+        padding: 3px 10px;
+        border-radius: 20px;
+        background-color: $cyan;
+        font-size: $font-13;
+        font-weight: 600;
+        text-align: center;
+        color: $white;
+      }
+
+      .message {
+        p {
+          margin-top:25px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .user-account {
+    &-pc {
+      display: none;
+    }
+
+    &-mobile {
+      display: block;
+    }
+  }
+}

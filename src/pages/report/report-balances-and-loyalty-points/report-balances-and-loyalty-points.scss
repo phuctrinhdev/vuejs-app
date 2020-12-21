@@ -1,0 +1,106 @@
+.report-balances-and-loyalty-points-page {
+  .page-title {
+    margin: 0 0px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $gray-dark;
+    padding-bottom: 10px;
+    h3 {
+      display: inline-block;
+      margin-top: 10px;
+      padding-left: 0;
+      font-weight: 900;
+      font-size: 18px;
+    }
+    .group-btn {
+      float: right;
+      .btn {
+        display: inline-block;
+        width: 150px !important;
+        a {
+          display: block;
+          color: $white;
+        }
+      }
+    }
+  }
+  .tabs-wrapper {
+    .report-links.mobile {
+      display: none;
+    }
+    .card-header {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      ul {
+        margin: 0;
+        li {
+          margin-right: 5px;
+          a {
+            border: 1px solid $gray;
+            border-radius: 0;
+            &.active, &:hover {
+              background: $purple;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+    .tab-content {
+      .card-body {
+        margin-top: 10px;
+        padding: 10px;
+        background: $white;
+      }
+      .intro {
+        padding: 0;
+        line-height: 34px;
+        span {
+          font-weight: bold;
+        }
+      }
+      .table {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .report-balances-and-loyalty-points-page {
+    .tabs-wrapper {
+      .card-header {
+        ul{
+          li {
+            a {
+              padding: 5px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .report-balances-and-loyalty-points-page {
+    .page-title .group-btn{
+      display: none;
+    }
+    .tabs-wrapper {
+      .report-links.mobile {
+        display: block;
+        height: 30px;
+        background-color: $white;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding-left: 5px;
+        text-indent: 0;
+      }
+      .card-header {
+        display: none;
+      }
+    }
+  }
+}

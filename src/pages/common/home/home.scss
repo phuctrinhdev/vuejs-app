@@ -1,0 +1,96 @@
+// extra large: .col-xl- | 1200++ -> desktop
+.home-page {
+  .row {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .marketing-balance {
+    display: none;
+  }
+}
+
+
+// large: .col-lg- | 992 - 1199px -> ipad landscape
+@media (max-width: 1199.98px) {
+
+}
+
+// medium: .col-md- | 768 - 991px -> ipad
+@media (max-width: 991.98px) {
+  .home-page {
+    .marketing-balance {
+      display: block;
+      float: left;
+      width: 48.5%;
+      height: 209px;
+      margin-top: 40px;
+      padding: 20px;
+      background: $green-lighten;
+      text-align: center;
+      h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      a {
+        display: block;
+        width: 150px;
+        height: 40px;
+        margin: auto;
+        border: 1px dotted $green-dark;
+        background-color: $green-light;
+        text-align: center;
+        font-size: 12px;
+        line-height: 40px;
+      }
+      dl {
+        margin-top: 13px;
+        dt {
+          display: inline-block;
+          margin-bottom: 10px;
+          border-bottom: 1px solid $green-light;
+          font-weight: bold;
+        }
+        dd {
+          line-height: 1.5;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+  .home-page {
+    .marketing-balance {
+      display: none;
+    }
+  }
+}
+
+// extra small: .col- | 360 - 575px, mobile
+@media (max-width: 575.98px) {
+
+}
+
+
+
+// responsive template
+// @media (max-width: 1199.98px) { // lg from 992px
+
+// }
+
+// @media (max-width: 991.98px) { // md from 768px
+  
+// }
+
+// @media (max-width: 767.98px) { // sm from 576px
+
+// }
+
+// @media (max-width: 575.98px) { // xs from 360px
+  
+// }

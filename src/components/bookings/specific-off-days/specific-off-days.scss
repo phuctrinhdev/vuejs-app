@@ -1,0 +1,45 @@
+.specific {
+  margin-top: 5px;
+  .title {
+    margin-bottom: 5px;
+    color: $red;
+  }
+  .part-box-content {
+    padding: 12px 10px;
+  }
+}
+.calendar-wrapper {
+  float: left;
+  min-width: 260px;
+  // .popover-origin {
+  //   display: none;
+  // }
+}
+.specific-off-days {
+  float: left;
+  ul.list-off-days-wrapper {
+    width: 260px;
+    max-width: 380px;
+    min-width: 200px;
+    height: 274px;
+    .past {
+      display: none;
+    }
+  }
+}
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+  .calendar-wrapper {
+    width: 100%;
+  }
+  .specific-off-days {
+    width: 100%;
+    .list-off-days {
+      ul {
+        max-width: 258px;
+        margin: 0 auto 5px;
+      }
+    }
+  }
+}

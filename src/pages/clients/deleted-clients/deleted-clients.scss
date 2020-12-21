@@ -1,0 +1,15 @@
+.client-information-modal {
+  .modal-dialog.modal-llg{
+    max-width: 95%;
+    .modal-content {
+      background: $gray-light;
+      .modal-body {
+        padding: 10px;
+      }
+    }
+  }
+}
+.custom-checkbox .custom-control-label::before,
+.custom-checkbox .custom-control-label::after {
+    margin-left: 4px;
+}

@@ -1,0 +1,27 @@
+.service-category-action-modal {
+  .modal-dialog {
+    width: 450px;
+  }
+  .form-group {
+    input{
+      width: 100%;
+      font-size: 14px;
+    }    
+    &.status {
+      margin-top: 12px;
+      label {
+        margin-top: 5px;
+      }
+      .btn {
+        width: 100px;
+        margin-top: 0;
+      }
+    }
+  }
+  .modal-footer{
+    margin:0px auto !important; 
+    &>.btn {
+      margin-left: .25rem !important;
+    }
+  }
+}

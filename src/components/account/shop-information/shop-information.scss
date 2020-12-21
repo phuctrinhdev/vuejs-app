@@ -1,0 +1,47 @@
+.tax-invoice {
+    .btn.secondary.post-code-search {
+        margin-left: 5px;
+    }
+    .table-inner-fll {
+        li {
+            width: 50%;
+            box-sizing: border-box;
+            padding: 3px;
+            span.text {
+                width: 30%; 
+                display: inline-block;
+                margin-top: 3px;
+            }
+            span.input-w {
+                display: inline-block;
+                width: 70%;
+            }
+        }
+    }
+}
+main .common-style .form-group .list dt {
+    float: left;
+    width: 35%;
+    font-weight: 500;
+}
+.w120p {width: 120%;}
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+    
+  }
+  
+  // extra small: .col- | 360 - 575px, mobile
+  @media (max-width: 575.98px) {
+    .tax-invoice {
+        .btn.secondary.post-code-search {
+            margin-left: 0px;
+            margin-top: 5px;
+        }
+        .table-inner-fll {
+            li {
+                width: 100%;
+            }
+        }
+    }
+  }

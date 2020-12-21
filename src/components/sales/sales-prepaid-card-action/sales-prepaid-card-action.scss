@@ -1,0 +1,40 @@
+.sales-prepaid-card-action-modal {
+  .modal-dialog {
+    max-width:  450px;
+  }
+  .form-wrapper {
+    border-bottom: 1px solid $gray;
+    padding-bottom: 5px;
+    input {
+      width: 100%;
+      text-align: center;
+    }
+    input:disabled{
+      border: 1px solid $gray-dark;
+      background-color: $gray;
+      opacity: 0.5;
+      color: $black;
+    }
+    .current-expiry-date{
+      height: 25px;
+    }
+    .new-expiry-date {
+      input {
+        border-color: $gray;
+      }
+    }
+    .view-only{
+      position: absolute;
+      top: 0;
+      width: calc(100% - 30px);
+      height: 25px;
+      background: $gray;
+      opacity: 0.5;
+    }
+  }
+  .update-type-wrapper {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $gray;
+  }
+}

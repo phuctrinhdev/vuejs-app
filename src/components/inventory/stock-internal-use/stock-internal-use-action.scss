@@ -1,0 +1,18 @@
+.stock-internal-use-action-modal {
+  .modal-dialog {
+    max-width: 500px;
+  }
+  .modal-body {
+
+  }
+  .form-group {
+    margin-bottom: 10px;
+    input {
+      height: 25px;
+      padding: 1px 0;
+      border-color: #adb5bd;
+      line-height: 25px;
+      text-indent: 5px;
+    }
+  }
+}

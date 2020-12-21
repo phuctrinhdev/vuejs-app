@@ -1,0 +1,100 @@
+.input-money-calculator-panel-wrapper {
+  position: relative;
+  width: 321px;
+  .input-money {
+    height: 40px;
+    padding-right: 30px;
+    text-align: right;
+  }
+  .clear {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 20px;
+    line-height: 38px;
+    font-size: 20px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .calculator-wrapper {
+    margin-top: 10px;
+    .number {
+      float: left;
+      width: 195px;
+      margin-left: -3px;
+      ul {
+        li {
+          float: left;
+          width: 55px;
+          height:55px;
+          margin: 3px;
+          border-radius: 7px;
+          background: $blue;
+          color: $white;
+          font-size: 18px;
+          font-weight: 800;
+          text-align: center;
+          line-height: 55px;
+          &:nth-child(10), &:nth-child(12){
+            background: $blue-light;
+          }
+          &.delete {
+            i {
+              margin: 20px 0px -1px 12px;
+            }
+          }
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .action {
+      float: left;
+      margin-right: -3px;
+      color: $white;
+      font-size: 16px;
+      text-align: center;
+      .zero-many {
+        .zero3, .zero4 {
+          float: left;
+          width: 60px;
+          height: 45px;
+          margin: 3px;
+          border-radius: 7px;
+          background: $orange-dark;
+          line-height: 45px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      .action-btn {
+        clear: both;
+        margin-left: 3px;
+        padding-top: 10px;
+        .confirm, .cancel, .delete {
+          width: 126px;
+          height: 45px;
+          margin-bottom: 10px;
+          border-radius: 7px;
+          background: $cyan;
+          line-height: 45px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        .delete {
+          display: table-cell;
+          vertical-align: middle;
+          height: 90px;
+          i {
+            margin: 0 auto -1px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.report-clients-summary-page {
+  .page-title {
+    margin: 0 0px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $gray-dark;
+    padding-bottom: 10px;
+    h3 {
+      display: inline-block;
+      margin-top: 10px;
+      padding-left: 0;
+      font-weight: 900;
+      font-size: 18px;
+    }
+    .group-btn {
+      float: right;
+      .btn {
+        color: $white;
+      }
+    }
+  }
+  .filter-wrapper {
+    margin-bottom: 15px;
+    padding: 15px 10px;
+    background: $white;
+    .filter {
+      .report-by {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 15px;
+        margin-right: 30px;
+        label {
+          width: 78px;
+        }
+        select {
+          width: 200px;
+          height: 30px;
+        }
+      }
+      .prepaid-goods-type {
+        display: inline-flex;
+      }
+    }
+    .filter-search {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 100%;
+      .btn-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        width: 120px !important;
+        height: 36px;
+        padding: 0;
+        border: 0;
+        border-radius: 5px;
+        text-align: center;
+        outline: 0;
+        i {
+          height: 19px;
+          margin-right: 5px;
+        }
+        span {
+          color: $white;
+        }
+      }
+    }
+  }
+  .chart-wrapper {
+    height: auto;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: $white;
+  }
+  .table-wrapper {
+    padding: 10px;
+    background: $white;
+    .table-title {
+      
+    }
+    table {
+      thead {
+        th {
+          vertical-align: middle;
+        }
+      }
+      tbody {
+        tr {
+          // &:last-of-type {
+          //   background: $gray;
+          // }
+          &:first-of-type {
+            background: transparent;
+          }
+        }
+      }
+    }
+    .all-clients {
+      margin-top: 15px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .report-clients-summary-page {
+    .filter-wrapper .filter-search {
+      justify-content: center !important;
+      margin: 10px;
+    }
+    .table-wrapper {
+      .prepaid-sales-clients {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+
+}

@@ -1,0 +1,142 @@
+.report-sales-by-discount-category-page {
+  .page-title {
+    margin: 0 0px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $gray-dark;
+    padding-bottom: 10px;
+    h3 {
+      display: inline-block;
+      margin-top: 10px;
+      padding-left: 0;
+      font-weight: 900;
+      font-size: 18px;
+    }
+    .group-btn {
+      float: right;
+      .btn {
+        display: inline-block;
+        width: 150px !important;
+        a {
+          display: block;
+          color: $white;
+        }
+      }
+    }
+  }
+  .filter-wrapper {
+    margin-bottom: 15px;
+    padding: 15px 10px;
+    background: $white;
+    .filter {
+      .input-date-range-by-date-type {
+        margin-bottom: 15px;
+      }
+      .filter-select {
+        .select-box {
+          label {
+            width: 65px;
+          }
+          select {
+            width: 200px;
+            height: 30px;
+          }
+          &.category {
+            margin: 15px 0;
+          }
+          &.product {
+            margin: 15px 0;
+          }
+          &.chart {
+            select {
+              display: inline-block;
+              width: 100px;
+              margin-right: 15px;
+            }
+            .radio-group {
+              display: inline-block;
+              width: 200px;
+              label {
+                width: fit-content;
+              }
+            }
+          }
+        }
+      }
+    }
+    .filter-search {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 100%;
+      .btn-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        width: 120px !important;
+        height: 36px;
+        padding: 0;
+        border: 0;
+        border-radius: 5px;
+        text-align: center;
+        outline: 0;
+        i {
+          height: 19px;
+          margin-right: 5px;
+        }
+        span {
+          color: $white;
+        }
+      }
+    }
+  }
+  .chart-wrapper {
+    height: auto;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: $white;
+  }
+  .table-wrapper {
+    padding: 10px;
+    background: $white;
+    table {
+      tbody {
+        tr {
+          &:last-of-type {
+            background: $gray;
+          }
+          &:first-of-type {
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .report-sales-by-discount-category-page{
+    .page-title .group-btn {
+      display: none;
+    }
+    .filter-wrapper {
+      .filter .filter-select .select-box label{
+  
+      }
+      .filter-search {
+        justify-content: center !important;
+        margin: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .report-sales-by-discount-category-page .filter-wrapper {
+    .filter .input-date-range-by-date-type{
+      .date-view {
+        padding-left: 68px;
+      }
+    }
+  }
+}

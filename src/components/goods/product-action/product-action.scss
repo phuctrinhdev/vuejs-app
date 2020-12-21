@@ -1,0 +1,40 @@
+.action-product-modal {
+  .modal-dialog {
+    width: 450px;
+  }
+  .form-group {
+    display: flex;
+    input{
+      font-size: 14px;
+    }
+    select {
+      margin-top: 0;
+    }
+    .custom-checkbox {
+      width: auto;
+    }
+    &.notes {
+      textarea {
+        padding: 5px;
+        line-height: 1.5;
+        text-indent: 0;
+      }
+    }
+    &.status {
+      margin-top: 12px;
+      label {
+        margin-top: 5px;
+      }
+      .btn {
+        width: 100px;
+        margin-top: 0;
+      }
+    }
+  }
+  .modal-footer {
+    flex-direction: row;
+    .btn {
+      margin-right: 5px;
+    }
+  }
+}

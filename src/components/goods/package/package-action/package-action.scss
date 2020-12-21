@@ -1,0 +1,226 @@
+.package-action-modal-wrapper {
+  .alert-modal {
+    .modal-dialog {
+      left: -8px;
+      max-width: 800px;
+    }
+  }
+}
+.package-action-modal {
+  .list-group-item-warning{
+    color: $black !important;
+    background-color:$green-light  !important;
+    
+  }
+  .list-group-item{
+    &:hover{
+      background-color:$green-lighten !important;
+    }
+  }
+  .modal-dialog {
+    width: 768px;
+    max-width: 768px;
+  }
+  .list-group-item, .list-group-item span{
+    font-size: 12px;
+  }
+  .list-group-item-dark{
+    font-size: 13px;
+  }
+  .box-tap{
+    .nav-tabs{     
+      border-bottom: 0px;
+      .nav-item{ 
+        margin-right: 5px;
+      }
+      .nav-link{
+        transition:0.3s;
+        border: 1px solid $gray;
+        color: $gray-dark;
+        background-color: $white;
+        border-radius: 0;
+        cursor: pointer;
+        &:hover {
+          background-color:$purple; 
+          color: $white; 
+          border: 1px solid $purple;
+        }
+      }
+      .active{ 
+        color: $white;
+        border: 1px solid $purple;
+        background-color: $purple;
+        border-radius: 0;
+      }
+    }
+    .tab-content{
+      width: 100%;
+      border: 1px solid $gray;
+      box-sizing: border-box;
+      padding: 15px 0;
+      margin-top: 10px !important;
+      display: inline-block;
+    }
+  }
+  .modal-dialog .modal-content .modal-footer .btn-action-group {
+    display: block;
+    .btn {
+      max-width: 100px !important;
+      margin-left: -10px !important;
+    }
+  }
+  
+  .form-group {
+    display: inline-flex;
+    width: 100%; 
+    margin-bottom: 5px;
+    input{
+      width: 100%;
+      font-size: 14px;
+    }
+    select{
+      width: 100%;
+      font-size: 14px;
+    }
+    .group-staff{
+      border: 1px solid $gray; 
+      padding: 10px;
+      max-height: 300px;
+      overflow-y: scroll;
+      .custom-checkbox{
+        width: 45%;
+        float: left;
+      }
+    }
+    .btn-group{
+      .btn {
+        padding: 3px 10px !important;
+        margin: 0px !important;
+      }
+    }
+    .failcode-link{
+      margin-top: 15px;
+      display: block;
+      position: absolute;
+    }
+    .multiselect { 
+      margin-top: 0;
+      .multiselect__select {
+        top: 12px;
+      }
+      .multiselect__tags {
+        margin-top: 0;
+      }
+      .multiselect__placeholder {
+        color: $gray-dark;
+        text-indent: 5px;
+      }
+      .multiselect__option {
+        padding-left: 5px;
+      }
+    }
+    .custom-checkbox {
+      width: auto;
+    }
+  }
+  .modal-footer  {
+    margin: 4px auto 0 !important; 
+    .btn-action-group>.btn {
+      margin-left: .25rem !important;
+    }
+  }
+  .vgt-wrap{
+    padding: 0 !important; 
+    a,td, td span {
+      font-size: 12px;
+    }
+    input {
+      width: 80px;
+    }
+  }
+  .no-padding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+ .box-item-full{
+  border: 1px solid $gray;
+  margin-top: 5px;
+  padding: 5px;
+  .packages-name{
+    margin-bottom: 20px;
+  }
+ }
+ .box-tap-content{ 
+  border: 1px solid $gray;
+  margin: 10px 0;
+  padding: 5px;  
+ }
+ .modal-footer{
+  flex-direction: column !important;
+  padding: 0;
+  button{
+    width: 100% !important;
+    margin: 5px 0;
+  }
+
+ }
+}
+.hide{
+  display: none
+}
+
+// medium: .col-md- | 768 - 991px -> ipad
+@media (max-width: 991.98px) {
+  .package-action-modal .modal-dialog {
+    max-width: 99%;
+  }
+}
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+  .package-action-modal .modal-dialog .modal-content .modal-footer .btn-action-group {
+    display: flex;
+  }
+  .package-action-modal {
+    .modal-dialog {
+      max-width: 95%;
+      width: 95%;
+    }
+    .modal-footer{
+      flex-direction: row !important;
+      padding: 0;
+    }
+    .modal-dialog .modal-content .modal-footer .btn-action-group .btn {
+      margin: 5px !important;
+    }
+    .nav-tabs {
+      .nav-item {
+        width: 25%;
+        float: left;
+        margin: 0 !important;
+        padding: 0; 
+        a{ 
+          font-size: 12px;
+          padding: 10px 6px;
+          text-align: center;
+        }
+      }
+    }
+    .form-wrapper .form-group .charge-amount {
+      float: left;
+      width: 80px;
+      text-align: right;
+    }
+  }
+  .package-action-modal .modal-footer {
+    margin-top: 10px !important;
+  }
+  .col-md-5,.col-md-7,.col-md-3,.col-md-2,.col-md-4 ,.col-md-6,.col-md-1{ 
+    width: 100%;
+  }
+}
+
+// extra small: .col- | 360 - 575px, mobile
+@media (max-width: 575.98px) {
+
+}

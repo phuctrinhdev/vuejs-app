@@ -1,0 +1,36 @@
+main{
+  .campaign-management{
+    button.btn-add-campaign, button.btn-edit-campaign, button.btn-view-report{
+      &:hover, &:focus{
+        color: $white !important;
+      }
+    }
+  }
+  .client-management-modal{
+    .modal{
+      .modal-dialog{
+        max-width: 90%;
+      }
+      main{
+        .contents-style{
+          .section-part{
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+  .send-messages-modal{
+    .modal{
+      .modal-dialog{
+        max-width: 600px;
+      }
+    }
+  }
+  main .contents-style{
+    padding: 0;
+    .section-part{
+      margin: 0;
+    }
+  }
+}

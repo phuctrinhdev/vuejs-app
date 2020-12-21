@@ -1,0 +1,264 @@
+.stock-internal-use-page {
+  .page-title {
+    margin: 0 0px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $gray-dark;
+    padding-bottom: 10px;
+    h3 {
+      display: inline-block;
+      margin-top: 10px;
+      padding-left: 0;
+      font-weight: 900;
+      font-size: 18px;
+    }
+    .group-btn {
+      float: right;
+      .btn {
+        display: inline-block;
+        width: 150px !important;
+        a {
+          display: block;
+          color: $white;
+        }
+      }
+    }
+  }
+  .filter-wrapper {
+    margin-bottom: 15px;
+    padding: 15px 10px 5px;
+    background: $white;
+    .filter {
+      .form-group {
+        margin-bottom: 10px;
+      }
+      label {
+        display: inline-block;
+        width: 85px;
+        padding-right: 5px;
+        text-align: right;
+      }
+      input {
+        height: 30px;
+        border: 1px solid $gray;
+      }
+      .custom-select {
+        max-width: 327px;
+        height: 30px;
+      }
+      .date-range {
+        .popover-container {
+          display: inline-block;
+          &:first-of-type {
+            margin-right: 5px;
+          }
+          input {
+            padding: 0 5px;
+          }
+        }
+      }
+      .product {
+        label {
+          width: 60px;
+        }
+        input {
+          display: inline-block;
+          max-width: 327px;
+          padding: 0 5px;
+        }
+      }
+      .category {
+        
+      }
+      .staff {
+        label {
+          width: 60px;
+        }
+      }
+    }
+    .filter-search {
+      .btn-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        width: 120px !important;
+        height: 36px;
+        margin-top: 20px;
+        padding: 0;
+        border: 0;
+        border-radius: 5px;
+        text-align: center;
+        outline: 0;
+        i {
+          height: 19px;
+          margin-right: 5px;
+        }
+        span {
+          color: $white;
+        }
+      }
+    }
+  }
+  .table-stock-internal-uses {
+    background: $white;
+    .table_intro {
+      padding: 10px 10px 0;
+    }
+    .view-table-wrapper {
+      padding: 10px;
+    }
+  }
+}
+
+@media (max-width: 1199.98px) { // lg
+  .stock-internal-use-page {
+    .filter-wrapper {
+      .filter {
+        .product {
+          input {
+            max-width: calc(100% - 65px);
+          }
+        }
+        .staff {
+          select {
+            max-width: calc(100% - 65px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) { // md
+  .stock-internal-use-page {
+    .filter-wrapper {
+      .filter {
+        .date-range {
+          input {
+            width: 110px;
+          }
+        }
+        .product {
+          input {
+            
+          }
+        }
+        .category {
+          select {
+            max-width: 229px;
+          }
+        }
+        .staff {
+          select {
+            
+          }
+        }
+      }
+      .filter-search{
+        .btn-search {
+          width: 100px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) { // sm
+  .stock-internal-use-page {
+    .page-title {
+      h3 {
+        margin-top: 5px;
+        font-size: 16px
+      }
+    }
+    .filter-wrapper {
+      .filter {
+        .date-range {
+          input {
+            width: 159px;
+          }
+        }
+        .product {
+          label {
+            width: 85px;
+          }
+          input {
+            max-width: 327px;
+          }
+        }
+        .category {
+          select {
+            max-width: 327px;
+          }
+        }
+        .staff {
+          label {
+            width: 85px;
+          }
+          select {
+            max-width: 327px;
+          }
+        }
+      }
+      .filter-search{
+        position: relative;
+        .btn-search {
+          position: absolute;
+          bottom: 10px;
+          right: 15px;
+          width: 100px !important;
+          height: 70px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) { // xs
+  .stock-internal-use-page {
+    .filter-wrapper {
+      padding-bottom: 15px;
+      .filter {
+        .date-range {
+          input {
+            width: 113.5px;
+          }
+        }
+        .product {
+          label {
+            width: 85px;
+          }
+          input {
+            max-width: 236px;
+          }
+        }
+        .category {
+          select {
+            max-width: 236px;
+          }
+        }
+        .staff {
+          label {
+            width: 85px;
+          }
+          select {
+            max-width: 236px;
+          }
+        }
+      }
+      .filter-search{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        .btn-search {
+          position: relative;
+          bottom: inherit;
+          right: inherit;
+          height: 36px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

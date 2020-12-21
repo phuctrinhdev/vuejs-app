@@ -1,0 +1,180 @@
+.sales-history{
+  &>.title{
+    width: 100%;
+    height: 46px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    h3{
+      display: flex;
+      align-items: center;
+      float: left;
+      width: 50%;
+      height: 100%;
+      font-weight: 900;
+      font-size: 18px;
+    }
+    &>div{
+      float: left;
+      width: 50%;
+      height: 100%;
+      text-align: right; 
+      a{
+        font-size: 14px;
+        display: inline-block;
+        text-align: center;
+        color: $blue;
+        padding: 4px 15px;
+        background-color: white;
+        border-radius: 5px;  
+        width: 100px;
+        height: 33px;
+        border: 1px solid $blue;
+        &:hover{
+          background-color: $blue;
+          color: $white;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+  .filter{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    .filter-box{
+      .input-date-range-by-date-type {
+        margin-bottom: 15px;
+      }
+      .items{
+        display: inline-flex;
+        align-items: center;
+        width: 250px;
+        margin-right: 20px;
+        label{
+          margin-right: 15px;
+        }
+        &>div{
+          display: inline-block;
+          .custom-checkbox {
+            margin-right: 0;
+          }
+          label {
+            line-height: 22px;
+          }
+        }
+      }
+      .payment-method{
+        display: inline-flex;
+        align-items: center;
+        width: 350px;
+        margin-right: 20px;
+        &.view-mobile {
+          display: none;
+        }
+        label{
+          width: 112px;
+          float: left;
+        }
+        select{
+          width: 200px;
+          height: 30px;
+          margin-left: 15px;
+        }
+      }
+      .staff{
+        display: inline-flex;
+        align-items: center;
+        width: 265px;
+        label{
+            width: 30px;
+            float: left;
+        }
+        select{
+          width: 200px;
+          height: 30px;
+          margin-left: 15px;
+        }
+      }
+      .date{
+        width: 550px;
+        .date-range{
+            height: 30px;
+            width: 500px;
+        }
+      }
+    }
+    .search{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 100%;
+      text-align: right;
+      button{
+        padding-left: 23px;
+        width: 120px;
+        height: 36px;
+        border-radius: 5px;
+        background-color: $blue;
+        color:$white;
+        text-align: center;
+        position: relative;
+        border: 0;
+        i{
+            left: 27px;
+            height: 19px;
+            position: absolute;
+        }
+      }
+    }
+  }
+  .table{
+      padding: 15px 10px 10px;
+      width: 100%;
+      height: auto;
+      background-color: white;
+      .table-data{
+          .vgt-fixed-header{
+              z-index: 4;
+          }
+      }
+  }
+  .modal-footer{
+      margin: 0px !important;
+      padding-bottom: 5px !important;
+  }
+}
+
+// ****responsive------------------------
+@media screen and (max-width: 1199.98px) {
+  .sales-history .filter .filter-box .staff {
+    margin-top: 10px;
+    label {
+      width: 35px;
+    }
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .sales-history .filter .search {
+    justify-content: center;
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .sales-history .filter .filter-box .payment-method {
+    margin-top: 10px;
+    &.view-pc {
+      display: none;
+    }
+    &.view-mobile {
+      display: flex;
+    }
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .input-date-range-by-date-type {
+    .date-view {
+      padding-left: 0;
+    }
+  }
+}

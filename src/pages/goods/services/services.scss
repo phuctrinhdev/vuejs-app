@@ -1,0 +1,102 @@
+main .services-page {
+  .inner {
+    width: 100%;
+  }
+  .no-line{
+    border-bottom: 0px ;
+  }
+  .table-custom {
+    .table-data {
+      background: $white;
+      margin: 0;
+      .table-left {
+        position: relative;
+        .setup-top {
+          min-height: 46px;
+          margin-top: 2px;
+          margin-bottom: 0;
+          padding-bottom: 6px;
+        }
+      }
+      .good-table-content {
+        padding: 10px 0;
+      }
+      .vgt-wrap { 
+        padding: 0;
+        .vgt-fixed-header {
+          width: 100%;
+        }
+      }
+      .total-data {
+        float: left;
+      }
+      .show-inactives { 
+        margin-top: 10px;
+        .custom-checkbox {
+          margin-right: 0;
+        }
+      }
+      .btn-group {
+        .btn {
+          padding: 7px 12px;
+          border: 1px solid $blue;
+          background: $white;
+          color: $blue;
+          &:hover {
+            background: $blue;
+            color: $white;
+          }
+        }
+      }
+      table {
+        .custom-checkbox {
+          margin-right: 0;
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+}
+
+
+// large: .col-lg- | 992 - 1199px -> ipad landscape
+@media (max-width: 1199.98px) {
+
+}
+
+// medium: .col-md- | 768 - 991px -> ipad
+@media (max-width: 991.98px) {
+  main .services-page .table-custom .table-data .table-left {
+    margin-bottom: 10px;
+  }
+}
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+  main .content.services-page {
+    .setup-top {
+      padding-bottom: 7px;
+      h3 {
+        text-indent: 0;
+      }
+      .btn-group {
+        .btn {
+          padding: 4px 12px;
+        }
+      }
+    }
+
+    .table-custom {
+      .table-data {
+        .table-left, .table-right {
+          padding: 0 7.5px;
+        }
+      }
+    }
+  }
+}
+
+// extra small: .col- | 360 - 575px, mobile
+@media (max-width: 575.98px) {
+
+}

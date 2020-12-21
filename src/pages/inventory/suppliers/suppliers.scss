@@ -1,0 +1,53 @@
+.suppliers{
+  .title{
+    margin-bottom: 10px;
+    border-bottom: 1px solid grey;
+    h3{
+      padding-bottom: 5px;
+      font-size: 18px;
+      font-weight: 900;
+    }
+  }
+  .filter{
+    padding:10px;
+    background-color: white;
+    .custom-checkbox {
+      display: flex;
+      height: 100%;
+      align-items: center;
+    }
+    .btn-wrapper {
+      text-align: right;
+      a{
+        display: inline-block;
+        width: 120px;
+        padding: 4px 15px;
+        border: 1px solid #3499db;
+        border-radius: 5px;
+        background-color: white;
+        text-align: center;
+        color: #3499db;
+        font-size: 14px;
+        &:hover{
+          cursor: pointer;
+          background-color: $blue;
+          color: $white;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+  .table{
+    padding: 0px 10px 10px 10px;
+    background-color: white;
+  }
+}
+// ****responsive------------------------
+@media screen and (max-width: 1199.98px) {
+}
+@media screen and (max-width: 991.98px) {
+}
+@media screen and (max-width: 767.98px) {
+}
+@media screen and (max-width: 575.98px) {
+}

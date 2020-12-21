@@ -1,0 +1,98 @@
+.notification {
+  position: relative;
+
+  &-icon {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+
+  &-count {
+    position: absolute;
+    display: block;
+    right: -11px;
+    top: -8px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $red;
+    color: $white;
+    font-size: $font-11;
+    line-height: 15px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &-list {
+    margin: 0;
+    padding: 1%;
+
+    &>li {
+      display: block;
+      height: 35px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      .btn {
+        display: inline-block;
+        width: 90%;
+        background: transparent;
+        color: $black;
+        text-align: left;
+        font-size: $font-13;
+      }
+
+      .remove {
+        float: right;
+        display: block;
+        width: 26px;
+        height: 28px;
+        padding: 3px 17px 4px 8px;
+        border: 1px solid $blue;
+        border-radius: 5px;
+        color: $blue;
+        text-align: center;
+        transition: 0.3s;
+        text-indent: 0;
+      }
+    }
+  }
+  .notification-list{
+    margin: 0;
+    padding: 1%;
+    overflow-y: auto;
+    max-height: 400px;
+    padding-right: 20px;
+  }
+  .waiting-modal {
+    .waiting-message {
+      padding: .5em;
+      box-sizing: border-box;
+      background-color: $gray-light;
+      color: $gray-dark;
+      font-size: $font-13;
+      font-weight: 400;
+    }
+    .waiting-content {
+      &>span {
+        margin-bottom: 3px;
+        color: $gray;
+        font-size: $font-13;
+      }
+      table tr td {
+        height: 25px;
+        padding: .25em;
+        box-sizing: border-box;
+        font-size: $font-13;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .btn-edit {
+        overflow: hidden;
+        width: auto;
+        padding: .25em .5em;
+      }
+    }
+  }
+}

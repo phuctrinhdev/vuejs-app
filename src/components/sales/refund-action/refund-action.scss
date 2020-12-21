@@ -1,0 +1,350 @@
+.refund-action-modal {
+  #refund-action-modal {
+    &>.modal-dialog {
+      max-width: 95%;
+      .modal-content {
+        min-height: 400px;
+      }
+      .refund-submit {
+        margin: 0;
+        padding: 0;
+        justify-content: flex-end;
+        .btn-action-group {
+          flex-flow: column;
+          .btn {
+            margin: 0 !important;
+            &.btn-default {
+              margin-bottom: 10px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .refund-items-wrapper {
+    .add-refund-item {
+      .title {
+        display: inline-block;
+        margin-right: 10px;
+        font-weight: bold;
+      }
+      .refund-goods-types-wrapper {
+        display: inline-block;
+        margin-bottom: 15px;
+      }
+    }
+    .refund-items-table {
+      table.vgt-table {
+        tbody {
+          tr{
+            td {
+              padding: 0 !important;
+              .is-prepaid-service{
+                width: 100%;
+              }
+              .active-block {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 2px 5px !important;
+              }
+              .input-money {
+                height: 25px;
+                border-color: transparent;
+                background: transparent;
+                text-align: center;
+                &:focus {
+                  border-color: $gray-light;
+                  box-shadow: none;
+                }
+              }
+              .amount {
+                span {
+                  font-size: 13px;
+                  font-style: italic;
+                  color: $blue;
+                }
+              }
+              .btn {
+                height: 25px;
+                line-height: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .check-out-wrapper {
+    margin-top: 30px;
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .check-out-brief {
+      float: left;
+      width: 280px;
+      padding: 15px;
+      border: 1px solid $gray;
+      ul {
+        li {
+          margin: 10px 0;
+          &>div {
+            &:nth-child(2){
+              padding-right: 2px;
+            }
+          }
+          &.total-amount {
+            color: $blue;
+            font-weight: bold;
+          }
+          &.payment {
+            &.first {
+              margin-top: 30px;
+            }
+            .payment-amount{
+              position: relative;
+              span {
+                display: block;
+                position: absolute;
+                top: 1px;
+                right: -13px;
+                width: 11px;
+                height: 14px;
+                padding-right: 1px;
+                border: 1px solid $blue;
+                color: $blue;
+                line-height: 8px;
+                &:hover {
+                  background: $blue;
+                  color: $white;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+          // &.credit-card {
+
+          // }
+          &.outstanding {
+            margin-top: 30px;
+            color: $red;
+            font-weight: bold;
+            &.change {
+              color: $green-dark;
+            }
+          }
+          &.earn-loyalty-points {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed $gray;
+            &>div {
+              &:nth-child(2){
+                padding: 0;
+                .input-money {
+                  width: calc(100% - 10px);
+                  height: 25px;
+                  margin-left: 10px;
+                  padding: 3px;
+                  text-align: right;
+                }
+              }
+            }
+            .no-client {
+              margin-right: 3px;
+            }
+          }
+          &>div {
+            display: inline-block;
+            width: 49%;
+            &:first-child {
+              width: 160px;
+            }
+            &:last-child {
+              width: calc(100% - 165px);
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+    .paying {
+      float: left;
+      margin-left: 15px;
+      .title {
+        text-transform: uppercase;
+      }
+      ul.list-btn {
+        li {
+          float: left;
+          width: calc(50% - 5px);
+          margin-bottom: 10px;
+          &:nth-child(odd){
+            margin-right: 5px;
+          }
+          &:nth-child(even){
+            margin-left: 5px;
+          }
+          a {
+            display: block;
+            height: 32px;
+            padding: 0 5px;
+            border: 1px solid $blue;
+            line-height: 32px;
+            color: $blue;
+            text-align: center;
+            &:hover {
+              background: $blue;
+              color: $white;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .deduction-wrapper {
+        clear: both;
+        .list-btn {
+          &.no-action {
+            a {
+              background: $gray-light;
+              color: $gray;
+            }
+          }
+        }
+      }
+      .payment-wrapper {
+        clear: both;
+      }
+      .notes-date-wrapper {
+        clear: both;
+        // padding-top: 10px;
+        .date-time {
+          margin-top: 10px;
+          label {
+            display: inline-block;
+          }
+          &>div {
+            display: inline-block;
+            .popover-container {
+              display: inline-block;
+              margin-left: 10px;
+            }
+            input{
+              text-align: center;
+              &.date {
+                width: 47% !important;
+                height: 25px;
+                margin-left: 7px;
+                border: 1px solid $gray;
+              }
+              &.time {
+                height: 25px;
+                margin-left: 7px;
+                border: 1px solid $gray;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) { // lg
+
+}
+
+@media (max-width: 991.98px) { // md
+  .refund-action-modal #refund-action-modal > .modal-dialog .refund-submit{
+    justify-content: center;
+    .btn-action-group {
+      flex-flow: row;
+      margin-top: 30px;
+      .btn-default {
+        margin-right:10px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) { // sm
+  .refund-action-modal {
+    #refund-action-modal > .modal-dialog {
+      max-width: 100% !important;
+      margin: 0;
+      &>.modal-content {
+        border-radius: 0;
+        &>.modal-body {
+          padding: 10px;
+        }
+      }
+    }
+    .refund-items-wrapper {
+      .add-refund-item {
+        margin-bottom: 8px;
+        .view-mobile {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+      .refund-items-table {
+        table {
+          thead {
+            tr {
+              th {
+                &:last-child {
+                  span {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+          tbody {
+            tr {
+              td {
+                &:last-child {
+                  .btn {
+                    line-height: 14px;
+                  }
+                }
+                input {
+                  padding: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .check-out-wrapper {
+      margin-top: 20px;
+      .paying {
+        margin: 0;
+      }
+      .check-out-brief {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .notes-date-wrapper {
+        .label {
+          margin-right: 10px;
+        }
+        .date-time {
+          .date {
+            margin-left: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) { // xs
+  
+}

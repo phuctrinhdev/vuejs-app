@@ -1,0 +1,39 @@
+.package-item {
+  .vgt-fixed-header{
+    width: 100% !important;
+    overflow-x:  hidden;
+  }
+  .vgt-responsive{
+    max-height: 460px !important;
+  }
+   .charge-amount{
+     color: $blue;
+     display: block !important;
+   }
+   .charge-amount-input{
+    float: right;
+    display: block;
+   }
+   .btn-delete{
+    width: 25px !important;
+    padding: 3px 7px !important;
+   }
+   input{
+    text-align: right;
+    font-size: 13px !important;
+    padding: 0 4px !important;
+   }
+   .good-table-wrapper {
+      .good-table-content {
+        .setup-top {
+          margin-bottom: 0;
+        }
+      }
+      table {
+        td,th {
+          min-width: 80px !important;
+        }
+
+      }
+   }
+}

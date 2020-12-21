@@ -1,0 +1,149 @@
+.stock-status-page {
+  .page-title {
+    margin: 0 0px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $gray-dark;
+    padding-bottom: 10px;
+    h3 {
+      display: inline-block;
+      margin-top: 10px;
+      padding-left: 0;
+      font-weight: 900;
+      font-size: 18px;
+    }
+    .group-btn {
+      float: right;
+      .btn {
+        display: inline-block;
+        width: 150px !important;
+        color: $white;
+      }
+    }
+  }
+  .filter-wrapper {
+    margin-bottom: 15px;
+    padding: 15px 10px 5px;
+    background: $white;
+    .filter {
+      .form-group {
+        margin-bottom: 10px;
+      }
+      label {
+        display: inline-block;
+        width: 70px;
+      }
+      input {
+        height: 30px;
+        border: 1px solid $gray;
+      }
+      .custom-select {
+        max-width: calc(100% - 74px);
+        height: 30px;
+      }
+      .product {
+        label {
+          width: 62px;
+        }
+        input {
+          display: inline-block;
+          max-width: calc(100% - 66px);
+          padding: 0 5px;
+        }
+      }
+    }
+    .filter-search {
+      .btn-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        width: 120px !important;
+        height: 36px;
+        margin-top: -3px;
+        padding: 0;
+        border: 0;
+        border-radius: 5px;
+        text-align: center;
+        outline: 0;
+        i {
+          height: 19px;
+          margin-right: 5px;
+        }
+        span {
+          color: $white;
+        }
+      }
+    }
+  }
+  .table-stock-status {
+    background: $white;
+    .table-intro {
+      padding: 10px 10px 0;
+    }
+    .table-intro-ui {
+      padding: 0 10px;
+      font-size: 13px;
+    }
+    .view-table-wrapper {
+      padding: 10px;
+    }
+  }
+}
+
+@media (max-width: 1199.98px) { // lg from 992px
+
+}
+
+@media (max-width: 991.98px) { // md from 768px
+  
+}
+
+@media (max-width: 767.98px) { // sm from 576px
+  .stock-status-page {
+    .filter-wrapper {
+      .filter {
+        .product {
+          label {
+            width: 70px;
+          }
+          input {
+            max-width: calc(100% - 74px);
+          }
+        }
+      }
+      .filter-search {
+        .btn-search {
+          height: 70px;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) { // xs from 360px
+  .stock-status-page {
+    .filter-wrapper {
+      .filter {
+        
+      }
+      .filter-search {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 10px;
+        .btn-search {
+          width: 40px !important;
+          height: 30px;
+          margin-left: -10px;
+          padding: 3px 5px !important;
+          i {
+            margin-right: 1px;
+          }
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

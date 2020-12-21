@@ -1,0 +1,181 @@
+.sales-total-page{
+  .filter-wrapper {
+    margin-bottom: 15px;
+    padding: 15px 10px;
+    background: $white;
+    .filter {
+      display: flex;
+      .input-date-range-by-date-type {
+        width: auto;
+        margin-right: 45px;
+      }
+      .staff {
+        label {
+          display: block;
+          float: left;
+          width: 30px;
+          margin-right: 10px;
+          line-height: 30px;
+        }
+        select {
+          float: left;
+          width: 200px;
+          height: 30px;
+        }
+      }
+    }
+    .filter-search {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 100%;
+      .btn-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        width: 120px !important;
+        height: 36px;
+        margin-top: -3px;
+        padding: 0;
+        border: 0;
+        border-radius: 5px;
+        text-align: center;
+        outline: 0;
+        i {
+          height: 19px;
+          margin-right: 5px;
+        }
+        span {
+          color: $white;
+        }
+      }
+    }
+  }
+  .table-wrapper{
+    background-color: white;
+    padding: 15px 10px;
+    .table-title {
+      margin-bottom: 5px;
+    }
+    table {
+      thead {
+        th {
+          background: $blue-dark;
+          color: $white;
+        }
+      }
+      tbody {
+        tr {
+          &:last-child {
+            background: $gray-lighten;
+          }
+          td{
+            &.table-no-data {
+              background: $white;
+            }
+          }
+        }
+      }
+    }
+    .table-sales-total {
+      tbody{
+        tr{
+          td{
+            &:first-child{
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+    .table-payment-total {
+
+    }
+    .table-detail-sales-total{
+      margin-bottom: 15px;
+      thead{
+        tr{
+          th{
+            &:first-child{
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+      tbody{
+        tr{
+          td{
+            border: 1px solid $gray;
+          }
+          .td-empty{
+            background-color: $gray-lighten;
+          }
+          &:last-child {
+            background: none;
+          }
+        }
+        .bg-gray-light{
+          background-color: $gray-light;
+        }
+      }
+    }
+  }
+  .sales-total-intro{
+    width: fit-content;
+    padding: 10px;
+    border: 2px solid $gray-light;
+    ul{
+      li{
+        padding: 3px 0;
+        list-style: inside;
+        &::marker {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+
+}
+
+@media screen and (max-width: 991.98px) {
+  .sales-total-page {
+    .filter-wrapper {
+      .filter {
+        flex-direction: column;
+        .input-date-range-by-date-type {
+  
+        }
+        .staff {
+          margin-top: 10px;
+        }
+      }
+      .filter-search {
+        justify-content: center !important;
+        margin: 10px;
+      }
+    }
+    .sales-total-intro {
+      ul {
+        li {
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .sales-total-page .filter-wrapper {
+    .filter {
+      .input-date-range-by-date-type {
+        .date-view {
+          padding-left: 40px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+.booking-resources {
+  .inner {
+    width: 100%;
+  }
+  .booking-links {
+    li {
+      a {
+        display: block;
+        padding: 6px 27px;
+        border: solid 1px $gray;
+        border-radius: 0;
+        background-color: unset;
+        color: $gray-dark;
+        &:hover, &.router-link-exact-active {
+          background-color: $purple;
+          color: $white;
+        }
+        
+        
+      }
+    }
+  }
+  .booking-resources-part {
+    width: 100%;
+    margin: 10px 0;    
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px $gray;
+    background-color: $white;
+    .part-title {
+      margin-bottom: 10px;
+      .title {
+        float: left;
+        margin-top: 5px;
+      }
+      .btn-group {
+        float: right;
+        .show-inactives {
+          margin: 5px 10px 0 0;
+          label {
+            line-height: 22px;
+          }
+        }
+        .btn { 
+          margin: 0 auto;
+          padding: 4px 5px;
+          border: 1px solid $blue;
+          background: $white;
+          color: $blue;
+          &:hover {
+            background: $blue;
+            color: $white;
+          }
+        }
+      }
+    }
+   
+    .table-data {
+      &.table-show-inactive {
+        tr {
+          &.inactive {
+            display: table-row;
+          }
+        }
+      }
+      table {
+        th, td {
+          height: 40px;
+          border-color: $gray;
+        }
+        thead {
+          th {
+            background: $gray-lighten;
+            color: $gray-dark;
+            padding: 7px 5px;
+          }
+        }
+        tbody {
+          tr {
+            &.inactive {
+              display: none;
+              background: $gray-lighten;
+            }
+          }
+          td {
+            font-size: 16px;
+            &.working-hours {
+              min-width: 300px;
+              font-size: 14px;
+              text-align: left;
+              ul {
+                padding: 5px;
+                li{
+                  margin-bottom: 5px;
+                  line-height: 18px;
+                }
+              }
+            }
+            &.days {
+              text-align: left;
+            }
+            .btn {
+              width: 70px;
+              height: auto;
+            }
+          }
+        }
+      }
+      .vgt-wrap__actions-footer {
+        border: 0;
+      }
+    }
+  }
+  .booking-resources-part-1 {
+    width: 100%;
+    margin: 15px 0;    
+    padding: 2%;
+    border-radius: 3px; 
+    background-color: $white;
+    border: solid 1px $gray;
+  }
+}
+
+
+// responsive
+@media (max-width: 575.98px) {
+  .booking-resources {
+    .action-specific-off-day-modal {
+      .specific-off-days {
+        .list-days-component {
+          max-width: 256px;
+          margin: 15px auto 0;
+          .title {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

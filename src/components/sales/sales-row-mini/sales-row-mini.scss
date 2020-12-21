@@ -1,0 +1,27 @@
+.sales-row-mini{
+  .menu-sales-actions {
+    .dropdown-menu {
+      margin-left: 35px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) { // sm
+  .sales-table-wrapper table tbody tr td {
+    .sales-row-mini {
+      .tag-refund {
+        display: inline-block;
+        width: 42px;
+        margin-left: 5px;
+        padding: 0 3px;
+        font-size: 10px;
+        line-height: 16px;
+      }
+      .menu {
+        .outstanding-btn {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

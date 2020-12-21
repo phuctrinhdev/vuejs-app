@@ -1,0 +1,62 @@
+main .common-style.environment-setup {
+    table.second {
+        td {
+            padding: .5rem;
+            text-align-last: left !important;
+            text-align: left !important;
+            dl {
+                dt {
+                    float: left;
+                    width: 50%;
+                    font-weight: 500;  
+                }
+                dd {
+                    float: left;
+                    width: 50%;
+                    input {
+                        text-align-last: center;
+                        &.netmoney_alarm_amount{
+                            border: 1px solid #adb5bd;
+                            height: 25px;
+                            line-height: 25px;
+                            padding: 0 5px;
+                            box-sizing: border-box;
+                            max-width: 30% !important;
+                            display: inline-block;
+                        }
+                    }
+                    select {
+                       text-align-last: center;
+                    }
+                    .timezone {
+                        background-color: #f4f4f4 !important;
+                        color: black !important;
+                    }
+                }
+            }
+        }
+    }
+}
+// ****responsive------------------------
+@media screen and (max-width: 575.98px) {    
+    main .common-style.environment-setup {
+        dt {
+            font-size: 13px;
+        }
+        dd {
+            font-size: 13px;
+            input, 
+            select {
+                font-size: 13px;
+            }
+        }      
+        input.w90p {
+            width: 75%;
+        } 
+        .inbox {
+            input {
+                width: 100%;
+            }
+        }
+    }
+}

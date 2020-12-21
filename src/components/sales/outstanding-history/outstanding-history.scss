@@ -1,0 +1,33 @@
+.receivables-history-action-wrapper{
+  .receivables-history-action-modal {
+    #receivables-history-action-modal {
+      &>.modal-dialog {
+        &>.modal-content {
+          &>.modal-body {
+            // padding: 0;
+          }
+        }
+      }
+    }
+  }
+  .modal-footer{
+      margin: 0px !important;
+      padding :0px !important;
+  }
+  .modal-footer{
+      a{
+          line-height: 30px !important;
+      }
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .receivables-history-action-wrapper {
+    .receivables-history-action-modal {
+      #receivables-history-action-modal {
+        &>.modal-dialog {
+          width: 95%;
+        }
+      }
+    }
+  }
+}

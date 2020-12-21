@@ -1,0 +1,32 @@
+// _variables.scss 
+// _mixin.scss
+// was loaded by sass-resources-loader for all scss source
+
+// bootstrap custom
+@import 'reset';
+@import 'bootstrap-custom';
+
+// 3rd-parties
+@import '../../node_modules/vue-multiselect/dist/vue-multiselect.min.css';
+@import '../../node_modules/v-calendar/lib/v-calendar.min.css';
+@import '../../node_modules/vue-draggable-resizable/dist/VueDraggableResizable.css';
+@import '../../node_modules/cropperjs/dist/cropper.css';
+
+// standard element by project(s)
+@import 'breadcrumb';
+@import 'button';
+@import 'card';
+@import 'dropdown';
+@import 'form';
+@import 'icon';
+@import 'menu';
+@import 'modal';
+@import 'pagination';
+@import 'preloader';
+@import 'tab';
+@import 'table';
+@import 'text';
+
+// custom style for this project
+@import 'custom';
+

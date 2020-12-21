@@ -1,0 +1,119 @@
+.expenditure-summary-page {
+  .page-title {
+    margin: 0 0px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $gray-dark;
+    padding-bottom: 10px;
+    h3 {
+      display: inline-block;
+      margin-top: 10px;
+      padding-left: 0;
+      font-weight: 900;
+      font-size: 18px;
+    }
+    .group-btn {
+      float: right;
+      .btn {
+        display: inline-block;
+        width: 150px !important;
+        a {
+          display: block;
+          color: $white;
+        }
+      }
+    }
+  }
+  .filter-wrapper {
+    margin-bottom: 15px;
+    padding: 15px 10px;
+    background: $white;
+    .input-date-range-by-date-type {
+      height: 100%;
+      .date-type{
+        width: 200px;
+        &>div:first-child {
+          display: none;
+        }
+      }
+      .date-view {
+        display: flex;
+        align-items: center;
+        .select-date-range {
+          .between {
+            line-height: 25px;
+          }
+        }
+      }
+    }
+    .filter-search {
+      .btn-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        width: 120px !important;
+        height: 36px;
+        padding: 0;
+        border: 0;
+        border-radius: 5px;
+        text-align: center;
+        outline: 0;
+        i {
+          height: 19px;
+          margin-right: 5px;
+        }
+        span {
+          color: $white;
+        }
+      }
+    }
+  }
+  .table-expenditure-summary {
+    background: $white;
+    .table_intro {
+      padding: 10px 10px 0;
+    }
+    .view-table-wrapper {
+      padding: 10px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) { // sm from 576px
+  .expenditure-summary-page {
+    .filter-wrapper {
+      .input-date-range-by-date-type {
+        .date-view {
+          padding-left: 0;
+        }
+      }
+      .filter-search {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) { // xs from 360px
+  .expenditure-summary-page {
+    .filter-wrapper {
+      .input-date-range-by-date-type {
+        .date-type {
+          width: 100%;
+        }
+        .date-view {
+          padding-left: 0;
+        }
+      }
+      .filter-search {
+        margin-top: 0;
+        .btn-search {
+          height: 59px;
+          margin-left: -25px;
+        }
+      }
+    }
+  }
+}

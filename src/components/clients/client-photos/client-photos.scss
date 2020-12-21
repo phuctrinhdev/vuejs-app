@@ -1,0 +1,53 @@
+.client-photos-wrapper {
+  .client-photo-intro {
+    display: flex;
+    justify-content: space-between;
+    .photo-intro {
+      ul {
+        display: flex;
+        align-items: center;
+        li {
+          .custom-checkbox {
+            margin-left: 15px;
+            label {
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+    .group-btns {
+      ul {
+        display: flex;
+        li {
+          &.btn-delete {
+            margin-left: 5px;
+          }
+        }
+      }
+      
+    }
+  }
+  .client-photos {
+    ul {
+      display: flex;
+      li {
+        width: 120px;
+        .img-wrapper {
+
+        }
+        .img-content {
+          display: flex;
+          margin-top: 3px;
+          .date {
+            display: flex;
+            align-items: center;
+          }
+          .notes {
+
+          }
+        }
+      }
+    }
+  }
+}

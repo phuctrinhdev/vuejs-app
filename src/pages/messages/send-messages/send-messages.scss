@@ -1,0 +1,11 @@
+.send-messages {
+  width: 50%;
+  margin: auto;
+}
+
+// large: .col-lg- | 992 - 1199px -> ipad landscape
+@media (max-width: 1199.98px) {
+  .send-messages {
+    width: 95%;
+  }
+}

@@ -1,0 +1,169 @@
+.payroll-statement-page {
+  .page-title{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+    h3{
+      display: inline-block;
+      margin-top: 10px;
+      padding-left: 0;
+      font-weight: 900;
+      font-size: 18px;
+    }
+    .group-btn {
+      float: right;
+      .btn {
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+  .filter-wrapper {
+    margin-bottom: 15px;
+    padding: 15px 10px;
+    background: $white;
+    .input-date-range-by-date-type {
+      display: inline-flex;
+      width: auto;
+      .date-type {
+        width: 200px;
+        .custom-radio:first-child {
+          display: none;
+        }
+      }
+    }
+    .staff {
+      display: inline-flex;
+      margin-left: 30px;
+      label {
+        width: 35px;
+        margin-right: 10px;
+        line-height: 30px;
+      }
+      select {
+        width: 200px;
+        height: 30px;
+      }
+    }
+    .select-filter{
+      width: 830px;
+      .select-box{
+        float: left;
+        margin-bottom: 15px;
+        width: 300px;
+        height: 30px;
+        label{
+          display: block;
+          float: left;
+          height: 30px;
+          margin-right: 10px;
+          line-height: 30px;
+        }
+        &.prepaid-sales-counting {
+          float: none;
+          clear: both;
+          display: inline-flex;
+          vertical-align: middle;
+          align-items: center;
+          width: auto;
+          margin: 10px 60px 10px 0;
+          label {
+            height: auto;
+            line-height: inherit;
+          }
+          &>label {
+            width: 150px;
+          }
+          .radio-group {
+            margin-right: 45px;
+            .custom-radio {
+              label {
+                width: 75px;
+                margin-right: 0;
+                line-height: 22px;
+              }
+            }
+          }
+        }
+        &.goal-calculation {
+          display: inline-flex;
+          align-items: center;
+          float: none;
+          width: auto;
+          margin-right: 15px;
+          label {
+            height: auto;
+            line-height: inherit;
+          }
+          &>label {
+            width: 150px;
+            text-align: right;
+          }
+          .radio-group {
+            .custom-radio {
+              label {
+                line-height: 22px;
+              }
+            }
+          }
+        }
+        &.items {
+          display: inline-flex;
+          float: none;
+          width: 245px;
+        }
+      }
+    }
+    .filter-search {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 100%;
+      .btn-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        width: 120px !important;
+        height: 36px;
+        padding: 0;
+        border: 0;
+        border-radius: 5px;
+        text-align: center;
+        outline: 0;
+        i {
+          height: 19px;
+          margin-right: 5px;
+        }
+        span {
+          color: $white;
+        }
+      }
+    }
+  }
+  .table-wrapper {
+    margin-top: 15px;
+    padding: 15px 10px;
+    background: $white;
+    table {
+      thead {
+        th {
+          vertical-align: middle;
+        }
+      }
+      tbody {
+        tr {
+          &:last-child {
+            background: $gray-lighten;
+          }
+          td {
+            &.table-no-data{
+              background: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

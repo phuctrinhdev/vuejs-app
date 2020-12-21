@@ -1,0 +1,121 @@
+//===========================================
+// ELEMENT
+//   modal
+//-------------------------------------------
+.modal-dialog {
+  max-width: 800px;
+  width: auto;
+  margin: 60px auto;
+  &.modal-sm {
+    max-width: 400px;
+  }
+  &.modal-ssm {
+    max-width: 450px;
+  }
+  &.modal-llg {
+    max-width: 900px;
+  }
+  &.modal-mdl {
+    max-width: 700px;
+  }
+  &.modal-md {
+    max-width: 600px;
+  }
+  .modal-content {
+    border: 0;
+
+    .modal-body {
+      padding: 15px;
+    }
+
+    .modal-footer {
+      margin: 10px auto;
+      background: none;
+      flex-direction: row;
+      justify-content: center;
+
+      .btn {
+        display: block;
+        width: 120px !important;
+        height: 40px;
+        margin-left: 0;
+        padding: 0;
+        border: 0;
+        border-radius: 5px;
+        background-color: $blue !important;
+        color: $white;
+        font-size: $font-medium;
+        line-height: 20px;
+        text-align: center;
+        
+        &.btn-primary {
+          margin-right: 5px !important;
+        }
+
+        &.btn-secondary {
+          background: $blue-light !important;
+        }
+      }
+    }
+  }
+}
+
+.modal-header {
+  background-color: $cyan;
+  padding: 2px !important;
+  text-indent: 15px;
+  border-bottom: none !important;
+  border-radius: 3px 3px 0 0;
+  &.alert {
+    background-color: $blue-dark;
+    color: $white;
+  }
+}
+
+.close {
+  color: $white !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+  font-weight: 400 !important;
+  padding-right: 1.5rem !important;
+}
+
+.modal-title {
+  color: $white;
+  font-size: $font-16;
+  font-weight: 600;
+  &.kr {
+    font-size: $font-medium;
+  }
+}
+
+.modal-footer {
+  padding: 15px 0;
+  border-top: none !important;
+}
+
+.modal-body > p {
+  text-align: center;
+}
+
+.modal-dialog-b {
+  max-width: 1000px;
+}
+
+@media all and (max-width: 767.98px){
+  .modal-dialog {
+    width: auto;
+    max-width: 95% !important;
+  }
+}
+
+@media all and (max-width: 575.98px){
+  .modal-dialog .modal-content .modal-footer .btn {
+    width: 90px !important;
+  }
+}
+
+// extra small: .col- | 360 - 575px, mobile
+@media (max-width: 575.98px) {
+  
+}

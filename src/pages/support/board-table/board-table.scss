@@ -1,0 +1,15 @@
+.view-table-wrapper {
+  .vgt-selection-info-row {
+    display: none;
+  }
+}
+tr.clickable.change-cursor {
+  transform: none !important;
+  cursor: pointer;
+}//solve the line in drag row disappeared
+tr.clickable.change-cursor.disabled {
+  cursor: initial !important;
+  &:hover{
+    background: none;
+  }
+}

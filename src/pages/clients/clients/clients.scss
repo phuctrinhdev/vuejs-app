@@ -1,0 +1,11 @@
+.client-information-modal {
+  .modal-dialog.modal-llg{
+    max-width: 95%;
+    .modal-content {
+      background: $gray-light;
+      .modal-body {
+        padding: 10px;
+      }
+    }
+  }
+}

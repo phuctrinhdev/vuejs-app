@@ -1,0 +1,102 @@
+.waiting-list-modal {
+  .modal-dialog {
+    max-width: 1200px;
+    width: 1200px;
+    .box-date .custom-control {
+      width: 50%;
+      float: left; 
+    }
+    input,select{
+      height: 30px;
+      padding: 0 5px;
+      width: 100%;
+      background-color: $white;
+      border: 1px solid $gray;
+    } 
+
+    .format-right{ 
+      margin-top: 5px;
+      display: block;
+      width: 100%;
+      text-align: right;
+    } 
+    .box-right{
+      float: right;
+    }
+    .box-form-search {
+      background-color: $gray-lighten;
+      padding: 15px  15px 0  15px;
+    }
+    .box-list-search{
+      margin-top: 15px;
+    }
+    .text-amount{
+      text-decoration: underline !important;
+      cursor: pointer;
+    }
+    .box-btn-top{ 
+      float: right;
+      margin-bottom: 10px;
+    }
+    .box-btn-top button{
+      float: right; 
+      margin-left: 5px;
+    }
+    .box-menu-client .nav-link {
+      color: $blue;
+      &:after {
+        display: none;
+      }
+    }
+    .box-comment{
+      margin-top: 15px;
+      border: 1px solid $black;
+      padding: 10px;
+      ul{
+        margin-left: 20px;
+        li{
+          padding: 3px;   
+          list-style: square !important;
+        }
+      }
+    }
+  }
+  .validate-errors-wrapper{ 
+    margin-top: 15px;
+  }
+  .bookable-waiting{
+    margin-right: 10px;
+    float: right;
+    .custom-checkbox{
+      float: left;
+      margin-right: 20px;
+    }
+    span{
+      float: left;
+    }
+  }
+}
+#waiting-list-modal, #waiting-list-bookable-modal {
+  .tooltip.show {
+    top: -4px !important;
+  }
+}
+.menu-waiting-actions { 
+  .dropdown-custom {
+    margin: 0;
+    .dropdown-toggle {
+      border-color: $blue;
+      color: $blue;
+      &:hover {
+        background: $blue;
+        color: $white;
+      }
+      &:before {
+        display: none;
+      }
+    }
+    .dropdown-menu {
+      @include box-shadow;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.calendar-cell {
+  height: 100%;
+  .calendar-cell-view-block{
+    width: 100%;
+    display: block;
+  }
+  .view-group {
+    .group-booked-items.show-menu{
+      z-index: 2 !important;
+      .booking-action{
+        .booking-action-list{
+          .dropdown-menu{
+            display: block !important;
+          }
+        }
+      }
+    }
+    .group-booked-items{
+      .resizable-block{
+        width: 100% !important;
+      }
+      .block.empty-block{
+        border-top: none !important;
+        .block-info {
+          display: none;
+        }
+        .booking-icons{
+          display: none;
+        }
+        .client-name{
+          display: none;
+        }
+        .services{
+          display: none;
+        }
+      }
+    }
+    .resizable-block{
+      z-index: 1 !important;
+      border: none;
+      display: block;
+    }
+    .calendar-cell-view-block{
+      z-index: 1 !important;
+    }
+    .resizing-block {
+      border-bottom: 1px dashed $black !important;
+      z-index: 2 !important;
+    }
+    .dragging-block {
+      div.booking-description {
+        display: none !important;
+      }
+    }
+  }
+}

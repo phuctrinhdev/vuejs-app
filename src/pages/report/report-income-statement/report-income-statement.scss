@@ -1,0 +1,171 @@
+.report-income-statement-page {
+  .page-title {
+    margin: 0 0px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $gray-dark;
+    padding-bottom: 10px;
+    h3 {
+      display: inline-block;
+      margin-top: 10px;
+      padding-left: 0;
+      font-weight: 900;
+      font-size: 18px;
+    }
+    .group-btn {
+      float: right;
+      .btn {
+        display: inline-block;
+        width: 150px !important;
+        a {
+          display: block;
+          color: $white;
+        }
+      }
+    }
+  }
+  .filter-wrapper {
+    margin-bottom: 15px;
+    padding: 15px 10px;
+    background: $white;
+    .filter {
+      .input-date-range {
+        display: flex;
+        height: 100%;
+      }
+    }
+    .filter-search {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 100%;
+      .btn-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        width: 120px !important;
+        height: 36px;
+        padding: 0;
+        border: 0;
+        border-radius: 5px;
+        text-align: center;
+        outline: 0;
+        i {
+          height: 19px;
+          margin-right: 5px;
+        }
+        span {
+          color: $white;
+        }
+      }
+    }
+  }
+  .chart-wrapper {
+    height: auto;
+    margin-bottom: 15px;
+    background: $white;
+    .display-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 10px;
+      label {
+        margin-right: 10px;
+      }
+      select {
+        width: 200px;
+      }
+    }
+    canvas {
+      padding: 10px;
+    }
+  }
+  .table-wrapper {
+    padding: 10px;
+    background: $white;
+    table {
+      thead {
+        th {
+          border: 1px solid $gray;
+          &>div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 28px;
+            color: $white;
+          }
+        }
+      }
+      tbody {
+        tr {
+          &.income-item.first{
+            td {
+              &:first-of-type {
+                background: $white;
+              }
+            }
+          }
+          &.income-total {
+            background: $gray-lighten;
+            &:hover {
+              background: $green-light;
+            }
+            td.income-title {
+              background: $white;
+            }
+          }
+          &.expenditure-item.first {
+            td {
+              &:first-of-type {
+                background: $white;
+              }
+            }
+          }
+          &.expenditure-total {
+            background: $gray-lighten;
+            &:hover {
+              background: $green-light;
+            }
+            td.expenditure-title {
+              background: $white;
+            }
+          }
+          &.net-total {
+            background: $gray;
+            &:hover {
+              background: $green-light;
+            }
+          }
+          td {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .report-income-statement-page {
+    .filter-wrapper {
+      .filter-search {
+        justify-content: center !important;
+        margin: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .report-income-statement-page {
+    .filter-wrapper {
+      .filter {
+        .input-date-range-by-date-type {
+          .date-view {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+}

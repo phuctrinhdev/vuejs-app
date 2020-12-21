@@ -1,0 +1,204 @@
+.booking-action-modal .repeat-booking-action-modal {
+  .modal-dialog {
+    max-width: 650px;
+  }
+  .form-wrapper {
+    margin-bottom: 10px;
+  }
+  .tabs {
+    .nav-tabs {
+      .nav-item {
+        height: 32px;
+        margin: 0;
+        a {
+          line-height: 15px;
+          text-align: center;
+          border: 1px solid $gray;
+          border-radius: 0;
+          &.active {
+            background: $purple;
+            color: $white;
+          }
+          &.disabled {
+            background: $gray;
+            color: $gray-light;
+          }
+        }
+      }
+    }
+    .tab-content {
+      min-height: 210px;
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid $gray;
+      .tab-pane {
+        outline: 0;
+      }
+      .repeat-by-week-of-day {
+        .repeat-options-wrapper {
+          padding-right: 10px;
+          .repeat-week-type {
+            .custom-radio {
+              padding: 0;
+              padding-left: 24px;
+            }
+          }
+          .repeat-day-of-week {
+            margin-top: 15px;
+            &.empty {
+              .multiselect.multi-checkbox .multiselect__tags {
+                border-color: $red;
+              }
+            }
+          }
+          .repeat-times {
+            margin-top: 15px;
+            margin-bottom: 0;
+            &.empty {
+              select {
+                border-color: $red;
+              }
+            }
+            select {
+              display: inline-block;
+              width: 60px;
+              height: 28px;
+              margin: 0 5px;
+            }
+            p.guide {
+              margin-top: 5px;
+              font-size: 12px;
+            }
+          }
+        }
+        .create-repeat-wrapper{
+          margin-top: 36px;
+          padding: 0px;
+          .create-repeat-days {
+            padding: 5px 10px !important;
+            font-size: 13px;
+            &:hover {
+              color: $white;
+            }
+          }
+        }
+        .list-days-wrapper {
+          padding-left: 10px;
+          .list-days-component {
+            .title {
+              display: none;
+            }
+            .list-days-box-wrapper {
+              height: 160px;
+            }
+            .action-wrapper {
+              .btn {
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+      }
+      .repeat-by-date {
+        position: relative;
+        .list-days-component {
+          .list-days-box-wrapper {
+            height: 160px;
+          }
+          .action-wrapper {
+            .btn {
+              margin-right: 5px;
+            }
+          }
+        }
+        .view-only {
+          position: absolute;
+          top: 65px;
+          width: 258px;
+          height: 230px;
+          z-index: 2;
+          cursor: not-allowed;
+        }
+        p.guide {
+          margin-top: 10px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .booking-action-modal {
+    .repeat-booking-action-modal {
+      .modal-dialog {
+        width: 99%;
+        margin: 60px auto;
+        .modal-content {
+          border-radius: 0;
+          .modal-body {
+            min-height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .booking-action-modal {
+    .modal-content {
+      border-radius: 0;
+      .modal-body {
+        min-height: calc(100vh - 28px);
+      }
+    }
+    .repeat-booking-action-modal {
+      .modal-dialog {
+        width: 100%;
+        margin: 0;
+        .modal-content {
+          .modal-body {
+            min-height: calc(100vh - 28px);
+          }
+        }
+      }
+      .tabs .tab-content {
+        .repeat-by-week-of-day {
+          .repeat-options-wrapper {
+            padding: 0 15px;
+            .repeat-times {
+              text-align: center;
+            }
+          }
+          .list-days-wrapper {
+            padding: 0 15px;
+          }
+          .create-repeat-wrapper {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            .create-repeat-days {
+              margin: 0 auto;
+            }
+          }
+        }
+        .repeat-by-date {
+          .calendar-wrapper {
+            .title, .select-off-days {
+              text-align: center;
+            }
+          }
+          .specific-off-days {
+            .list-days-component {
+              width: 256px;
+              margin: 10px auto 0;
+              .title {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

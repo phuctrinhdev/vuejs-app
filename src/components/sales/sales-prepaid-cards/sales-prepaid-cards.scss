@@ -1,0 +1,124 @@
+.sales-prepaid-card-wrapper {
+  table{
+    thead{
+      tr{
+        th{
+          &.mobile{
+            display: none
+          }
+        }
+      }
+    }
+    tbody{
+      tr{
+          td{
+              &.mobile{
+                  display: none;
+              }
+          }
+      }
+    }
+  }
+  .show-expired{
+    float: right;
+    margin-top: -45px;
+  }
+  
+  .show-expired-pc{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    top: 3px;
+    
+    .left{
+      padding-top: 5px;
+    }
+    .right{
+      margin-left: 10px;
+    }
+    .move-balance {
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+  .show-expired-mobile{
+    display: none;
+  }
+}
+
+// ****responsive------------------------
+@media screen and (max-width: 1199.98px) {    
+}
+@media screen and (max-width: 991.98px) {
+}
+@media screen and (max-width: 767.98px) {
+  .sales-prepaid-card-wrapper{
+    .vgt-responsive{
+      overflow-x: hidden;
+    }
+    .vgt-wrap.empty{
+      table {
+        tbody {
+          tr{
+            td{
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    table{
+      thead{
+        tr{
+          th{
+            display: none;
+          }
+        }
+      }
+      tbody{
+        tr{
+          td{
+            display: none;
+            &.mobile{
+              display: block;
+              text-align: left;
+              height: auto;
+              position: relative;
+              .show-more-text{
+                position: absolute;
+                right: 20px;
+                top: 20%;
+              }
+              .card-name{
+                font-weight: bold;
+                font-size: 15px;
+              }
+              .expand{
+                transform: rotate(-90deg);
+              }
+              .group-button{
+                .btn {
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .show-expired-mobile{
+        display: inline-block;
+    }
+    .show-expired-pc{
+      .move-balance {
+        display: none;
+      }
+    }
+    #dropdown-right{
+        height: 37px;
+        width: 37px;
+    }
+  }
+}

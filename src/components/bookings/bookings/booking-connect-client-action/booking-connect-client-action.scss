@@ -1,0 +1,54 @@
+.booking-connect-client-action-modal {
+  .modal-dialog .modal-content .modal-body {
+    padding: 10px;
+  }
+  .booking-client {
+    height: 64px;
+    padding: 10px;
+    border: 1px solid $gray-light;
+    .client-info {
+      float: left;
+    }
+  }
+  .client-contact-actions {
+    display: flex;
+    align-items: center;
+    float: left;
+    height: 100%;
+    margin-left: 20px;
+    i {
+      &.call-w-icon {
+        margin-right: 5px;
+      }
+    }
+  }
+  .add-to-client-wrapper {
+    display: flex;
+    align-items: center;
+    float: right;
+    height: 100%;
+    .btn {
+      color: $white;
+    }
+  }
+  .same-registered-client-wrapper {
+    .table-intro {
+      padding: 10px 0;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .booking-connect-client-action-modal {
+    #booking-connect-client-action-modal {
+      &>.modal-dialog {
+        max-width: 100% !important;
+        margin: 0 !important;
+        &>.modal-content {
+          border-radius: 0;
+          min-height: 100vh;
+        }
+      }
+    }
+  }
+}

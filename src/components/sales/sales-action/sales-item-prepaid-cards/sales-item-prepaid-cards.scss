@@ -1,0 +1,158 @@
+.sales-item-prepaid-cards {
+  .prepaid-cards {
+    .have-cards {
+      padding: 0 15px;
+      border: 1px solid $gray;
+      ul {
+        padding: 10px 5px;
+        li {
+          margin-bottom: 10px;
+          padding: 0 5px;
+          &.active {
+            a {
+              background: $purple;
+              color: $white;
+              &:hover {
+                background: $purple;
+                color: $white;
+              }
+            }
+          }
+          a {
+            @include truncate-text(1, 40px);
+            height: 40px;
+            border: 1px solid $gray;
+            text-align: center;
+            line-height: 40px;;
+            &:hover {
+              background: $purple-light;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    .no-cards {
+      min-height: 250px;
+      padding: 10px;
+      border: 1px solid $gray;
+    }
+  }
+  .prepaid-card-selected {
+    .card-wrapper {
+      padding: 10px;
+      border: 1px solid $gray;
+      .card-detail {
+        padding-bottom: 10px;
+        .card-name {
+          font-weight: bold;
+        }
+        .choose-giftcard-type {
+          margin-top: 5px;
+          .custom-checkbox {
+            float: left;
+            width: 100px;
+            label {
+              padding: 0;
+            }
+            .fail-code-img {
+              margin-top: 1px;
+              margin-left: 5px;
+            }
+          }
+          .form-btn-group {
+            float: left;
+            margin: 0;
+            .custom-radio {
+              padding-top: 0;
+              label {
+                padding-top: 0;
+              }
+            }
+          }
+        }
+        .card-form {
+          clear: both;
+          padding-top: 10px;
+          .form-group {
+            height: 25px;
+            margin-bottom: 10px;
+            label {
+              float: left;
+              width: 100px;
+              height: 25px;
+              line-height: 25px;
+            }
+            input {
+              float: left;
+              height: 25px;
+              width: 135px;
+            }
+            &.validity {
+              margin-bottom: 15px;
+              .btn-group-toggle {
+                margin-left: 10px;
+                &>label {
+                  margin-top: 0;
+                  line-height: 15px;
+                }
+              }
+              .custom-checkbox {
+                margin-left: 100px;
+              }
+            }
+          }
+        }
+      }
+      .client-prepaid-cards-wrapper {
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid $gray-light;
+        .intro {
+          margin-bottom: 10px;
+          span {
+            color: $gray;
+          }
+        }
+        .family-card {
+          font-style: italic;
+          color: $blue;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) { // lg
+  .sales-item-prepaid-cards .prepaid-card-selected .card-wrapper {
+    .card-detail {
+      padding-bottom: 35px;
+      .card-form {
+        .form-group.validity {
+          .validity-value {
+            float: left;
+            width: calc(100% - 100px);
+            .btn-group-toggle {
+              margin: 5px 0 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) { // md
+  
+}
+
+@media (max-width: 767.98px) { // sm
+  .sales-item-prepaid-cards .prepaid-card-selected {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 575.98px) { // xs
+  
+}

@@ -1,0 +1,209 @@
+.service-sales-by-month-page {
+  .page-title {
+    margin: 0 0px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $gray-dark;
+    padding-bottom: 10px;
+    h3 {
+      display: inline-block;
+      margin-top: 10px;
+      padding-left: 0;
+      font-weight: 900;
+      font-size: 18px;
+    }
+    .group-btn {
+      float: right;
+      .btn {
+        display: inline-block;
+        width: 150px !important;
+        a {
+          display: block;
+          color: $white;
+        }
+      }
+    }
+  }
+  .filter-wrapper {
+    margin-bottom: 15px;
+    padding: 15px 10px;
+    background: $white;
+    .filter {
+      .form-group {
+        margin-bottom: 0;
+        label {
+          display: inline-block;
+          width: 85px;
+        }
+        input {
+          height: 30px;
+          border: 1px solid $gray;
+        }
+        &.input-date-range {
+          margin-bottom: 15px;
+        }
+        &.prepaid-sales-counting {
+          display: flex;
+          align-items: center;
+          &>label {
+            width: 160px;
+          }
+          .form-btn-group {
+            label {
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+    .filter-search {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 100%;
+      .btn-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        width: 120px !important;
+        height: 54px;
+        padding: 0;
+        border: 0;
+        border-radius: 5px;
+        text-align: center;
+        outline: 0;
+        i {
+          height: 19px;
+          margin-right: 5px;
+        }
+        span {
+          color: $white;
+        }
+      }
+    }
+    .select-filter{
+      width: 700px;
+      .select-box{
+        float: left;
+        margin-bottom: 15px;
+        width: 300px;
+        height: 30px;
+        label{
+          display: block;
+          float: left;
+          width: 60px;
+          height: 30px;
+          margin-right: 10px;
+          line-height: 30px;
+        }
+        select{
+          float: left; 
+          width: 200px;
+          height: 30px;
+        }
+        &.staff {
+          margin-bottom: 0;
+        }
+        &.chart{
+          margin-bottom: 0;
+        }
+      }
+      .chart-select-box{
+        width: 200px;
+        float: left;
+        select{
+          width: 110px;
+        }
+      }
+      .chart-value{
+        display: flex;
+        align-items: center;
+        float: left;
+        height: 30px;
+        width: 160px;
+      }
+    }
+  }
+  .chart-wrapper {
+    height: auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: $white;
+    canvas {
+      padding-top: 10px;
+    }
+  }
+  .table-wrapper {
+    padding: 10px;
+    background: $white;
+    table {
+      tbody {
+        tr {
+          &:last-of-type {
+            background: $gray;
+          }
+          &:first-of-type {
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .service-sales-by-month-page {
+    .filter-wrapper {
+      .filter-search {
+        justify-content: center !important;
+        margin: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .service-sales-by-month-page {
+    .filter-wrapper {
+      .select-filter{
+        .select-box {
+          width: 180px;
+          label {
+            text-align: right;
+          }
+          select {
+            width: 110px;
+          }
+          &.staff {
+            margin-bottom: 15px;
+          }
+          &.chart {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .service-sales-by-month-page {
+    .filter-wrapper {
+      .select-filter{
+        width: 375px;
+        .select-box {
+          width: 100%;
+          select {
+            width: 200px;
+          }
+          &.chart {
+            width: 170px;
+            select {
+              width: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

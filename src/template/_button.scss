@@ -1,0 +1,173 @@
+//===========================================
+// ELEMENT
+//   button
+//-------------------------------------------
+button {
+  &:focus {
+    outline: 0;
+  }
+}
+.btn {
+  display: block;
+  width: fit-content !important;
+  height: auto;
+  padding: 5px 15px !important;
+  background-color: $blue;
+  color: $white;
+  font-size: 14px;
+  // line-height: 15px;
+  text-align: center;
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+  }
+  &.btn-white {
+    border: 1px solid $blue;
+    background: $white;
+    color: $blue;
+    &:hover {
+      background: $blue;
+      color: $white;
+    }
+  }
+  &.btn-blue {
+    border: 1px solid $blue;
+    background: $blue;
+    color: $white;
+    &:hover {
+      background: $white;
+      color: $blue;
+    }
+  }
+}
+// .btn-primary, .btn-default {
+//   border-color: $black !important;
+// }
+// .btn-primary:hover {
+//   background-color: $blue !important;
+// }
+.btn-add-waiting, .btn-waiting-list {
+  width: 50px;
+  height: 25px;
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 8px;
+  &:hover, &.active {
+    background: $blue-dark;
+    color: $white;
+  }
+}
+ul.btn-group {
+  li {
+    margin-right: 5px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.btn-large {
+  line-height: 23px;
+}
+
+
+main {
+  .common-style {
+    // button
+    .buttonbox {
+      margin: 10px 0;
+      text-align: center;
+      button.btn-default {
+          background-color: #3499db;
+          width: 220px;
+          height: 40px;
+          line-height: 40px;
+          color: #fff;
+          text-align: center;
+          border: 1px solid #3499db !important;
+          border-radius: 5px;
+      }
+      button.btn-default:hover {
+          color: #3499db;
+          border: 1px solid #3499db;
+          background-color: #fff;
+      }
+      button.btn-default.small {
+          background-color: #3499db;
+          width: auto;
+          height: auto;
+          line-height: 1.5;
+          color: #fff;
+          border: 0px solid #000;
+          text-align: center;
+          padding: .5rem 1rem;
+          border-radius: 5px;
+          font-size: 13px;
+      }
+    }
+    .btn.default {
+        width: 120px;
+        height: 40px;
+        line-height: 2em !important;        
+    }
+    .btn.default:hover {
+        color: #fff;
+    }
+    .btn.default.cancel {
+        background-color: #38bae6 !important;
+    }
+    // button-secondary
+    .btn.secondary {
+        border: 1px solid #3499db;
+        color: #3499db !important;
+        background-color: #fff;
+        padding: 5px 15px !important;
+        transition:.3s;
+        width: auto;
+        display: inline-block;
+        height: auto;
+        line-height: 1.5;
+        font-size: 14px;
+        a {
+          color: #3499db;
+        }
+    }
+    .btn.secondary:hover {
+        background-color: #3499db;
+        color: #fff !important;
+        a {
+          color: #fff;
+        }
+    }
+    .btn.secondary.small {
+        padding: .2rem .4rem !important;
+    }
+    .btn.secondary.text-long {
+      font-size: 13px;
+      max-width: 150px;
+    }
+    button.btn {
+      border: 1px solid #3499db;
+    }
+    button.btn:hover {
+      color: #3499db !important;
+      background-color: #fff;
+      border: 1px solid #3499db;
+    }
+  }
+}
+
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+  .btn {
+    padding: 3px 10px !important;
+  }
+}
+
+// extra small: .col- | 360 - 575px, mobile
+@media (max-width: 575.98px) {
+  main .common-style .btn.secondary {
+    padding: 3px 7px !important;
+  }
+}

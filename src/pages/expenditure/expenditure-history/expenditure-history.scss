@@ -1,0 +1,234 @@
+.expenditure-history-page {
+  .page-title {
+    margin: 0 0px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $gray-dark;
+    padding-bottom: 10px;
+    h3 {
+      display: inline-block;
+      margin-top: 10px;
+      padding-left: 0;
+      font-weight: 900;
+      font-size: 18px;
+    }
+    .group-btn {
+      float: right;
+      .btn {
+        display: inline-block;
+        &.btn-add-expenditure {
+
+        }
+        &.btn-add-item {
+
+        }
+        &.btn-print {
+
+        }
+        a {
+          display: block;
+          color: $white;
+        }
+      }
+    }
+  }
+  .filter-wrapper {
+    margin-bottom: 15px;
+    padding: 15px 10px;
+    background: $white;
+    .filter {
+      .form-group {
+        margin-bottom: 10px;
+        select {
+          width: 200px;
+          height: 30px;
+        }
+        &.item {
+          display: inline-block;
+          width: 245px;
+          margin-right: 30px;
+          margin-bottom: 0;
+          label {
+            width: 40px;
+          }
+        }
+        &.payment {
+          display: inline-block;
+          width: 270px;
+          margin-bottom: 0;
+          label {
+            width: 65px;
+          }
+        }
+      }
+    }
+    .filter-search {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 100%;
+      .btn-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        width: 120px !important;
+        height: 36px;
+        padding: 0;
+        border: 0;
+        border-radius: 5px;
+        text-align: center;
+        outline: 0;
+        i {
+          height: 19px;
+          margin-right: 5px;
+        }
+        span {
+          color: $white;
+        }
+      }
+    }
+  }
+  .table-expenditure-history {
+    background: $white;
+    .table_intro {
+      padding: 10px 10px 0;
+    }
+    .view-table-wrapper {
+      padding: 10px;
+    }
+  }
+}
+
+@media (max-width: 1199.98px) { // lg from 992px
+  
+}
+
+@media (max-width: 991.98px) { // md from 768px
+  .expenditure-history-page {
+    .filter-wrapper {
+      .filter {
+        .input-date-range-by-date-type .date-view .select-date input {
+          width: 145px;
+        }
+        .form-group {
+          &.item {
+            width: 190px;
+            margin-right: 20px;
+            label {
+              width: 35px;
+            }
+          }
+          &.payment {
+            width: 220px;
+            label {
+              width: 62px;
+            }
+          }
+          select {
+            width: 145px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) { // sm from 576px
+  .expenditure-history-page {
+    .page-title h3 {
+      margin-top: 5px;
+    }
+    .filter-wrapper {
+      .filter {
+        .input-date-range-by-date-type {
+          display: block;
+          .date-type {
+            float: inherit;
+            margin-bottom: 5px;
+          }
+          .date-view {
+            float: inherit;
+            margin-left: 65px;
+            .select-date {
+              input { 
+                width: 360px;
+              }
+            }
+            .select-date-range {
+              height: 30px;
+              .date-picker {
+                width: 170px;
+              }
+            }
+          }
+        }
+        .form-group {
+          width: 100% !important;
+          &.item {
+            margin-bottom: 10px;
+            label {
+              width: 62px;
+              padding-right: 5px;
+              text-align: right;
+            }
+          }
+          &.payment {
+            label {
+              width: 62px;
+              padding-right: 5px;
+              text-align: right;
+            }
+          }
+          select {
+            width: 360px;
+          }
+        }
+      }
+      .filter-search {
+        display: flex;
+        align-items: flex-end;
+        .btn-search {
+          height: 70px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) { // xs from 360px
+  .expenditure-history-page {
+    .page-title {
+      h3 {
+        margin-top: 5px;
+      }
+      .group-btn {
+        .btn {
+          &.btn-add-item {
+            display: none;
+          }
+        }
+      }
+    }
+    .filter-wrapper {
+      .filter {
+        .input-date-range-by-date-type {
+          .date-view {
+            padding-left: 0;
+          }
+        }
+        .form-group {
+          select {
+            width: calc(100% - 66px);
+          }
+        }
+      }
+      .filter-search {
+        justify-content: center;
+        margin-top: 5px;
+        .btn-search {
+          height: 36px;
+        }
+      }
+    }
+  }
+}

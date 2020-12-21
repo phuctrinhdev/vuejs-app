@@ -1,0 +1,298 @@
+.client-information-wrapper {
+  position: relative;
+  .sales-info-btns {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    .remove-client {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: $black;
+      color: $white;
+      text-align: center;
+      line-height: 30px;
+      font-weight: bold;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .btn-info {
+      transform: rotate(0deg);
+      margin-top: 10px;
+      position: relative;
+      width: 30px;
+      height: 30px;
+      border: 1px solid $gray;
+      border-radius: 5px;
+      background: $gray-lighten;
+      &:hover {
+        cursor: pointer;
+      }
+      .triangle {
+        position: absolute;
+        top: 9px;
+        left: 8px;
+        border-bottom: 8px solid;
+        border-right: 6px solid transparent;
+        border-left: 6px solid transparent;
+        color: $gray-dark;
+
+
+        // border-top: 8px solid;
+        // border-right: 6px solid transparent;
+        // border-left: 6px solid transparent;
+      }
+    }
+    .expand{
+      transform: rotate(180deg);
+    }
+  }
+  .client-info-collapsed{
+      padding-bottom: 20px;
+      font-size: 14px;
+      background-color: white;
+      height: auto;
+      display: block !important;
+      .client-name{
+          font-weight: bold;
+          padding: 15px;
+      }
+      .info{
+          padding-left: 15px;
+          &>div{
+              display: inline-block;
+              margin-right: 30px;
+          }
+          .total-sales{
+              color: black;
+              font-weight: normal;
+          }
+          .outstanding{
+              &>span:nth-child(2){
+                  font-weight: bold;
+                  color: rgb(219, 60, 72);
+              }
+          }
+      }
+  }
+  .client-name-info {
+    .client-text {
+
+    }
+  }
+}
+
+.info-box-top{
+  position: relative;
+  .note-box {
+    position: relative;
+    &.not-client-of-current-shop {
+      background: $gray-light;
+    }
+    p.multiple-line-ellipsis {
+      @include truncate-text(3, 18px);
+    }
+    .note-tooltip-box {
+      width: 100%;
+    }
+    .tooltip{
+      will-change: inherit !important;
+      &.show {
+        transform: none !important;
+        top: 70px !important;
+        .tooltip-inner {
+          max-width: 100%;
+          text-align: left;
+        }
+      }
+    }
+  }
+  .sales-info{
+    dl{
+      dd{
+        padding: 5px 0px;
+        .sales-outstand{
+            color: #db3c44;
+        }
+        .action{
+          margin-left: 5px;
+          display: inline-block;
+          border-radius: 5px;
+          font-size: 12px !important;
+          color: #db3c44;
+          border: 1px solid #db3c44;
+          width: 80px;
+          text-align: center;
+          height: 22px;
+          line-height: 20px;
+          &:hover {
+              cursor: pointer;
+          }
+        }
+        &>span{
+          font-size: 14px !important;
+        }
+      }
+    }
+    .result{
+      &>span{
+        margin-top: 10px;
+        display: inline-block;
+        text-align: center;
+        padding: 0px 10px;
+        height: 22px;
+        line-height: 20px;
+        border-radius: 10px;
+        font-size: 14px !important;
+        color: white;
+      }
+      .total{
+        margin-right: 5px;
+        background-color: #707070;
+      }
+      .no-show{
+        background-color: #db3c44;
+      }
+    }
+  }
+  .bottom{
+      margin-top: 10px;
+      width: 100%;
+      &>a{
+        float: left;
+        width: 49%;
+        color: $white;
+        font-size: 14 !important;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 5px;
+        &.add-sales{
+          background-color: #3499db;
+          margin-right: 2%;;
+        }
+        &.add-refund{
+          background-color: #38bae6;
+          &.disabled {
+            background-color: $gray;
+          }
+        }
+        &:hover {
+          cursor: pointer;
+          color: $white;
+        }
+      }
+  }
+  .total-sales{
+    color: #3499db;
+    font-weight: bold;
+  }
+}
+
+.client-sales-table {
+  .intro {
+    margin-bottom: 5px;
+  }
+}
+
+.bs-popover-right {
+  max-width: 600px;
+}
+
+// ****responsive------------------------
+@media screen and (max-width: 1199.98px) {
+
+}
+@media screen and (max-width: 991.98px) {
+
+}
+@media screen and (max-width: 767.98px) {
+  .client-information-wrapper{
+    .info-box-top {
+      &>.box {
+        padding: 10px !important;
+        &.box1 {
+          &.is-mobile-client-info {
+            display: block;
+          }
+          &.is-mobile-client-sales {
+            display: none;
+          }
+          .bottom {
+            height: 40px;
+          }
+        }
+        &.box2 {
+          height: 210px !important;
+          min-height: 210px !important;
+          &.is-mobile-client-info {
+            display: none;
+          }
+          &.is-mobile-client-sales {
+            display: block;
+          }
+        }
+        .sales-info {
+          dl {
+            dd {
+              padding: 0;
+              * {
+                font-size: 13px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .client-name-info {
+      
+    }
+    .edit-family-button-box {
+      &>p {
+        width: 70px !important;
+        margin-right: 30px;
+        margin-bottom: 5px;
+        a {
+          padding: 1px !important;
+        }
+      }
+    }
+    .sales-info-btns {
+      .remove-client {
+        width: 25px;
+        height: 25px;
+        margin-top: 2px;
+        line-height: 25px;
+      }
+      .btn-info {
+        width: 25px;
+        height: 25px;
+        margin-top: 5px;
+        &.show-client-sales-info {
+          .triangle {
+            transform: rotate(90deg);
+          }
+        }
+        .triangle {
+          top: 7px;
+          left: 6px;
+        }
+      }
+    }
+    .pc{
+      display: block !important;
+      .por{
+        height: 260px;
+      }
+    }
+  }
+  .client-sales-table {
+    margin-top: 15px;
+    .intro {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 575.98px) { 
+  
+}

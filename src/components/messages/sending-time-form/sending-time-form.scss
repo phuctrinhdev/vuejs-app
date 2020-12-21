@@ -1,0 +1,16 @@
+.action-message-setup-post-visit-general-modal {
+  text-align: center;
+  .modal-dialog {
+    width: 360px;
+    .modal-content .modal-footer .btn {
+      width: 100px !important;
+    }
+  }
+  .time-sm {
+    display: inline-block;
+    select {
+      width: 70px;
+      margin-right: 3px;
+    }
+  }
+}

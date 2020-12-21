@@ -1,0 +1,66 @@
+.prepaid-service-action-modal {
+  .modal-dialog {
+    width: 600px;
+  }
+  .form-wrapper {
+    .form-group {
+      display: flex;
+    }
+    .no-limit {
+      margin-top: 5px;
+    }
+    .salary, .validity {
+      input {
+        display: inline-block;
+      }
+      .btn-group-toggle {
+        margin-top: -2px;
+      }
+      .row {
+        justify-content: flex-end;
+        padding-right: 0;
+        .btn-group-toggle {
+          width: 120px;
+          .btn {
+            padding: 3px 10px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+main .services-page .table-custom .table-data {
+  .prepaid-service-action-modal {
+    .btn-group-toggle label {
+      width: 80px;
+      margin: 0;
+      padding: 1.5px;
+    }
+  }
+}
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+  .prepaid-service-action-modal .form-wrapper {
+    .salary, .validity {
+      .row {
+        margin-left: 0;
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+// extra small: .col- | 360 - 575px, mobile
+@media (max-width: 575.98px) {
+  .prepaid-service-action-modal .form-wrapper {
+    .salary, .validity {
+      .row {
+        .btn-group-toggle {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}

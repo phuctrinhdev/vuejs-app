@@ -1,0 +1,56 @@
+.action-booking-item-modal {
+  .modal-dialog {
+    width: 500px; 
+  }
+  .form-wrapper { 
+    .form-group {
+      margin-bottom: 5px;
+      input{
+        width: 100%;
+        font-size: 14px;
+      }
+      select{
+        width: 100%;
+        font-size: 14px;
+      }
+      .group-staff{
+        border: 1px solid $gray-light; 
+        padding: 10px;
+        max-height: 300px;
+        overflow-y: scroll;
+        .custom-checkbox{
+          width: 45%;
+          float: left;
+        }
+      }
+      .btn-group{
+        .btn {
+          padding: 3px 10px !important;
+          margin: 0px !important;
+        }
+      }
+      .failcode-link{
+        margin-top: 15px;
+        display: block;
+        position: absolute;
+      }
+      .multiselect { 
+        margin-top: 0; 
+      }
+      .custom-checkbox {
+        width: auto;
+      }
+    }
+  }
+}
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+  main {
+    .action-booking-item-modal {
+      .modal-dialog {
+        max-width: 95%;
+      }
+    }
+  }
+}

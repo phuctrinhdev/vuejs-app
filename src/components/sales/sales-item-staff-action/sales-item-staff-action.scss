@@ -1,0 +1,121 @@
+.sales-item-staff-action-modal {
+  .modal-dialog {
+    max-width: 720px;
+    .modal-content .modal-footer {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .multiple-staffs-mode {
+    margin-bottom: 5px;
+  }
+  .staffs-list {
+    border: 1px solid $gray;
+    padding: 10px;
+    padding-bottom: 0;
+    ul {
+      padding-left: 15px;
+      padding-right: 15px;
+      
+      li {
+        margin-bottom: 10px;
+        padding: 0;
+        &:hover {
+          a {
+            background: $purple-light;
+          }
+        }
+        &.active {
+            a {
+              background: $purple;
+              color: $white;
+            }
+        }
+        &:nth-child(odd){
+          a {
+            margin-right: 5px;
+          }
+        }
+        &:nth-child(even){
+          a {
+            margin-left: 5px;
+          }
+        }
+        a {
+          @include truncate-text(1, 40px);
+          width: calc(100% - 5px);
+          height: 40px;
+          padding: 0 5px;
+          border: 1px solid $gray;
+          line-height: 40px;
+          text-align: center;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .modal-footer {
+    &.view-mobile {
+      margin-top: 20px !important;
+      .btn-action-group {
+        justify-content: center;
+      }
+    }
+    .btn-action-group {
+      margin-top: -5px;
+      justify-content: flex-end;
+    }
+  }
+  .staffs-payment {
+    margin-top: 17px;
+    border: 1px solid $gray;
+    font-size: 13px;
+    &>*{
+      padding: 10px;
+    }
+    .sales-amount {
+      height: 36px;
+      background: $gray-light;
+      line-height: 16px;
+      font-size: 14px;
+      text-align: center;
+    }
+    .split-sales-mode {
+      border-top: 1px solid $gray;
+      border-bottom: 1px solid $gray;
+      .title {
+        margin-bottom: 4px;
+        font-size: 14px;
+      }
+      .form-btn-group {
+        label {
+          padding-top: 2px;
+        }
+      }
+    }
+    .split-staffs-amount {
+      ul {
+        li {
+          height: 30px;
+          .name {
+            padding-right: 5px;
+            label {
+              height: 25px;
+              line-height: 25px;
+              overflow: hidden;
+            }
+          }
+          .money {
+            padding-left: 5px;
+            input {
+              height: 25px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

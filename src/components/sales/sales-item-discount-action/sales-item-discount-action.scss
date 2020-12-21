@@ -1,0 +1,97 @@
+.sales-item-discount-action-modal {
+  .modal-dialog {
+    max-width: 400px;
+  }
+  .tabs {
+    .nav-tabs {
+      border: 0;
+      .nav-item {
+        width: 50%;
+        height: 30px;
+        a {
+          padding: 0;
+          border: 1px solid $gray;
+          border-radius: 0;
+          text-align: center;
+          line-height: 30px;
+          &.active {
+            border: 0 !important;
+            background: $purple;
+            color: $white;
+          }
+        }
+      }
+
+    }
+    .tab-content {
+      min-height: 113px;
+      margin-left: -2.5px;
+      margin-right: -2.5px;
+      .keypad, .discount-category {
+        ul {
+          max-height: 150px;
+          overflow: auto;
+          li {
+            float: left;
+            width: calc(25% - 5px);
+            height: 32px;
+            margin: 2.5px;
+            background: $blue-light;
+            text-align: center;
+            line-height: 32px;
+            color: $white;
+            font-weight: bold;
+            cursor: pointer;
+          }
+        }
+      }
+      .discount-category {
+        ul {
+          li {
+            width: calc(50% - 5px);
+          }
+        }
+      }
+    }
+  }
+  .discount-custom {
+    clear: both;
+    margin: 15px 0 10px;
+    .form-group {
+      label {
+        width: 25%;
+        float: left;
+        line-height: 32px;
+        font-weight: bold;
+      }
+      .input-money {
+        float: left;
+        width: 75%;
+        height: 32px;
+      }
+    }
+    .apply-btns {
+      clear: left;
+      margin-left: 25%;
+      padding-top: 10px;
+      .btn {
+        display: inline-block;
+        color: $white;
+      }
+    }
+  }
+  .modal-footer {
+    padding-bottom: 0;
+    // .btn-action-group {
+    //   .btn {
+
+    //   }
+    // }
+  }
+}
+
+@media (max-width: 575.98px) { // xs
+  .sales-item-discount-action-modal .discount-custom .apply-btns .btn {
+    padding: 5px !important;
+  }
+}

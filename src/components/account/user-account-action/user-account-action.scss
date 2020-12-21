@@ -1,0 +1,48 @@
+.action-user-account-modal {
+  .modal-dialog {
+    width: 450px;
+  }
+  .form-group {
+    &>label {
+      width: 40%;
+    }
+    input{
+      font-size: 14px;
+    }
+    .multiselect {
+      width: 60%;
+      margin-top: 0;
+      .multiselect__select {
+        top: 12px;
+      }
+      .multiselect__tags {
+        margin-top: 0;
+      }
+      .multiselect__placeholder {
+        color: $gray-dark;
+        text-indent: 5px;
+      }
+      .multiselect__option {
+        padding-left: 5px;
+      }
+    }
+    .custom-checkbox {
+      width: auto;
+    }
+    &.status {
+      label {
+        margin-top: 5px;
+      }
+      .btn {
+        width: 100px;
+        margin-top: 0;
+      }
+    }
+  }
+  .modal-footer{
+    margin:0px auto !important; 
+    &>.btn {
+      margin-left: .25rem !important;
+    }
+  }
+}

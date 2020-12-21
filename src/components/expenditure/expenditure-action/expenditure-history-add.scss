@@ -1,0 +1,67 @@
+.expenditure-history-add-modal {
+  .modal-dialog {
+    max-width: 900px;
+  }
+  .form-wrapper {
+    margin-bottom: 15px;
+    .vgt-responsive {
+      // overflow-x: visible;
+      table {
+        td {
+          input {
+            height: 25px;
+            border: 1px solid $gray-light;
+            text-align: center;
+          }
+          select {
+            height: 25px;
+            border: 1px solid $gray-light;
+            // text-align-last: center;
+            // -moz-text-align-last: center;
+            option {
+              // text-align: center;
+              // text-align-last: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) { // lg from 992px
+
+}
+
+@media (max-width: 991.98px) { // md from 768px
+  .expenditure-history-add-modal {
+    .modal-dialog {
+      max-width: 95%;
+    }
+  }
+}
+
+@media (max-width: 767.98px) { // sm from 576px
+
+}
+
+@media (max-width: 575.98px) { // xs from 360px
+  .expenditure-history-add-modal {
+    .modal-dialog {
+      max-width: 100% !important;
+      margin: 0;
+      .modal-content {
+        min-height: 100vh;
+        border-radius: 0;
+      }
+    }
+    .form-wrapper .vgt-responsive table td {
+      .popover-container {
+        
+      }
+      input, select {
+        min-width: 100px !important;
+      }
+    }
+  }
+}

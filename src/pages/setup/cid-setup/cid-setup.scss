@@ -1,0 +1,32 @@
+.cid-setup {
+    .cid-toggle {
+       button {
+           border: 1px solid #3499db !important;
+           font-size: 12px;
+       } 
+       .btn {
+           max-width: none !important;
+       }
+       .active {
+           background-color: #3499db !important;
+       }
+    }
+}
+.btn-action-group {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    .btn2 {
+        margin: 5px !important;
+    }
+}
+
+table tbody tr:hover {
+    background: none;
+}
+table tbody tr td .btn{
+    max-width: none;
+}
+.bg-th{
+   width: 20%;
+}

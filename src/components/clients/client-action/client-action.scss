@@ -1,0 +1,190 @@
+main .common-style .action-client-modal {
+    position: relative;
+    p.set-field-btn {
+        position: absolute;
+        top: 15px; right: 15px;
+        text-align: center;
+        z-index: 1000;
+        span {
+            display: block;
+            font-size: 13px;
+            margin: auto;
+            margin-bottom: 3px;
+        } 
+    }
+    dl.list {
+        dt {
+            width: 20%;
+        }
+        dd {
+            .custom-select{
+                .disabled {
+                    background: $gray-light;
+                }
+            }
+            width: 80%;
+            font-size: 13px;
+            .input-box {
+                float: left;
+                width: 60%;
+                box-sizing: border-box;
+                padding-right: 1%;
+                ::-webkit-input-placeholder {
+                    text-align: center;
+                }
+                
+                ::-webkit-input-placeholder { /* Edge */
+                    text-align: center;
+                }
+                
+                :-ms-input-placeholder { /* Internet Explorer */
+                    text-align: center;
+                }
+            }
+            .input-box.day-option {
+                width: 70% !important;
+                margin-bottom: 10px;
+            }
+            .last-box {
+                float: left;
+                width: 40%;
+                span {
+                    margin: 5px;
+                }
+            }
+            .last-box.checkbox-por {
+                position: relative;
+                .add-client-check {
+                    display: inline-block;
+                    position: absolute;
+                    left: 35px;
+                    top: 0;
+                    margin-left: 7px;
+                    span.text {
+                        margin-left: -2px;
+                    }
+                }
+            }
+            .last-box.res-non.non2 {
+                .btn.secondary.small {
+                    margin-top: -18px;
+                }
+            }
+            .client-action-img {
+                .duplicate-check {
+                    display: inline-block;
+                    margin: 0;
+                }
+                .client-setup-s {
+                    display: inline-block;
+                    margin: 0;
+                }
+                .search-img {
+                    display: inline-block;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+
+main .common-style .set-field-check-box {
+    border: 1px solid #adb5bd;
+    box-sizing: border-box;
+    padding: .5rem;
+    height: 155px;
+    overflow-y: scroll;
+    ul li {
+        width: 50%;
+        float: left;
+        .custom-control-label span.text {
+            display: inline-block;
+            padding-top: 4px;
+        }
+    }
+}
+
+// ****responsive------------------------
+@media screen and (max-width: 800px) {
+    main .common-style {
+        // modal
+        .modal-dialog {
+            max-width: 95% !important;
+        }
+    }
+    main .common-style .action-client-modal {
+        dl.list {
+            dt {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+            dd {
+                width: 100%;
+                .input-box {
+                   width: 50%;
+                }
+                .input-box.day-option {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                .last-box {
+                   width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+main .common-style .action-client-modal {
+    .form-wrapper {
+        margin-top: 50px;
+    }
+    dl.list {
+        dt {
+            width: 100%;
+        }
+        dd {
+            width: 100%;
+            .input-box {
+                width: 100%;
+            }
+            .input-box.day-option {
+                width: 100% !important;
+                margin-bottom: 10px;
+                span {
+                    display: inline-block;
+                    margin: 3px 0;
+                }                
+            }
+            .last-box {
+                width: 100%;
+                margin-top: 10px;
+                .setup-hover:hover {
+                    .setup-hover-tultip {
+                        display: none;
+                        z-index: 100;
+                    }
+                }
+            }
+            .input-box.res-non {
+                width: 85%;
+            }
+            .last-box.res-non {
+                width: 15%;
+                margin-top: 0px;
+            }
+            .input-box.res-non.non2 {
+                width: 75%;
+            }
+            .last-box.res-non.non2 {
+                width: 25%;
+                .btn.secondary.small {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+}

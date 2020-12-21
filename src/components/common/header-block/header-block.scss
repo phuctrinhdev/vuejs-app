@@ -1,0 +1,163 @@
+// extra large: .col-xl- | 1200++ -> desktop
+.header {
+  .top-bar {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: $white;
+    .inner {
+      width: 100%;
+      height: 60px;
+      &>.btn-group {
+        margin-left: 30%;
+        margin-top: 13px;
+        padding: 0;
+        border: none;
+        border-radius: 5px;
+        overflow: hidden;
+        dd {
+          &:nth-of-type(1) .btn-link {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+          }
+          &:nth-of-type(2) .btn-link{
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+          }
+        }
+        .btn-link {
+          display: block;
+          width: 90px !important;
+          height: 35px;
+          background-color: $blue;
+          color: $gray-light;
+          font-size: $font-medium;
+          line-height: 24px;
+          text-align: center;
+          transition: all .25s ease;
+          -webkit-transition: all .25s ease;
+          -moz-transition: all .25s ease;
+          -ms-transition: all .25s ease;
+          -o-transition: all .25s ease;
+          &:hover {
+            background-color: $blue-gray;
+            color: $white;
+          }
+          &.router-link-active {
+            background: $blue-dark;
+          }
+        }
+      }
+    }
+    .top-bar-left {
+      float: left;
+      .logo {
+        position: absolute;
+        top: 11px;
+        left: 3%;
+        a {
+          display: inline-block;
+        }
+      }
+      .extend-wrapper {
+        display: inline-block;
+        .login-wrapper {
+          .login-user {
+            width: 80px;
+          }
+          .login-pass {
+            width: 80px;
+          }
+          .btn {
+            display: inline-block;
+            padding: 3px!important;
+            font-size: 10px;
+          }
+        }
+        .change-shop-wrapper {
+          display: inline-block;
+          .change-shop {
+            display: inline-block;
+            width: 80px;
+            margin-top: -11px;
+          }
+          .btn {
+            display: inline-block;
+            padding: 3px !important;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+
+    .top-bar-right {
+      float: right;
+      .menu-user {
+        position: absolute;
+        top: 18px;
+        right: 3%;
+        &>dd {
+          float: left;
+          margin-left: 15px;
+          padding-left: 5px;
+          &.menu-user-home {
+            a {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// large: .col-lg- | 992 - 1199px -> ipad landscape
+@media (max-width: 1199.98px) {
+  .header .top-bar .inner > .btn-group {
+    margin-left: 26%;
+  }
+}
+
+// medium: .col-md- | 768 - 991px -> ipad portrait
+@media (max-width: 991.98px) {
+  .header .top-bar .inner > .btn-group {
+    margin-left: 24%;
+    .btn-link {
+      width: 85px;
+    }
+  }
+}
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+  .header {
+    .top-bar {
+      .inner{
+        .top-bar-left{
+          .logo {
+            left: 50%;
+            margin-left: -67.5px;
+          }
+        }
+        &>.btn-group {
+          display: none;
+        }
+        .top-bar-right {
+          .menu-user dd {
+            &:nth-of-type(1), &:nth-of-type(2) {
+              display: none;
+            }
+          }
+        }
+      }
+      .btn, .menu-user {
+        display: none;
+      }
+    }
+  }
+}
+
+// extra small: .col- | 360 - 575px, mobile portrait
+@media (max-width: 575.98px) {
+  
+}

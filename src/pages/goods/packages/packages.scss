@@ -1,0 +1,110 @@
+main .packages-page {
+  .align-left{
+    float: left !important
+  }
+  .inner {
+    width: 100%;
+  }
+  .setup-top {
+    position: relative;
+    height: 45px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $gray-dark;
+    padding-bottom: 10px;
+    .btn-group {
+      float: right;
+      .btn { 
+        padding: 7px 12px;
+        border: 1px solid $blue;
+        background: $white;
+        color: $blue;
+        &:hover {
+          background: $blue;
+          color: $white;
+        }
+      }
+    }
+  }
+  .no-line{
+    border-bottom: 0px ;
+  }
+  .table-custom {
+    .table-data {
+      background: $white;
+      margin: 0;
+      .table-left {
+        position: relative;
+        .setup-top {
+          margin-bottom: 0;
+        }
+      }
+      .good-table-content {
+        padding: 10px 0;
+      }
+      .vgt-wrap { 
+        padding: 0;
+        .vgt-fixed-header {
+          width: 100%;
+        }
+      }
+      .total-data {
+        float: left;
+      }
+      .show-inactives { 
+        margin-top: 10px;
+        .custom-checkbox {
+          margin-right: 0;
+        }
+      }
+      .btn-group {
+        .btn {
+          padding: 7px 12px;
+          border: 1px solid $blue;
+          background: $white;
+          color: $blue;
+          &:hover {
+            background: $blue;
+            color: $white;
+          }
+        }
+      }
+      table {
+        .custom-checkbox {
+          margin-right: 0;
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+}
+
+// small: .col-sm- | 576 - 767px -> mobile landscape
+@media (max-width: 767.98px) {
+  main .content.packages-page {
+    .setup-top {
+      padding-bottom: 7px;
+      h3 {
+        text-indent: 0;
+      }
+      .btn-group {
+        .btn {
+          padding: 4px 12px;
+        }
+      }
+    }
+
+    .table-custom {
+      .table-data {
+        .show-inactives {
+          margin-top: -2px;
+        }
+      }
+    }
+  }
+}
+
+// extra small: .col- | 360 - 575px, mobile
+@media (max-width: 575.98px) {
+
+}

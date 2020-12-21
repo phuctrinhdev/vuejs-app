@@ -1,0 +1,47 @@
+.box-item-prepaid-service{ 
+  .box-i{
+    width: 50%;
+    float: left;
+    padding: 5px;
+    .box-i-body{
+      .list-group{
+        display: block;
+        max-height: 500px;
+        overflow-y: auto;
+        .list-group-item{
+          border-radius: 0 !important;
+          padding: 0px;  
+          span{
+            display: inline-flex;
+            border-left: 1px solid $gray;
+          }
+          .no{ 
+            width: 25px;
+            padding: 0; 
+            margin-left:-1px ;
+            div{
+              margin: auto;
+            }
+          }
+          .name{ 
+            padding: 5px;
+            width: calc( 100% - 29px); 
+          } 
+          &:hover{
+            cursor: pointer;
+          }
+        }
+      } 
+      .lb-total-items{
+        font-size: 12px;
+        margin-top: 2px;
+      }
+      h3{
+        background-color: $blue-dark;
+        color: $white; 
+        line-height: 30px;   
+        padding: 0 10px;
+      }
+    }
+  }
+} 

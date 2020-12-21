@@ -1,0 +1,25 @@
+.visit-count-type-info-modal {
+  .visit-count-type {
+    border: 1px;
+    tr:hover {
+      background: none;
+    }
+    th {
+      text-align: center;
+      vertical-align: middle;
+      border: 1px solid #444444;
+      background: #a6ecee;
+      width: 30%;
+    }
+    td {
+      text-align: left;
+      border: 1px solid #444444;
+    }
+  }
+  .modal-dialog {
+    width: 360px;
+    .modal-content .modal-footer .btn {
+      width: 100px !important;
+    }
+  }
+}
